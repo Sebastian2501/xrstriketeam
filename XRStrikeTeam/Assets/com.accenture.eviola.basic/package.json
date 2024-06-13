@@ -1,0 +1,17 @@
+{
+    "name": "com.accenture.eviola.basic",
+    "version": "1.0.0",
+    "license": "MIT",
+    "displayName": "Accenture Unity basic",
+    "description": "Generic Unity utilities",
+    "unity": "2022.3",
+    "unityRelease": "7f1",
+    "author": {
+        "name": "Enrico Viola",
+        "email": "enrico.viola@accenture.com"
+    },
+    "keywords": [
+        "misc",
+        "helpers"
+    ]
+}
