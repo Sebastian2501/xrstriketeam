@@ -12,6 +12,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         private Transform _cameraSocket = null;
         [SerializeField]
         private GameObject _activatedPayload = null;
+        [SerializeField]
+        public Trajectory NextTrajectory = null;
         
         [HideInInspector]
         public StepController Controller = null;

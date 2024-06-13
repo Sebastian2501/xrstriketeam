@@ -16,7 +16,11 @@ namespace Accenture.XRStrikeTeam.Presentation
         [SerializeField]
         private Transform _stepsContainer = null;
         [SerializeField]
+        private Transform _trajectoryContainer = null;
+        [SerializeField]
         private GameObject _destinationPrefab = null;
+        [SerializeField]
+        private GameObject _trajectoryPrefab = null;
         [Header("Steps")]
         [SerializeField]
         private List<Destination> _steps = new List<Destination>();
@@ -83,6 +87,24 @@ namespace Accenture.XRStrikeTeam.Presentation
                 EditorUtility.SetDirty(step);
             }
             EditorUtility.SetDirty(this);
+        }
+
+        public void MakeTrajectories() {
+            if (_steps.Count < 1) return;
+            for (int i = 0; i < _steps.Count-1; i++) {
+                int idxNxt = i + 1;
+                GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_trajectoryPrefab);
+                go.transform.parent = _trajectoryContainer;
+                go.name = i + "to" + idxNxt + "_trajectory";
+                Trajectory trajectory = go.GetComponent<Trajectory>();
+                if (trajectory != null)
+                {
+                    _steps[i].NextTrajectory = trajectory;
+                    trajectory.SetTransformsAndMakeWaypoints(_steps[i].PayloadContainer, _steps[idxNxt].PayloadContainer);
+                    EditorUtility.SetDirty(trajectory);
+                    EditorUtility.SetDirty(_steps[i]);
+                }
+            }
         }
 #endif
         #endregion
@@ -162,7 +184,9 @@ namespace Accenture.XRStrikeTeam.Presentation
         {
             Misc.CheckNotNull(_cameraMover);
             Misc.CheckNotNull(_stepsContainer);
+            Misc.CheckNotNull(_trajectoryContainer);
             Misc.CheckNotNull(_destinationPrefab);
+            Misc.CheckNotNull(_trajectoryPrefab);
             _camera = _cameraMover.transform.GetComponent<Camera>();
             InitSteps();
         }
@@ -191,6 +215,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
             EditorUI.Button("Extract Payloads", GetTarget().ExtractPayloads);
             EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);
+            EditorUI.Button("Make trajectories", GetTarget().MakeTrajectories);
         }
     }
 #endif
