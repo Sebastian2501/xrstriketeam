@@ -61,6 +61,16 @@ namespace Accenture.XRStrikeTeam.Presentation
 
             EditorUtility.SetDirty(this);
         }
+
+        public void MakeCamerasLookAtPayloads()
+        {
+            foreach (Destination step in _steps)
+            {
+                step.PointCameraAtPayload();
+                EditorUtility.SetDirty(step);
+            }
+            EditorUtility.SetDirty(this);
+        }
 #endif
         #endregion
 
@@ -166,6 +176,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             base.OnInspectorGUI();
 
             EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
+            EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);
         }
     }
 #endif
