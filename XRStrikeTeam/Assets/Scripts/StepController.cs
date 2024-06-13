@@ -45,12 +45,15 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
 
             foreach (Transform tra in tras) {
-                Vector3 payloadPos = tra.position;
+                Pose payloadPose = new Pose();
+                payloadPose.position = tra.position;
+                payloadPose.rotation = tra.rotation;
                 GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_destinationPrefab);
                 go.transform.parent = _stepsContainer;
                 go.name = _steps.Count + "_Step";
                 Destination dst = go.GetComponent<Destination>();
-                dst.PayloadContainer.position = payloadPos;
+                dst.PayloadContainer.position = payloadPose.position;
+                dst.PayloadContainer.rotation = payloadPose.rotation;
                 tra.parent = dst.PayloadContainer;
                 _steps.Add(dst);
             }
