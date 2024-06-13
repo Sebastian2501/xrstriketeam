@@ -24,11 +24,8 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #region Init
 
-        public void PointCameraAtPayload() { 
-            _cameraSocket.position = PayloadContainer.position;
-            Vector3 lPos = _cameraSocket.localPosition;
-            lPos.z -= 2;
-            _cameraSocket.localPosition = lPos;
+        public void PointCameraAtPayload() {
+            _cameraSocket.position = PayloadContainer.position - (PayloadContainer.forward * 2);
             _cameraSocket.LookAt(PayloadContainer);
         }
         
