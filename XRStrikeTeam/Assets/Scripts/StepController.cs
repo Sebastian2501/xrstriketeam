@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Accenture.eviola; 
+using Accenture.eviola;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Accenture.XRStrikeTeam.Presentation
 {
@@ -10,6 +13,10 @@ namespace Accenture.XRStrikeTeam.Presentation
         [Header("ExternalComponents")]
         [SerializeField]
         private CameraMover _cameraMover = null;
+        [SerializeField]
+        private Transform _stepsContainer = null;
+        [SerializeField]
+        private GameObject _destinationPrefab = null;
         [Header("Steps")]
         [SerializeField]
         private List<Destination> _steps = new List<Destination>();
@@ -19,6 +26,37 @@ namespace Accenture.XRStrikeTeam.Presentation
         private Camera _camera;
         public Camera PovCamera { get { return _camera; } }
         public CameraMover CameraDriver { get { return _cameraMover; } }
+
+        #region Init
+        public bool IsDestination(Transform tra) { 
+            return tra.GetComponent<Destination>() != null;
+        }
+
+#if UNITY_EDITOR
+        public void MakeDestinationsFromStuffInSteps() {
+            if (_stepsContainer.childCount < 1) return;
+            
+            List<Transform> tras = new List<Transform>();
+            for (int i = 0; i < _stepsContainer.childCount; i++) {
+                Transform tra = _stepsContainer.GetChild(i);
+                if (!IsDestination(tra)) {
+                    tras.Add(tra);
+                }
+            }
+
+            foreach (Transform tra in tras) {
+                GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_destinationPrefab);
+                go.transform.parent = _stepsContainer;
+                go.name = _steps.Count + "_Step";
+                Destination dst = go.GetComponent<Destination>();
+                tra.parent = dst.PayloadContainer;
+                _steps.Add(dst);
+            }
+
+            EditorUtility.SetDirty(this);
+        }
+#endif
+        #endregion
 
         #region Steps
 
@@ -94,6 +132,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_cameraMover);
+            Misc.CheckNotNull(_stepsContainer);
+            Misc.CheckNotNull(_destinationPrefab);
             _camera = _cameraMover.transform.GetComponent<Camera>();
             InitSteps();
         }
@@ -109,4 +149,18 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
         #endregion
     }
+
+#if UNITY_EDITOR
+    [CustomEditor(typeof(StepController))]
+    public class StepControllerEditor : Editor {
+        private StepController GetTarget() { return (StepController)target; }
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+
+            EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
+        }
+    }
+#endif
 }

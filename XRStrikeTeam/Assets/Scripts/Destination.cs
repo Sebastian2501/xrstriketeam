@@ -20,6 +20,8 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private bool _bCameraMoverListener = false;
 
+        public Transform PayloadContainer { get { return _activatedPayload.transform; } }
+
         #region Transitioning
         public void Leave() { 
             _activatedPayload.SetActive(false);
