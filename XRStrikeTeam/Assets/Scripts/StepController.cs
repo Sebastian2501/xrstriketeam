@@ -45,12 +45,18 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
 
             foreach (Transform tra in tras) {
+                Vector3 payloadPos = tra.position;
                 GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_destinationPrefab);
                 go.transform.parent = _stepsContainer;
                 go.name = _steps.Count + "_Step";
                 Destination dst = go.GetComponent<Destination>();
+                dst.PayloadContainer.position = payloadPos;
                 tra.parent = dst.PayloadContainer;
                 _steps.Add(dst);
+            }
+
+            foreach (Destination step in _steps) { 
+                EditorUtility.SetDirty(step);
             }
 
             EditorUtility.SetDirty(this);

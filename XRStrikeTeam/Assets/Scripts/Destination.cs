@@ -22,6 +22,12 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public Transform PayloadContainer { get { return _activatedPayload.transform; } }
 
+        #region Init
+
+        
+        
+        #endregion
+
         #region Transitioning
         public void Leave() { 
             _activatedPayload.SetActive(false);
