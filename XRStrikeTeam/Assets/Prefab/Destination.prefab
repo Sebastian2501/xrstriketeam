@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3003096868383930626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9.03}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,6 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraSocket: {fileID: 6078218112224651044}
   _activatedPayload: {fileID: 3003096868383930626}
+  Controller: {fileID: 0}
+  Id: -1
 --- !u!1 &7711737185797040359
 GameObject:
   m_ObjectHideFlags: 0
