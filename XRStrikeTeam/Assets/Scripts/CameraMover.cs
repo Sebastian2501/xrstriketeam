@@ -24,7 +24,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #region Animation
 
-        public void Go(Vector3 pos, Quaternion rot) {
+        public void Go(Vector3 pos, Quaternion rot, Trajectory trajectory = null) {
             if (IsMoving()) return;
             StopCamera();
 

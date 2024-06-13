@@ -30,10 +30,18 @@ namespace Accenture.XRStrikeTeam.Presentation
             _cameraSocket.position = PayloadContainer.position - (PayloadContainer.forward * 2);
             _cameraSocket.LookAt(PayloadContainer);
         }
-        
+
         #endregion
 
         #region Transitioning
+
+        public Trajectory GetTrajectoryToGetHere() {
+            if (Id < 1) return null;
+            Destination prevDestination = Controller.GetStep(Id - 1);
+            if (prevDestination == null) return null;
+            return prevDestination.NextTrajectory;
+        }
+
         public void Leave() { 
             _activatedPayload.SetActive(false);
         }
@@ -47,7 +55,9 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void Go() {
             AddCameraMoverListener();
             _activatedPayload.SetActive(true);
-            Controller.CameraDriver.Go(_cameraSocket.position, _cameraSocket.rotation);
+            Trajectory trajectory = GetTrajectoryToGetHere();
+            Controller.CameraDriver.Go(_cameraSocket.position, _cameraSocket.rotation, trajectory);
+            
         }
 
         public bool IsTransitioning() { return Controller.CameraDriver.IsMoving(); }

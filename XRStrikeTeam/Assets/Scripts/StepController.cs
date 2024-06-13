@@ -111,6 +111,11 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #region Steps
 
+        public Destination GetStep(int idx) {
+            if (!Misc.IsGoodIndex(idx, _steps)) return null;
+            return _steps[idx];
+        }
+
         private void InitSteps() {
             for (int i = 0; i < _steps.Count; i++) {
                 _steps[i].Controller = this;
