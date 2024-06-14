@@ -9,6 +9,7 @@ namespace Accenture.eviola.Animation
     public class LinearTimedMovement : Timer
     {
         public Transform AnimatedTransform = null;
+        public bool EnfoceStartAndStopPoses = true;
         
         private Pose _startPose = new Pose();
         private Pose _endPose = new Pose();
@@ -42,6 +43,19 @@ namespace Accenture.eviola.Animation
             }
         }
 
+        public void EnforceStartPose() {
+            _curPose.position = _startPose.position;
+            _curPose.rotation = _startPose.rotation;
+            UpdateAnimatedTransform();
+        }
+
+        public void EnforceEndPose()
+        {
+            _curPose.position = _endPose.position;
+            _curPose.rotation = _endPose.rotation;
+            UpdateAnimatedTransform();
+        }
+
         protected void UpdateAnimatedTransform() {
             if (AnimatedTransform == null) return;
             AnimatedTransform.position = _curPose.position;
@@ -50,17 +64,15 @@ namespace Accenture.eviola.Animation
 
         public override void Start()
         {
-            _curPose.position = _startPose.position;
-            _curPose.rotation = _startPose.rotation;
-            UpdateAnimatedTransform();
+            if (EnfoceStartAndStopPoses) EnforceStartPose();
+            
             base.Start();
         }
 
         protected override void Stop(TimerStopType tst)
         {
-            _curPose.position = _endPose.position;
-            _curPose.rotation= _endPose.rotation;
-            UpdateAnimatedTransform();
+            if (EnfoceStartAndStopPoses)EnforceEndPose();
+            
             base.Stop(tst);
         }
 
@@ -91,6 +103,7 @@ namespace Accenture.eviola.Animation
         private int _numSegments { get { return _waypoints.Count - 1; } }
 
         public WaypointsTimedMovement() {
+            _movement.EnfoceStartAndStopPoses = false;
             _movement.OnStop.AddListener(HandleTimer);
         }
 
@@ -123,15 +136,13 @@ namespace Accenture.eviola.Animation
             _movement.AnimatedTransform = AnimatedTransform;
             _movement.SetStartPose(_waypoints[idx].position, _waypoints[idx].rotation);
             _movement.SetEndPose(_waypoints[idx+1].position, _waypoints[idx+1].rotation);
+            if(idx==0)_movement.EnforceStartPose();
             _movement.Start();
         }
 
         public void Update()
         {
             _movement.Update();
-            //if (UnityEngine.Input.GetKeyDown("q")) {
-            //    StartSegment(_curWaypoint + 1);
-            //}
         }
 
         private void HandleTimer(Timer.TimerStopType tst) {
@@ -141,6 +152,7 @@ namespace Accenture.eviola.Animation
                     StartSegment(_curWaypoint + 1);
                 }
                 else {
+                    _movement.EnforceEndPose();
                     OnMovementCompleted.Invoke();
                 }
             }
