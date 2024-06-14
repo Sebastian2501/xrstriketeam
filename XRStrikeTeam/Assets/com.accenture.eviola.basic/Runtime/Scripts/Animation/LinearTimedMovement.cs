@@ -2,6 +2,7 @@ using Accenture.eviola.Async;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Accenture.eviola.Animation
 {
@@ -73,6 +74,73 @@ namespace Accenture.eviola.Animation
             _curPose.position.z = Math.Remap.Map(pct, 0, 1, _startPose.position.z, _endPose.position.z);
             _curPose.rotation = Quaternion.Slerp(_startPose.rotation, _endPose.rotation, pct);
             UpdateAnimatedTransform();
+        }
+    }
+
+    public class WaypointsTimedMovement {
+        public UnityEvent OnMovementCompleted = new UnityEvent();
+        public float Duration = 1;
+        public Transform AnimatedTransform = null;
+
+        private LinearTimedMovement _movement = new LinearTimedMovement();
+        private List<Pose> _waypoints = new List<Pose>();
+        private int _curWaypoint = -1;
+
+        private int _lastSegment { get { return _waypoints.Count-2; } }
+
+        private int _numSegments { get { return _waypoints.Count - 1; } }
+
+        public WaypointsTimedMovement() {
+            _movement.OnStop.AddListener(HandleTimer);
+        }
+
+        public void ClearWaypoints() { _waypoints.Clear(); }
+
+        public void AddWayPoint(Pose wp) { _waypoints.Add(new Pose(wp.position, wp.rotation)); }
+
+        public bool IsMoving() { return _movement.IsRunning(); }
+
+        public void Stop() {
+            if (!IsMoving()) return;
+            _movement.Stop();
+        }
+
+        public void Start() {
+            if (IsMoving()) return;
+            if (_waypoints.Count < 2) return;
+            StartSegment(0);
+        }
+
+        private void StartSegment(int idx) {
+            if (idx < 0 || idx > _lastSegment)
+            {
+                Stop();
+                return;
+            }
+            _curWaypoint = idx;
+            _movement.Stop();
+            _movement.Duration = Duration /(float)_numSegments;
+            _movement.AnimatedTransform = AnimatedTransform;
+            _movement.SetStartPose(_waypoints[idx].position, _waypoints[idx].rotation);
+            _movement.SetEndPose(_waypoints[idx+1].position, _waypoints[idx+1].rotation);
+            _movement.Start();
+        }
+
+        public void Update()
+        {
+            _movement.Update();
+        }
+
+        private void HandleTimer(Timer.TimerStopType tst) {
+            if (tst == Timer.TimerStopType.NATURAL) {
+                if (_curWaypoint < _lastSegment)
+                {
+                    StartSegment(_curWaypoint + 1);
+                }
+                else {
+                    OnMovementCompleted.Invoke();
+                }
+            }
         }
     }
 }
