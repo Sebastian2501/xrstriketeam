@@ -39,12 +39,12 @@ namespace Accenture.XRStrikeTeam.Presentation
             _movement.Stop();
             _movement.Duration = _travelTime;
             _movement.AnimatedTransform = _camera.transform;
-            _movement.ClearWaypoints();
+            _movement.Waypoints.Clear();
 
             if (trajectory == null)
             {
-                _movement.AddWayPoint(_startPose);
-                _movement.AddWayPoint(_endPose);
+                _movement.Waypoints.Add(_startPose);
+                _movement.Waypoints.Add(_endPose);
             }
             else { 
                 LoadTrajectory(trajectory);
@@ -54,14 +54,14 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         private void LoadTrajectory(Trajectory traj) {
-            _movement.AddWayPoint(_startPose);
+            _movement.Waypoints.Add(_startPose);
             if (traj.NumWaypoints > 2) {
                 for (int i = 1; i < traj.NumWaypoints - 1; i++) {
                     Vector3 pos = traj.GetWayPoint(i);
-                    _movement.AddWayPoint(new Pose(pos, eviola.Math.Vector.LookAt(pos, traj.GetWayPoint(i+1))));
+                    _movement.Waypoints.Add(new Pose(pos, eviola.Math.Vector.LookAt(pos, traj.GetWayPoint(i+1))));
                 }
             }
-            _movement.AddWayPoint(_endPose);
+            _movement.Waypoints.Add(_endPose);
         }
 
         public void StopCamera() { _movement.Stop(); }
@@ -72,13 +72,14 @@ namespace Accenture.XRStrikeTeam.Presentation
             _camera.transform.rotation = rot;
         }
 
-        public bool IsMoving() { return _movement.IsMoving(); }
+        public bool IsMoving() { return _movement.IsRunning(); }
 
         private void UpdateMovement() { 
             _movement.Update();
         }
 
-        private void HandleMovementDone() {
+        private void HandleMovementDone(Timer.TimerStopType tst) {
+            if (tst == Timer.TimerStopType.MANUAL) return;
             OnDestinationReached.Invoke(_endPose);
         }
 
@@ -90,7 +91,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_camera);
-            _movement.OnMovementCompleted.AddListener(HandleMovementDone);
+            _movement.OnStop.AddListener(HandleMovementDone);
         }
 
         private void Update()

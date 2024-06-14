@@ -89,73 +89,90 @@ namespace Accenture.eviola.Animation
         }
     }
 
-    public class WaypointsTimedMovement {
-        public UnityEvent OnMovementCompleted = new UnityEvent();
-        public float Duration = 1;
+    public class WaypointsTimedMovement : Timer {
         public Transform AnimatedTransform = null;
+        public List<Pose> Waypoints = new List<Pose>();
 
-        private LinearTimedMovement _movement = new LinearTimedMovement();
-        private List<Pose> _waypoints = new List<Pose>();
-        private int _curWaypoint = -1;
+        private Pose _curPose = new Pose();
+        private float _wptPct = 1;
 
-        private int _lastSegment { get { return _waypoints.Count-2; } }
-
-        private int _numSegments { get { return _waypoints.Count - 1; } }
-
-        public WaypointsTimedMovement() {
-            _movement.EnfoceStartAndStopPoses = false;
-            _movement.OnStop.AddListener(HandleTimer);
+        private Pose _firstWaypoint{ get { return Waypoints[0]; } }
+        private Pose _lastWaypoint { 
+            get { 
+                if(Waypoints==null)return new Pose();
+                if(Waypoints.Count<1)return new Pose();
+                return Waypoints[Waypoints.Count - 1]; 
+            } 
         }
 
-        public void ClearWaypoints() { _waypoints.Clear(); }
-
-        public void AddWayPoint(Pose wp) { _waypoints.Add(new Pose(wp.position, wp.rotation)); }
-
-        public bool IsMoving() { return _movement.IsRunning(); }
-
-        public void Stop() {
-            if (!IsMoving()) return;
-            _movement.Stop();
+        public void UpdateAnimatedTransform() {
+            if (AnimatedTransform == null) return;
+            AnimatedTransform.position = _curPose.position;
+            AnimatedTransform .rotation = _curPose.rotation;
         }
 
-        public void Start() {
-            if (IsMoving()) return;
-            if (_waypoints.Count < 2) return;
-            StartSegment(0);
-        }
-
-        private void StartSegment(int idx) {
-            if (idx < 0 || idx > _lastSegment)
+        public Pose GetCurrentPose() {
+            if (AnimatedTransform != null) {
+                return new Pose(AnimatedTransform.position, AnimatedTransform.rotation);
+            }
+            else
             {
-                Stop();
-                return;
+                if (IsRunning()) {
+                    return _curPose;
+                }
+                else{
+                    return new Pose();
+                }
             }
-            _curWaypoint = idx;
-            _movement.Stop();
-            _movement.Duration = Duration /(float)_numSegments;
-            _movement.AnimatedTransform = AnimatedTransform;
-            _movement.SetStartPose(_waypoints[idx].position, _waypoints[idx].rotation);
-            _movement.SetEndPose(_waypoints[idx+1].position, _waypoints[idx+1].rotation);
-            if(idx==0)_movement.EnforceStartPose();
-            _movement.Start();
         }
 
-        public void Update()
+        public override void Start()
         {
-            _movement.Update();
+            if (Waypoints == null) return;
+            if (Waypoints.Count < 2) return;
+
+            _curPose.position = _firstWaypoint.position;
+            _curPose.rotation = _firstWaypoint.rotation;
+            UpdateAnimatedTransform();
+
+            _wptPct = 1.0f/(float)Waypoints.Count;
+
+            base.Start();
         }
 
-        private void HandleTimer(Timer.TimerStopType tst) {
-            if (tst == Timer.TimerStopType.NATURAL) {
-                if (_curWaypoint < _lastSegment)
-                {
-                    StartSegment(_curWaypoint + 1);
-                }
-                else {
-                    _movement.EnforceEndPose();
-                    OnMovementCompleted.Invoke();
-                }
+        protected override void Stop(TimerStopType tst)
+        {
+            if (tst == TimerStopType.NATURAL)
+            {
+                _curPose.position = _lastWaypoint.position;
+                _curPose.rotation = _lastWaypoint.rotation;
+                UpdateAnimatedTransform();
             }
+            base.Stop(tst);
         }
+
+        public override void Update()
+        {
+            base.Update();
+            if (!IsRunning()) return;
+            float totPct = GetPct();
+            int _curSegment = (int)(totPct / _wptPct);
+
+            if (_curSegment >= Waypoints.Count - 1) return;
+            
+            float segPct = Math.Remap.Map(totPct % _wptPct, 0, _wptPct, 0, 1);
+            
+            Pose wpFrom = GetStartWaypointForSegment(_curSegment);
+            Pose wpTo = GetEndWaypointForSegment(_curSegment);
+
+            _curPose.position = Vector3.Slerp(wpFrom.position, wpTo.position, segPct);
+            _curPose.rotation = Quaternion.Slerp(wpFrom.rotation, wpTo.rotation, segPct);
+
+            UpdateAnimatedTransform();
+        }
+
+
+        private Pose GetStartWaypointForSegment(int seg) { return Waypoints[seg]; }
+        private Pose GetEndWaypointForSegment(int seg) { return Waypoints[seg + 1]; }
     }
 }
