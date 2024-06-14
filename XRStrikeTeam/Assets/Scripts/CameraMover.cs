@@ -1,6 +1,7 @@
 using Accenture.eviola;
 using Accenture.eviola.Animation;
 using Accenture.eviola.Async;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,10 +41,27 @@ namespace Accenture.XRStrikeTeam.Presentation
             _movement.AnimatedTransform = _camera.transform;
             _movement.ClearWaypoints();
 
-            _movement.AddWayPoint(_startPose);
-            _movement.AddWayPoint(_endPose);
-
+            if (trajectory == null)
+            {
+                _movement.AddWayPoint(_startPose);
+                _movement.AddWayPoint(_endPose);
+            }
+            else { 
+                LoadTrajectory(trajectory);
+            }
+            
             _movement.Start();
+        }
+
+        private void LoadTrajectory(Trajectory traj) {
+            _movement.AddWayPoint(_startPose);
+            if (traj.NumWaypoints > 2) {
+                for (int i = 1; i < traj.NumWaypoints - 1; i++) {
+                    Vector3 pos = traj.GetWayPoint(i);
+                    _movement.AddWayPoint(new Pose(pos, eviola.Math.Vector.LookAt(pos, traj.GetWayPoint(i+1))));
+                }
+            }
+            _movement.AddWayPoint(_endPose);
         }
 
         public void StopCamera() { _movement.Stop(); }

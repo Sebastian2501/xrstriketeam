@@ -23,12 +23,18 @@ namespace Accenture.XRStrikeTeam.Presentation
         private bool _bCameraMoverListener = false;
 
         public Transform PayloadContainer { get { return _activatedPayload.transform; } }
+        public Transform CameraSocket { get { return _cameraSocket; } }
 
         #region Init
 
         public void PointCameraAtPayload() {
             _cameraSocket.position = PayloadContainer.position - (PayloadContainer.forward * 2);
             _cameraSocket.LookAt(PayloadContainer);
+        }
+
+        public void TogglePayloadVisibility() { 
+            bool b = PayloadContainer.gameObject.activeSelf;
+            PayloadContainer.gameObject.SetActive(!b);
         }
 
         #endregion

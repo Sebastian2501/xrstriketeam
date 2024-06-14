@@ -100,13 +100,20 @@ namespace Accenture.XRStrikeTeam.Presentation
                 if (trajectory != null)
                 {
                     _steps[i].NextTrajectory = trajectory;
-                    trajectory.SetTransformsAndMakeWaypoints(_steps[i].PayloadContainer, _steps[idxNxt].PayloadContainer);
+                    trajectory.SetTransformsAndMakeWaypoints(_steps[i].CameraSocket, _steps[idxNxt].CameraSocket);
                     EditorUtility.SetDirty(trajectory);
                     EditorUtility.SetDirty(_steps[i]);
                 }
             }
         }
 #endif
+        public void ToggleAllPayloadsVisibility() { 
+            foreach (Destination step in _steps)
+            {
+                step.TogglePayloadVisibility();
+            }
+        }
+
         #endregion
 
         #region Steps
@@ -221,6 +228,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUI.Button("Extract Payloads", GetTarget().ExtractPayloads);
             EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);
             EditorUI.Button("Make trajectories", GetTarget().MakeTrajectories);
+            EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
         }
     }
 #endif

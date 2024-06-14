@@ -129,6 +129,9 @@ namespace Accenture.eviola.Animation
         public void Update()
         {
             _movement.Update();
+            //if (UnityEngine.Input.GetKeyDown("q")) {
+            //    StartSegment(_curWaypoint + 1);
+            //}
         }
 
         private void HandleTimer(Timer.TimerStopType tst) {

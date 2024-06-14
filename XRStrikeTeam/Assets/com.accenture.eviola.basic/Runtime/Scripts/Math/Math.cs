@@ -3,9 +3,17 @@ using UnityEngine;
 
 namespace Accenture.eviola.Math
 {
-    
+    public class Vector
+    {
+        static public Quaternion LookAt(Vector3 looker, Vector3 lookedAt)
+        {
+            Vector3 dir = lookedAt - looker;
+            return Quaternion.LookRotation(dir, Vector3.up);
+        }
+    }
+
     /// this is Eric Gunnerson idea to do generic math
-    
+
     public interface ICalculator<T> {
         T Sum(T a, T b);
         T Subtract(T a, T b);
