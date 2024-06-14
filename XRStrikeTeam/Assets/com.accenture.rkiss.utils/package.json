@@ -1,0 +1,18 @@
+{
+    "name": "com.accenture.rkiss.utils",
+    "version": "1.0.0",
+    "license": "MIT",
+    "displayName": "Accenture Unity utility package - Richard Kiss",
+    "description": "Generic Unity utilities by Richard Kiss",
+    "unity": "2022.3",
+    "unityRelease": "7f1",
+    "author": {
+        "name": "Richard Kiss",
+        "email": "rkiss@accenture.com"
+    },
+    "keywords": [
+        "misc",
+        "helpers",
+        "timers"
+    ]
+}

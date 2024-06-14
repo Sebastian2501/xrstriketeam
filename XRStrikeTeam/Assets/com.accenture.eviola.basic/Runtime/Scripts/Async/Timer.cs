@@ -23,7 +23,7 @@ namespace Accenture.eviola.Async
 
         public bool IsRunning() { return _bRunning; }
 
-        public void Start() {
+        virtual public void Start() {
             if (IsRunning()) return;
             _bRunning = true;
             _startTime = Time.time;
@@ -34,13 +34,13 @@ namespace Accenture.eviola.Async
             Stop(TimerStopType.MANUAL);
         }
 
-        private void Stop(TimerStopType tst) {
+        virtual protected void Stop(TimerStopType tst) {
             if (!IsRunning()) return;
             _bRunning = false;
             OnStop.Invoke(tst);
         }
 
-        public void Update() {
+        virtual public void Update() {
             if (!IsRunning()) return;
             float now = Time.time;
             if (now >= _endTime)

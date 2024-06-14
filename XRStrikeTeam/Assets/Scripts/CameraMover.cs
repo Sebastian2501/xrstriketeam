@@ -1,5 +1,7 @@
 using Accenture.eviola;
+using Accenture.eviola.Animation;
 using Accenture.eviola.Async;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,11 +22,11 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private Pose _startPose = new Pose();
         private Pose _endPose = new Pose();
-        private Timer _timer = new Timer();
+        private WaypointsTimedMovement _movement = new WaypointsTimedMovement();
 
         #region Animation
 
-        public void Go(Vector3 pos, Quaternion rot) {
+        public void Go(Vector3 pos, Quaternion rot, Trajectory trajectory = null) {
             if (IsMoving()) return;
             StopCamera();
 
@@ -34,11 +36,35 @@ namespace Accenture.XRStrikeTeam.Presentation
             _endPose.position = pos;
             _endPose.rotation = rot;
 
-            _timer.Duration = _travelTime;
-            _timer.Start();
+            _movement.Stop();
+            _movement.Duration = _travelTime;
+            _movement.AnimatedTransform = _camera.transform;
+            _movement.Waypoints.Clear();
+
+            if (trajectory == null)
+            {
+                _movement.Waypoints.Add(_startPose);
+                _movement.Waypoints.Add(_endPose);
+            }
+            else { 
+                LoadTrajectory(trajectory);
+            }
+            
+            _movement.Start();
         }
 
-        public void StopCamera() { _timer.Stop(); }
+        private void LoadTrajectory(Trajectory traj) {
+            _movement.Waypoints.Add(_startPose);
+            if (traj.NumWaypoints > 2) {
+                for (int i = 1; i < traj.NumWaypoints - 1; i++) {
+                    Vector3 pos = traj.GetWayPoint(i);
+                    _movement.Waypoints.Add(new Pose(pos, eviola.Math.Vector.LookAt(pos, traj.GetWayPoint(i+1))));
+                }
+            }
+            _movement.Waypoints.Add(_endPose);
+        }
+
+        public void StopCamera() { _movement.Stop(); }
 
         public void SetCamera(Vector3 pos, Quaternion rot, bool stopAnim=false) { 
             if(stopAnim)StopCamera();
@@ -46,24 +72,17 @@ namespace Accenture.XRStrikeTeam.Presentation
             _camera.transform.rotation = rot;
         }
 
-        public bool IsMoving() { return _timer.IsRunning(); }
+        public bool IsMoving() { return _movement.IsRunning(); }
 
         private void UpdateMovement() { 
-            _timer.Update();
-            if (!_timer.IsRunning()) return;
-            float pct = _timer.GetPct();
-            Vector3 pos = Vector3.zero;
-            pos.x = eviola.Math.Remap.Map(pct, 0,1, _startPose.position.x, _endPose.position.x);
-            pos.y = eviola.Math.Remap.Map(pct, 0, 1, _startPose.position.y, _endPose.position.y);
-            pos.z = eviola.Math.Remap.Map(pct, 0, 1, _startPose.position.z, _endPose.position.z);
-            Quaternion rot = Quaternion.Slerp(_startPose.rotation, _endPose.rotation, pct);
-            SetCamera(pos, rot);
+            _movement.Update();
         }
 
-        private void HandleTimer(Timer.TimerStopType tst) {
-            SetCamera(_endPose.position, _endPose.rotation, false);
+        private void HandleMovementDone(Timer.TimerStopType tst) {
+            if (tst == Timer.TimerStopType.MANUAL) return;
             OnDestinationReached.Invoke(_endPose);
         }
+
 
         #endregion
 
@@ -72,7 +91,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_camera);
-            _timer.OnStop.AddListener(HandleTimer);
+            _movement.OnStop.AddListener(HandleMovementDone);
         }
 
         private void Update()
