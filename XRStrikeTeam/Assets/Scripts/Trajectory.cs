@@ -21,6 +21,8 @@ namespace Accenture.XRStrikeTeam
         private Vector3 _bezierHandle2 = Vector3.zero;
         [SerializeField]
         private List<Vector3> _wayPoints = new List<Vector3>();
+        [SerializeField]
+        public int DesiredNumWayPoints = 10;
 
         public int NumWaypoints { get { return _wayPoints.Count; } }
 
@@ -31,7 +33,7 @@ namespace Accenture.XRStrikeTeam
 
         public void MakeWayPoints() { 
             _wayPoints.Clear();
-            Vector3[] pts = PathGenerationFunctions.GetWaypointsAlongSpline(_from.position, _to.position, _bezierHandle1, _bezierHandle2, 1);
+            Vector3[] pts = PathGenerationFunctions.GetWaypointsAlongSpline(_from.position, _to.position, _bezierHandle1, _bezierHandle2, 1, false, 1, DesiredNumWayPoints);
             foreach (Vector3 point in pts)
             {
                 _wayPoints.Add(point);

@@ -49,3 +49,4 @@ MonoBehaviour:
   _bezierHandle1: {x: 0, y: 0, z: 0}
   _bezierHandle2: {x: 0, y: 0, z: 0}
   _wayPoints: []
+  DesiredNumWayPoints: 10

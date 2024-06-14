@@ -14,14 +14,15 @@ namespace Accenture.rkiss.PathGeneration
         /// <param name="controlPointModifier2">A vector used to modify the second control point.</param>
         /// <param name="controlPointModifier">A scalar value that scales the control point modifiers.</param>
         /// <returns></returns>
-        public static Vector3[] GetWaypointsAlongSpline(Vector3 startPoint, Vector3 endPoint, Vector3 controlPointModifier1, Vector3 controlPointModifier2, float controlPointModifier, bool isNoiseEnabled = false, float noiseStrength = 1.0f)
+        public static Vector3[] GetWaypointsAlongSpline(Vector3 startPoint, Vector3 endPoint, Vector3 controlPointModifier1, Vector3 controlPointModifier2, float controlPointModifier, bool isNoiseEnabled = false, float noiseStrength = 1.0f, int numPts=10)
         {
             List<Vector3> waypoints = new List<Vector3>();
 
             Vector3 controlPoint1 = startPoint + (endPoint - startPoint) / 3 + (controlPointModifier1 * controlPointModifier);
             Vector3 controlPoint2 = endPoint - (endPoint - startPoint) / 3 + (controlPointModifier2 * controlPointModifier);
 
-            for (float t = 0; t <= 1; t += 0.1f)
+            float inc = 1.0f / (float)numPts;
+            for (float t = 0; t <= 1; t += inc)
             {
                 float x = (float)((1 - t) * (1 - t) * (1 - t) * startPoint.x + 3 * (1 - t) * (1 - t) * t * controlPoint1.x + 3 * (1 - t) * t * t * controlPoint2.x + t * t * t * endPoint.x);
                 float y = (float)((1 - t) * (1 - t) * (1 - t) * startPoint.y + 3 * (1 - t) * (1 - t) * t * controlPoint1.y + 3 * (1 - t) * t * t * controlPoint2.y + t * t * t * endPoint.y);
