@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1048870003870676443
+--- !u!1001 &909704895939342825
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,60 +8,111 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 778339490984557139, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b80217196b0d6a74c96ea7b59e497481, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "\u200B\u200BEmpowered multiple global projects for diverse industries
+        and internal demos like JCI, where Julie Sweet presented smart building concepts
+        in Virtual Reality. ICP has powered demos multiple times at CES.\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_10
       objectReference: {fileID: 0}
-    - target: {fileID: 1073407233990259782, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
-      propertyPath: m_Name
-      value: Camera_Empty_10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3532359184605135056, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 29c47ba197af1064fa9932a22c85e77f, type: 3}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 8801cf432b1bbc94bb476a7d564dcfb0, type: 3}
+    - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bacd6ba422554a345ae4d4c772f1a203, type: 3}
+    - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e57c46dfdff8e644aa1ae0b3a45f10db, type: 3}
+    - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Accenture Immersive Collaboration Platform (AICP)\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Multi-user, multi-platform, collaborative platform and accelerator
+        featuring digital twins, design thinking environments and immersive demos.
+        Digital recreation of client spaces such as Disney StudioLab, ESPN, Computer
+        History Museum, AMRC and many more have delighted our Clients and been featured
+        at trade shows many times. \u200B\r\nICP has powered demos multiple times
+        at CES.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369904848783164712, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 40dab749d33f45f40afde1cdb6168c39, type: 3}
+    - target: {fileID: 8764803656298611708, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 547be154d245ead408568d13c06039e1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}

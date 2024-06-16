@@ -1,6 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1048870003870676443
+--- !u!1 &2453676717961771248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4586355493876530503}
+  - component: {fileID: 7008365210327369126}
+  - component: {fileID: 7961596343230225660}
+  m_Layer: 0
+  m_Name: ImageBig (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4586355493876530503
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2453676717961771248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1805198336676816679}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -556.3, y: 0}
+  m_SizeDelta: {x: 403.7, y: 540}
+  m_Pivot: {x: 1, y: 1}
+--- !u!222 &7008365210327369126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2453676717961771248}
+  m_CullTransparentMesh: 1
+--- !u!114 &7961596343230225660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2453676717961771248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6d5efa68695befc4aa2d068fbcc16e52, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &909704895939342825
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,60 +83,126 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 778339490984557139, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf7776e2c07147d419700203ab8a7832, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "GCV generated a multi-year collaboration between Accenture and the
+        WEF, leading to a number of XR projects with WEF partners as well.\u200B\r\nThe
+        project also elevated Accenture prestige, by being featured on the cover
+        of Time Magazine.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_11
       objectReference: {fileID: 0}
-    - target: {fileID: 1073407233990259782, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
-      propertyPath: m_Name
-      value: Camera_Empty_11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3532359184605135056, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a3b73495e27d5be49ac160028ef6e85c, type: 3}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 1b114d815ccf68445a6da78eda91be7b, type: 3}
+    - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d47fea866625664c9726bea56eb000a, type: 3}
+    - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e57c46dfdff8e644aa1ae0b3a45f10db, type: 3}
+    - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Global Collaboration Village \u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Global Collaboration Village for the World Economic Forum. The first
+        team to work with the as of yet unreleased MSFT Mesh technology, the first
+        decentralized Multilateral in the history of the WEF and a historic collaboration
+        between Accenture, MSFT and the WEF.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369904848783164712, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9bbb5342181fedf42934d0d241c093a8, type: 3}
+    - target: {fileID: 8428176771275144500, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "World Economic Forum\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764803656298611708, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2027455a8780c35419bdf841458d96ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1554500099908474574, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 4586355493876530503}
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+--- !u!224 &1805198336676816679 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1554500099908474574, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+  m_PrefabInstance: {fileID: 909704895939342825}
+  m_PrefabAsset: {fileID: 0}

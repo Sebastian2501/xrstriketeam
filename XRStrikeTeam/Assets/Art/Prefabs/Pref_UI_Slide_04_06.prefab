@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7639545105406723114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_Slide_04_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: <i>Lead Program Manager</i>
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622742115596369273, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: Alyssa Prinsloo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426166630021682342, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: 'Alyssa has over 9 years of specialized experience as a 3D Artist, Extended
+        Reality (XR) SME, Extended Reality Project Manager and Liquid Studio XR and
+        Experience Lead.
+
+
+        Her passions lie within the Extended Reality Universe,
+        namely 3D Art Optimization and Workflows, AEC, BIM, DIgital Twins, XR PRoject
+        Management and XR Design.'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}

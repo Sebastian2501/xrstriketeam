@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7639545105406723114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_Slide_04_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: "<i>Art Director / Designer\u200B\r</i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622742115596369273, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: "Yury Schicker\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471858974770150892, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: efc0ad050e7f1c24c863c64902ed24bc, type: 3}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426166630021682342, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: "Art Director and Designer for the XR Studio Zurich, XR ASG and Art
+        Director for GCV.\u200B\r\n\r\nInterdisciplinary design veteran, with wide
+        knowledge in various art styles across multiple creative domains, oversees
+        art direction of projects across multiple platforms, from concepts to launch
+        and design work in all aspects of production.\u200B\r\n\r\nMajor Accenture
+        contributions: AICP, GCV, E.ON Campus, Tech Vision XR, Skyverse, AI Embodied
+        Agent, MxP and more...\u200B\r"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1048870003870676443
+--- !u!1001 &909704895939342825
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,60 +8,119 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 778339490984557139, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c406d65ef9b81ce49b04ff90cbf8ad1c, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "These events reached a high profile and wide audience, contributing
+        to build trust in Accenture ability to deliver in the XR and innovation sectors
+        and \u2013 consequently \u2013 supporting sales in these areas.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_12
       objectReference: {fileID: 0}
-    - target: {fileID: 1073407233990259782, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
-      propertyPath: m_Name
-      value: Camera_Empty_12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3532359184605135056, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d2e710bed57c9fc46a14deedebc09b69, type: 3}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 1719a61142a6b4a40b29168c97a6d9c8, type: 3}
+    - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d4d5979a30338246835c64a5e66f17a, type: 3}
+    - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e57c46dfdff8e644aa1ae0b3a45f10db, type: 3}
+    - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Tech Vision XR\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Portable, accessible and easy to use stage demo of the annual Tech
+        Vision. Our team produced this augmented version of the Tech Vision event
+        for multiple years in row, bringing a wide range of tech innovations, from
+        AR to robotics onto stages across the world.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369904848783164712, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a815ea5d091b9b54eb63142112a15611, type: 3}
+    - target: {fileID: 8428176771275144500, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: 'Accenture
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764803656298611708, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b42b22681c1e3e4aba447bd0546bb7b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}

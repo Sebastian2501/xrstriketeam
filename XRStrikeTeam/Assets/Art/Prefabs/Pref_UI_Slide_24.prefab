@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1048870003870676443
+--- !u!1001 &7025168928793188587
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,60 +8,84 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 778339490984557139, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 76489695248189022, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9b0eaf7a223c6ff42bb6a248da8c747a, type: 3}
+    - target: {fileID: 138417931336290763, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_text
+      value: "AICP \u2013 AR in VR demo\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_24
       objectReference: {fileID: 0}
-    - target: {fileID: 1073407233990259782, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
-      propertyPath: m_Name
-      value: Camera_Empty_24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3532359184605135056, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 2398949554490991141, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3e26797f9a5f7de4ea9e19947d25fb27, type: 3}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 69a1f9823dc2a5b49ac86cbfcb06ab07, type: 3}
+    - target: {fileID: 2697310266577894159, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1709a416ac18124b973f29297a40afd, type: 3}
+    - target: {fileID: 3571073673352797264, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_text
+      value: "AICP \u2013 Digital Twin creation demo\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627303696968911294, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_text
+      value: "AICP \u2013 Generative Design demo\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426843388917850442, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7adb8595569431a41a8c862a6c0b61a3, type: 3}
+    - target: {fileID: 8794821078266213598, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_text
+      value: "AICP \u2013 Avatars demo for XR experiences\u200B\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1048870003870676443
+--- !u!1001 &909704895939342825
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,60 +8,112 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 778339490984557139, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e7654b82daaf13441a9def64293475ee, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "Flagship immersive learning demo, featured in countless international
+        conferences, client pitches and XR workshops. One of the main assets used
+        to drive XR Accenture sales.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_13
       objectReference: {fileID: 0}
-    - target: {fileID: 1073407233990259782, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
-      propertyPath: m_Name
-      value: Camera_Empty_13
-      objectReference: {fileID: 0}
-    - target: {fileID: 3532359184605135056, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d2e710bed57c9fc46a14deedebc09b69, type: 3}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 4261f733f8904d248ab87894efe0bed8, type: 3}
+    - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d526945cfa21f9240b7094e083079710, type: 3}
+    - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e57c46dfdff8e644aa1ae0b3a45f10db, type: 3}
+    - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: 'Drillsite
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4730665056862502931, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "A VR training platform set in an open-pit mining, exploratory drilling
+        context. The software allows workers to receive safety training before being
+        delivered in a dangerous working area; it also allow trainers to track worker's
+        improvements in a dedicated after-action report application that gathers
+        trainee data in real-time.\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369904848783164712, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b99a3866cbcd53429ed1a8b1191d4c4, type: 3}
+    - target: {fileID: 8764803656298611708, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec48f32b36b5c0947b59a1f09bbd6b09, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c2ae31da2a67314283bcb7c92833fdc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
