@@ -92,6 +92,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_camera);
+
+            _movement.LerpRotationForSingleWaypoints = false;
             _movement.OnStop.AddListener(HandleMovementDone);
         }
 
