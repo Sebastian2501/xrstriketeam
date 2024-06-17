@@ -25,7 +25,10 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private DelayedAction _delayedPayloadActivation = null;
         private DelayedAction _delayedPayloadDeactivation = null;
+        private Destination _otherDestination = null;
+        private DelayedAction _delayedLeave = null;
         private bool _bCameraMoverListener = false;
+        private bool _bLeaveOtherDestinationOnEnter = false;
 
         public Transform PayloadContainer { get { return _activatedPayload.transform; } }
         public Transform CameraSocket { get { return _cameraSocket; } }
@@ -67,12 +70,16 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         public void Enter() {
+            if (_bLeaveOtherDestinationOnEnter) HandleOtherDestinationDelayedLeave();
             Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, true);
         }
 
         public void Go() {
-            AddCameraMoverListener();
             Trajectory trajectory = GetTrajectoryToGetHere();
+
+            HandlePreviourDestinationLeave(trajectory);
+            AddCameraMoverListener();
+            
             Controller.CameraDriver.Go(_cameraSocket.position, _cameraSocket.rotation, trajectory);
             StartDelayedPayloadActivation(trajectory);
             
@@ -92,6 +99,31 @@ namespace Accenture.XRStrikeTeam.Presentation
             _delayedPayloadActivation.Abort();
             _delayedPayloadActivation.Delay = traj.DelayEaseIn;
             _delayedPayloadActivation.Fire();
+        }
+
+        private void HandlePreviourDestinationLeave(Trajectory traj) {
+            _bLeaveOtherDestinationOnEnter = false;
+            int prevIdx = Id - 1;
+            _otherDestination = Controller.GetStep(prevIdx);
+            if (_otherDestination == null) return;
+            if (traj == null)
+            {
+                _bLeaveOtherDestinationOnEnter = true;
+            }
+            else if (traj.DelayEaseOut <= 0) {
+                HandleOtherDestinationDelayedLeave();
+            }
+            else
+            {
+                _delayedLeave.Abort();
+                _delayedLeave.Delay = traj.DelayEaseOut;
+                _delayedLeave.Fire();
+            }
+        }
+
+        private void HandleOtherDestinationDelayedLeave() {
+            if (_otherDestination == null) return;
+            _otherDestination.Leave();
         }
 
         private void HandlePayloadActivation() {
@@ -127,6 +159,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
             _delayedPayloadActivation = new DelayedAction(this, 0, HandlePayloadActivation);
             _delayedPayloadDeactivation = new DelayedAction(this, 1, () => { _activatedPayload.SetActive(false); });
+            _delayedLeave = new DelayedAction(this, 1, HandleOtherDestinationDelayedLeave);
         }
 
         #endregion
