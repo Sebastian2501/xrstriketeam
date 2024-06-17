@@ -57,6 +57,10 @@ PrefabInstance:
       value: "Contact\u200B\r\n\ns.giannoulatos@accenture.com\u200B\r\nenrico.viola@accenture.com\u200B\r\nyury.schicker@accenture.com\u200B\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_fontColor.b
       value: 1
       objectReference: {fileID: 0}
@@ -69,12 +73,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8754569350916443321, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_text
       value: "Thank you!\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754569350916443321, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
