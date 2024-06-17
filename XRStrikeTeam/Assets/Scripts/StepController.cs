@@ -147,6 +147,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             _curStep = idx;
             if (instantaneous)
             {
+                _steps[_curStep].PayloadContainer.gameObject.SetActive(true);
                 _steps[_curStep].Enter();
             }
             else

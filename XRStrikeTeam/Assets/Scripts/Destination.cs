@@ -1,4 +1,5 @@
 using Accenture.eviola;
+using Accenture.eviola.Async;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         [HideInInspector]
         public int Id = -1;
 
+        private DelayedAction _delayedPayloadActivation = null;
         private bool _bCameraMoverListener = false;
 
         public Transform PayloadContainer { get { return _activatedPayload.transform; } }
@@ -55,19 +57,35 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void Enter() {
             Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, true);
-
-            _activatedPayload.SetActive(true);
         }
 
         public void Go() {
             AddCameraMoverListener();
-            _activatedPayload.SetActive(true);
             Trajectory trajectory = GetTrajectoryToGetHere();
             Controller.CameraDriver.Go(_cameraSocket.position, _cameraSocket.rotation, trajectory);
+            StartDelayedPayloadActivation(trajectory);
             
         }
 
         public bool IsTransitioning() { return Controller.CameraDriver.IsMoving(); }
+
+        private void StartDelayedPayloadActivation(Trajectory traj) {
+            if (traj == null) {
+                HandlePayloadActivation();
+                return;
+            }
+            if (traj.DelayEaseIn <= 0) {
+                HandlePayloadActivation();
+                return;
+            }
+            _delayedPayloadActivation.Abort();
+            _delayedPayloadActivation.Delay = traj.DelayEaseIn;
+            _delayedPayloadActivation.Fire();
+        }
+
+        private void HandlePayloadActivation() {
+            _activatedPayload.SetActive(true);
+        }
 
         private void AddCameraMoverListener() {
             if (_bCameraMoverListener) return;
@@ -95,7 +113,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_cameraSocket);
-            
+
+            _delayedPayloadActivation = new DelayedAction(this, 0, HandlePayloadActivation);
         }
 
         #endregion

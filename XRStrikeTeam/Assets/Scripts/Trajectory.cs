@@ -11,6 +11,7 @@ namespace Accenture.XRStrikeTeam
 {
     public class Trajectory : MonoBehaviour
     {
+        [Header("Path")]
         [SerializeField]
         private Transform _from = null;
         [SerializeField]
@@ -22,13 +23,21 @@ namespace Accenture.XRStrikeTeam
         [SerializeField]
         private List<Vector3> _wayPoints = new List<Vector3>();
         [SerializeField]
-        private float Duration = 3;
-        [SerializeField]
         public int DesiredNumWayPoints = 10;
+        [Header("Time")]
+        [SerializeField]
+        private float _duration = 3;
+        [SerializeField]
+        private float _delayEaseIn = 0;
+        [SerializeField]
+        private float _delayEaseOut = 0;
 
         public int NumWaypoints { get { return _wayPoints.Count; } }
 
-        public float GetTravelTime() { return Duration; }
+        public float Duration { get { return _duration; } }
+        public float DelayEaseIn { get { return _delayEaseIn; } }
+        public float DelayEaseOut { get { return _delayEaseOut; } }
+
 
         public Vector3 GetWayPoint(int idx) {
             if (!Misc.IsGoodIndex(idx, _wayPoints)) return Vector3.zero;

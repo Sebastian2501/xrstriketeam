@@ -54,7 +54,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         private void LoadTrajectory(Trajectory traj) {
-            _movement.Duration = traj.GetTravelTime();
+            _movement.Duration = traj.Duration;
             _movement.Waypoints.Add(_startPose);
             if (traj.NumWaypoints > 2) {
                 for (int i = 1; i < traj.NumWaypoints - 1; i++) {
