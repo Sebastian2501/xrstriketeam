@@ -92,6 +92,7 @@ namespace Accenture.eviola.Animation
     public class WaypointsTimedMovement : Timer {
         public Transform AnimatedTransform = null;
         public List<Pose> Waypoints = new List<Pose>();
+        public bool LerpRotationForSingleWaypoints = true;
 
         private Pose _curPose = new Pose();
         private float _wptPct = 1;
@@ -166,7 +167,14 @@ namespace Accenture.eviola.Animation
             Pose wpTo = GetEndWaypointForSegment(_curSegment);
 
             _curPose.position = Vector3.Slerp(wpFrom.position, wpTo.position, segPct);
-            _curPose.rotation = Quaternion.Slerp(wpFrom.rotation, wpTo.rotation, segPct);
+
+            if (LerpRotationForSingleWaypoints)
+            {
+                _curPose.rotation = Quaternion.Slerp(wpFrom.rotation, wpTo.rotation, segPct);
+            }
+            else {
+                _curPose.rotation = Quaternion.Slerp(_firstWaypoint.rotation, _lastWaypoint.rotation, totPct);
+            }
 
             UpdateAnimatedTransform();
         }

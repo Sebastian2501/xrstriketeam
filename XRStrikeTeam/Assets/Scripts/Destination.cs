@@ -1,4 +1,5 @@
 using Accenture.eviola;
+using Accenture.eviola.Async;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,13 +15,20 @@ namespace Accenture.XRStrikeTeam.Presentation
         private GameObject _activatedPayload = null;
         [SerializeField]
         public Trajectory NextTrajectory = null;
+        [SerializeField]
+        public SlideAnimatorController _slideAnimatorController = null;
         
         [HideInInspector]
         public StepController Controller = null;
         [HideInInspector]
         public int Id = -1;
 
+        private DelayedAction _delayedPayloadActivation = null;
+        private DelayedAction _delayedPayloadDeactivation = null;
+        private Destination _otherDestination = null;
+        private DelayedAction _delayedLeave = null;
         private bool _bCameraMoverListener = false;
+        private bool _bLeaveOtherDestinationOnEnter = false;
 
         public Transform PayloadContainer { get { return _activatedPayload.transform; } }
         public Transform CameraSocket { get { return _cameraSocket; } }
@@ -37,6 +45,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             PayloadContainer.gameObject.SetActive(!b);
         }
 
+
         #endregion
 
         #region Transitioning
@@ -48,25 +57,78 @@ namespace Accenture.XRStrikeTeam.Presentation
             return prevDestination.NextTrajectory;
         }
 
-        public void Leave() { 
-            _activatedPayload.SetActive(false);
+        public void Leave() {
+            if (_slideAnimatorController == null)
+            {
+                _activatedPayload.SetActive(false);
+            }
+            else {
+                _slideAnimatorController.EaseOut();
+                _delayedPayloadDeactivation.Abort();
+                _delayedPayloadActivation.Fire();
+            }
         }
 
         public void Enter() {
+            if (_bLeaveOtherDestinationOnEnter) HandleOtherDestinationDelayedLeave();
             Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, true);
-
-            _activatedPayload.SetActive(true);
         }
 
         public void Go() {
-            AddCameraMoverListener();
-            _activatedPayload.SetActive(true);
             Trajectory trajectory = GetTrajectoryToGetHere();
+
+            HandlePreviourDestinationLeave(trajectory);
+            AddCameraMoverListener();
+            
             Controller.CameraDriver.Go(_cameraSocket.position, _cameraSocket.rotation, trajectory);
+            StartDelayedPayloadActivation(trajectory);
             
         }
 
         public bool IsTransitioning() { return Controller.CameraDriver.IsMoving(); }
+
+        private void StartDelayedPayloadActivation(Trajectory traj) {
+            if (traj == null) {
+                HandlePayloadActivation();
+                return;
+            }
+            if (traj.DelayEaseIn <= 0) {
+                HandlePayloadActivation();
+                return;
+            }
+            _delayedPayloadActivation.Abort();
+            _delayedPayloadActivation.Delay = traj.DelayEaseIn;
+            _delayedPayloadActivation.Fire();
+        }
+
+        private void HandlePreviourDestinationLeave(Trajectory traj) {
+            _bLeaveOtherDestinationOnEnter = false;
+            int prevIdx = Id - 1;
+            _otherDestination = Controller.GetStep(prevIdx);
+            if (_otherDestination == null) return;
+            if (traj == null)
+            {
+                _bLeaveOtherDestinationOnEnter = true;
+            }
+            else if (traj.DelayEaseOut <= 0) {
+                HandleOtherDestinationDelayedLeave();
+            }
+            else
+            {
+                _delayedLeave.Abort();
+                _delayedLeave.Delay = traj.DelayEaseOut;
+                _delayedLeave.Fire();
+            }
+        }
+
+        private void HandleOtherDestinationDelayedLeave() {
+            if (_otherDestination == null) return;
+            _otherDestination.Leave();
+        }
+
+        private void HandlePayloadActivation() {
+            _activatedPayload.SetActive(true);
+        }
 
         private void AddCameraMoverListener() {
             if (_bCameraMoverListener) return;
@@ -94,7 +156,10 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_cameraSocket);
-            
+
+            _delayedPayloadActivation = new DelayedAction(this, 0, HandlePayloadActivation);
+            _delayedPayloadDeactivation = new DelayedAction(this, 1, () => { _activatedPayload.SetActive(false); });
+            _delayedLeave = new DelayedAction(this, 1, HandleOtherDestinationDelayedLeave);
         }
 
         #endregion

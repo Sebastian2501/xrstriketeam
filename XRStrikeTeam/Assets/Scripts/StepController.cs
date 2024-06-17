@@ -32,14 +32,14 @@ namespace Accenture.XRStrikeTeam.Presentation
         public CameraMover CameraDriver { get { return _cameraMover; } }
 
         #region Init
-        public bool IsDestination(Transform tra) { 
+        public bool IsDestination(Transform tra) {
             return tra.GetComponent<Destination>() != null;
         }
 
 #if UNITY_EDITOR
         public void MakeDestinationsFromStuffInSteps() {
             if (_stepsContainer.childCount < 1) return;
-            
+
             List<Transform> tras = new List<Transform>();
             for (int i = 0; i < _stepsContainer.childCount; i++) {
                 Transform tra = _stepsContainer.GetChild(i);
@@ -62,7 +62,7 @@ namespace Accenture.XRStrikeTeam.Presentation
                 _steps.Add(dst);
             }
 
-            foreach (Destination step in _steps) { 
+            foreach (Destination step in _steps) {
                 EditorUtility.SetDirty(step);
             }
 
@@ -71,7 +71,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void ExtractPayloads() {
             foreach (Destination step in _steps) {
-                if (step.PayloadContainer.childCount > 0) { 
+                if (step.PayloadContainer.childCount > 0) {
                     step.PayloadContainer.GetChild(0).parent = _stepsContainer;
                 }
             }
@@ -91,7 +91,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void MakeTrajectories() {
             if (_steps.Count < 1) return;
-            for (int i = 0; i < _steps.Count-1; i++) {
+            for (int i = 0; i < _steps.Count - 1; i++) {
                 int idxNxt = i + 1;
                 GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_trajectoryPrefab);
                 go.transform.parent = _trajectoryContainer;
@@ -107,10 +107,17 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 #endif
-        public void ToggleAllPayloadsVisibility() { 
+        public void ToggleAllPayloadsVisibility() {
             foreach (Destination step in _steps)
             {
                 step.TogglePayloadVisibility();
+            }
+        }
+
+        public void SetAllPayloadsVisibility(bool b) {
+            foreach (Destination step in _steps)
+            {
+                step.PayloadContainer.gameObject.SetActive(b);
             }
         }
 
@@ -140,6 +147,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             _curStep = idx;
             if (instantaneous)
             {
+                _steps[_curStep].PayloadContainer.gameObject.SetActive(true);
                 _steps[_curStep].Enter();
             }
             else
@@ -160,7 +168,8 @@ namespace Accenture.XRStrikeTeam.Presentation
             SetStep(idx);
         }
 
-        public void FirstStep(bool instantaneous=false) { 
+        public void FirstStep(bool instantaneous=false) {
+            SetAllPayloadsVisibility(false);
             SetStep(0, instantaneous);
         }
 
