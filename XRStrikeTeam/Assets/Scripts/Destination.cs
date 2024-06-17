@@ -37,6 +37,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             PayloadContainer.gameObject.SetActive(!b);
         }
 
+
         #endregion
 
         #region Transitioning
