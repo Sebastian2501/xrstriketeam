@@ -22,9 +22,13 @@ namespace Accenture.XRStrikeTeam
         [SerializeField]
         private List<Vector3> _wayPoints = new List<Vector3>();
         [SerializeField]
+        private float Duration = 3;
+        [SerializeField]
         public int DesiredNumWayPoints = 10;
 
         public int NumWaypoints { get { return _wayPoints.Count; } }
+
+        public float GetTravelTime() { return Duration; }
 
         public Vector3 GetWayPoint(int idx) {
             if (!Misc.IsGoodIndex(idx, _wayPoints)) return Vector3.zero;
