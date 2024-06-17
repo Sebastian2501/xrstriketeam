@@ -15,6 +15,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         private GameObject _activatedPayload = null;
         [SerializeField]
         public Trajectory NextTrajectory = null;
+        [SerializeField]
+        public SlideAnimatorController _slideAnimatorController = null;
         
         [HideInInspector]
         public StepController Controller = null;
@@ -22,6 +24,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         public int Id = -1;
 
         private DelayedAction _delayedPayloadActivation = null;
+        private DelayedAction _delayedPayloadDeactivation = null;
         private bool _bCameraMoverListener = false;
 
         public Transform PayloadContainer { get { return _activatedPayload.transform; } }
@@ -51,8 +54,16 @@ namespace Accenture.XRStrikeTeam.Presentation
             return prevDestination.NextTrajectory;
         }
 
-        public void Leave() { 
-            _activatedPayload.SetActive(false);
+        public void Leave() {
+            if (_slideAnimatorController == null)
+            {
+                _activatedPayload.SetActive(false);
+            }
+            else {
+                _slideAnimatorController.EaseOut();
+                _delayedPayloadDeactivation.Abort();
+                _delayedPayloadActivation.Fire();
+            }
         }
 
         public void Enter() {
@@ -115,6 +126,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             Misc.CheckNotNull(_cameraSocket);
 
             _delayedPayloadActivation = new DelayedAction(this, 0, HandlePayloadActivation);
+            _delayedPayloadDeactivation = new DelayedAction(this, 1, () => { _activatedPayload.SetActive(false); });
         }
 
         #endregion
