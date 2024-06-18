@@ -31,6 +31,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         public Camera PovCamera { get { return _camera; } }
         public CameraMover CameraDriver { get { return _cameraMover; } }
 
+        public int CurrentStep { get { return _curStep; } }
+
         #region Init
         public bool IsDestination(Transform tra) {
             return tra.GetComponent<Destination>() != null;
@@ -232,7 +234,10 @@ namespace Accenture.XRStrikeTeam.Presentation
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-
+            if (Application.isPlaying) {
+                EditorUtility.SetDirty(GetTarget());
+                EditorUI.Header("Current Step: "+GetTarget().CurrentStep);
+            }
             EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
             EditorUI.Button("Extract Payloads", GetTarget().ExtractPayloads);
             EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);

@@ -17,6 +17,9 @@ namespace Accenture.XRStrikeTeam.Presentation
         public Trajectory NextTrajectory = null;
         [SerializeField]
         public SlideAnimatorController _slideAnimatorController = null;
+        [Header("Options")]
+        [SerializeField]
+        private bool _autoAdvance = false;
         
         [HideInInspector]
         public StepController Controller = null;
@@ -72,6 +75,9 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void Enter() {
             if (_bLeaveOtherDestinationOnEnter) HandleOtherDestinationDelayedLeave();
             Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, true);
+            if (_autoAdvance) { 
+                Controller.NextStep();
+            }
         }
 
         public void Go() {
