@@ -130,6 +130,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 7711737185797040359, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
+      propertyPath: m_Name
+      value: CameraSocket_01_IntroSlide
+      objectReference: {fileID: 0}
     - target: {fileID: 7761261569464426922, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.58
