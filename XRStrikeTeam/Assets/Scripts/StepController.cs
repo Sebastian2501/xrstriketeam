@@ -108,6 +108,17 @@ namespace Accenture.XRStrikeTeam.Presentation
                 }
             }
         }
+
+        public void TryLinkStepAnimationControllers()
+        {
+            if (_steps.Count < 1) return;
+            for (int i = 0; i < _steps.Count - 1; i++)
+            {
+                _steps[i].TryLinkAnimationController();
+                EditorUtility.SetDirty(_steps[i]);
+            }
+            EditorUtility.SetDirty(this);
+        }
 #endif
         public void ToggleAllPayloadsVisibility() {
             foreach (Destination step in _steps)
@@ -243,6 +254,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);
             EditorUI.Button("Make trajectories", GetTarget().MakeTrajectories);
             EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
+            EditorUI.Button("Link Step Animation Controllers", GetTarget().TryLinkStepAnimationControllers);
         }
     }
 #endif
