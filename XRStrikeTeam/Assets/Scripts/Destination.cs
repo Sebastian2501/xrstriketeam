@@ -51,16 +51,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void TryLinkAnimationController() {
             if (_slideAnimatorController != null) return;
             if (PayloadContainer.childCount < 1) return;
-            Transform tra = PayloadContainer.GetChild(0);
-            if (tra.childCount < 1) return;
-            for (int i = 0; i < tra.childCount; i++) { 
-                Transform child = tra.GetChild(i);
-                SlideAnimatorController sac = child.GetComponent<SlideAnimatorController>();
-                if (sac != null) { 
-                    _slideAnimatorController = sac;
-                    return;
-                }
-            }
+
+            _slideAnimatorController = PayloadContainer.gameObject.GetComponentInChildren<SlideAnimatorController>();
         }
 
         #endregion
