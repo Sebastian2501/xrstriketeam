@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Accenture.eviola;
+using UnityEngine.Events;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -10,6 +11,8 @@ namespace Accenture.XRStrikeTeam.Presentation
 {
     public class StepController : MonoBehaviour
     {
+        public UnityEvent<int> OnStepChange = new UnityEvent<int>();
+
         [Header("ExternalComponents")]
         [SerializeField]
         private CameraMover _cameraMover = null;
@@ -158,6 +161,7 @@ namespace Accenture.XRStrikeTeam.Presentation
                 if (Misc.IsGoodIndex(_curStep, _steps)) _steps[_curStep].Leave();
             }
             _curStep = idx;
+            OnStepChange.Invoke(_curStep);
             if (instantaneous)
             {
                 _steps[_curStep].PayloadContainer.gameObject.SetActive(true);
