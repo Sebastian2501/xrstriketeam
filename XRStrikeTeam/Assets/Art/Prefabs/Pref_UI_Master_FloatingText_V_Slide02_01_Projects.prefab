@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 778339490984557139, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_FloatingText
+      value: Pref_UI_Master_FloatingText_V_Slide02_01_Projects
       objectReference: {fileID: 0}
     - target: {fileID: 4730665056862502931, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,6 +51,22 @@ PrefabInstance:
     - target: {fileID: 4730665056862502931, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042967399057301706, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
+      propertyPath: m_text
+      value: completed in less than 6 years
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042967399057301706, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993380840655740961, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
+      propertyPath: m_text
+      value: 70+ projects
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993380840655740961, guid: fcdea6f460cde064a8407a188f429f30, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294901916
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

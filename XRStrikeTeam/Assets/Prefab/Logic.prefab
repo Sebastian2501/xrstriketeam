@@ -83,7 +83,7 @@ Transform:
   m_GameObject: {fileID: 2775607479020948037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -274,6 +274,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3408770e5bf2cda4eb9497a58fa47a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStepChange:
+    m_PersistentCalls:
+      m_Calls: []
   _cameraMover: {fileID: 4046849845792461897}
   _stepsContainer: {fileID: 2041281206481905198}
   _trajectoryContainer: {fileID: 2907081531968439327}
@@ -565,9 +568,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2014958670745790582, guid: 086dc56685703a64dabc6357dd79f987, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294901916
+      objectReference: {fileID: 0}
     - target: {fileID: 2047652668349017153, guid: 086dc56685703a64dabc6357dd79f987, type: 3}
       propertyPath: m_Name
       value: 1_Step_V_Accolades_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505200017482721437, guid: 086dc56685703a64dabc6357dd79f987, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5350465234447710775, guid: 086dc56685703a64dabc6357dd79f987, type: 3}
       propertyPath: NextTrajectory
@@ -5398,9 +5409,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1_Step_V_Accolades_04
       objectReference: {fileID: 0}
+    - target: {fileID: 5051289776604817201, guid: 87efd75a4c8f5fc40a907b47cbfd14da, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5350465234447710775, guid: 87efd75a4c8f5fc40a907b47cbfd14da, type: 3}
       propertyPath: NextTrajectory
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163445703768205274, guid: 87efd75a4c8f5fc40a907b47cbfd14da, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294901916
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5464,9 +5483,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1_Step_V_Accolades_05
       objectReference: {fileID: 0}
+    - target: {fileID: 5159695355596908484, guid: acc0eeccf04d66b46a485ba4607dfd6e, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294901916
+      objectReference: {fileID: 0}
     - target: {fileID: 5350465234447710775, guid: acc0eeccf04d66b46a485ba4607dfd6e, type: 3}
       propertyPath: NextTrajectory
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126610125940811567, guid: acc0eeccf04d66b46a485ba4607dfd6e, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6626,6 +6653,10 @@ PrefabInstance:
     - target: {fileID: 307197032102940552, guid: 4b686ef2aa61d8447bb1372def8ea22b, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937496215691190027, guid: 4b686ef2aa61d8447bb1372def8ea22b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5704063430745568712, guid: 4b686ef2aa61d8447bb1372def8ea22b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9832,9 +9863,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1_Step_V_Accolades_03
       objectReference: {fileID: 0}
+    - target: {fileID: 4947458403682169900, guid: be4c2919e72b71843bb13d0c13e098ad, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294901916
+      objectReference: {fileID: 0}
     - target: {fileID: 5350465234447710775, guid: be4c2919e72b71843bb13d0c13e098ad, type: 3}
       propertyPath: NextTrajectory
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050607063939839175, guid: be4c2919e72b71843bb13d0c13e098ad, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
