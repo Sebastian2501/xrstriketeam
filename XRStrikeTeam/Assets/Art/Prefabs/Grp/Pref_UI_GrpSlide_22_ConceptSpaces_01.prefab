@@ -170,10 +170,54 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8568598370147079150}
   m_SourcePrefab: {fileID: 100100000, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
 --- !u!4 &2690212025618615356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
   m_PrefabInstance: {fileID: 2512785288196402135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3323196078329370246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
+  m_PrefabInstance: {fileID: 2512785288196402135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &8568598370147079150
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3323196078329370246}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: Streaming Assets/RobotDataVis_001.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
