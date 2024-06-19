@@ -80,7 +80,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void Enter() {
             if (_bLeaveOtherDestinationOnEnter) HandleOtherDestinationDelayedLeave();
-            Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, true);
+            Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, Id==0);
             if (_autoAdvance) { 
                 Controller.NextStep();
             }
