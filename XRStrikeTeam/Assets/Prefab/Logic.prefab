@@ -4141,11 +4141,45 @@ PrefabInstance:
       propertyPath: _slideAnimatorController
       value: 
       objectReference: {fileID: 4498666376238742742}
+    - target: {fileID: 8469616645126584826, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
+      propertyPath: m_Url
+      value: file://D:/Repositories/XRStrikeTeam/XRStrikeTea
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469616645126584826, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
+      propertyPath: m_DataSource
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469616645126584826, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3277921920633404562, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8071414076381549842}
   m_SourcePrefab: {fileID: 100100000, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
+--- !u!1 &730144654342644693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3277921920633404562, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
+  m_PrefabInstance: {fileID: 2836276209572093767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8071414076381549842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730144654342644693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db27d95aeb6171479d3988f9fd9a62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoURL: RobotDataVis_001.mp4
+  _playOnAwake: 1
 --- !u!4 &3325815094538915021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 683369679534707594, guid: d202867f65e945f4e9233c0b09051a82, type: 3}
