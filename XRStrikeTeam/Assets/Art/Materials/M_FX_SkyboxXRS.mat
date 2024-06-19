@@ -84,7 +84,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Fog_Distance_Color: {r: 0.759, g: 0.662211, b: 0.44097897, a: 1}
-    - _Fog_Height_Color: {r: 0.15254399, g: 0.2779056, b: 0.336, a: 1}
+    - _Fog_Distance_Color: {r: 0.5, g: 0.24292454, b: 0.4366646, a: 1}
+    - _Fog_Height_Color: {r: 0.043137256, g: 0.06621668, b: 0.101960786, a: 1}
     - _Vector0: {r: 0.98, g: 1, b: -1.65, a: 0}
   m_BuildTextureStacks: []
