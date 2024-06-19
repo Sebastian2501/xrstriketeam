@@ -89,10 +89,20 @@ namespace Accenture.eviola.Animation
         }
     }
 
+    public class PoseEnforcementRules {
+        public bool EnforcePosition = true;
+        public bool EnforceRotation = true;
+        public PoseEnforcementRules() { }
+        public PoseEnforcementRules(bool pos, bool rot) { Set(pos, rot); }
+        public void Set(bool pos, bool rot) { EnforcePosition = pos; EnforceRotation = rot; }
+    }
+
     public class WaypointsTimedMovement : Timer {
         public Transform AnimatedTransform = null;
         public List<Pose> Waypoints = new List<Pose>();
         public bool LerpRotationForSingleWaypoints = true;
+        public PoseEnforcementRules StartEnforcementRules = new PoseEnforcementRules(true, true);
+        public PoseEnforcementRules EndEnforcementRules = new PoseEnforcementRules(true, true);
 
         private Pose _curPose = new Pose();
         private float _wptPct = 1;
@@ -106,10 +116,10 @@ namespace Accenture.eviola.Animation
             } 
         }
 
-        public void UpdateAnimatedTransform() {
+        public void UpdateAnimatedTransform(bool bPos=true, bool bRot=true) {
             if (AnimatedTransform == null) return;
-            AnimatedTransform.position = _curPose.position;
-            AnimatedTransform .rotation = _curPose.rotation;
+            if(bPos)AnimatedTransform.position = _curPose.position;
+            if(bRot)AnimatedTransform .rotation = _curPose.rotation;
         }
 
         public Pose GetCurrentPose() {
@@ -134,7 +144,7 @@ namespace Accenture.eviola.Animation
 
             _curPose.position = _firstWaypoint.position;
             _curPose.rotation = _firstWaypoint.rotation;
-            UpdateAnimatedTransform();
+            UpdateAnimatedTransform(StartEnforcementRules.EnforcePosition, StartEnforcementRules.EnforceRotation);
 
             _wptPct = 1.0f/(float)Waypoints.Count;
 
@@ -147,7 +157,7 @@ namespace Accenture.eviola.Animation
             {
                 _curPose.position = _lastWaypoint.position;
                 _curPose.rotation = _lastWaypoint.rotation;
-                UpdateAnimatedTransform();
+                UpdateAnimatedTransform(EndEnforcementRules.EnforcePosition, EndEnforcementRules.EnforceRotation);
             }
             base.Stop(tst);
         }
@@ -156,26 +166,22 @@ namespace Accenture.eviola.Animation
         {
             base.Update();
             if (!IsRunning()) return;
+
             float totPct = GetPct();
             int _curSegment = (int)(totPct / _wptPct);
-
-            if (_curSegment >= Waypoints.Count - 1) return;
-            
-            float segPct = Math.Remap.Map(totPct % _wptPct, 0, _wptPct, 0, 1);
-            
+            if (_curSegment >= Waypoints.Count-1) return;
             Pose wpFrom = GetStartWaypointForSegment(_curSegment);
             Pose wpTo = GetEndWaypointForSegment(_curSegment);
-
+            float segPct = Math.Remap.Map(totPct % _wptPct, 0, _wptPct, 0, 1);
             _curPose.position = Vector3.Slerp(wpFrom.position, wpTo.position, segPct);
-
             if (LerpRotationForSingleWaypoints)
             {
                 _curPose.rotation = Quaternion.Slerp(wpFrom.rotation, wpTo.rotation, segPct);
             }
-            else {
+            else
+            {
                 _curPose.rotation = Quaternion.Slerp(_firstWaypoint.rotation, _lastWaypoint.rotation, totPct);
             }
-
             UpdateAnimatedTransform();
         }
 

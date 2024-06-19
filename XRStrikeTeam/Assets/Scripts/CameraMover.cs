@@ -1,6 +1,7 @@
 using Accenture.eviola;
 using Accenture.eviola.Animation;
 using Accenture.eviola.Async;
+using Accenture.eviola.Math;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,9 +20,15 @@ namespace Accenture.XRStrikeTeam.Presentation
         [Header("Options")]
         [SerializeField]
         private float _travelTime = 1;
+        [SerializeField]
+        private float _easingTime = 0.3f;
 
         private Pose _startPose = new Pose();
         private Pose _endPose = new Pose();
+        private Pose _targetPose = new Pose();
+        private Pose _srcPose = new Pose();
+        private float _fromTime = 0;
+        private float _toTime = 0;
         private WaypointsTimedMovement _movement = new WaypointsTimedMovement();
 
         #region Animation
@@ -67,10 +74,20 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void StopCamera() { _movement.Stop(); }
 
-        public void SetCamera(Vector3 pos, Quaternion rot, bool stopAnim=false) { 
-            if(stopAnim)StopCamera();
-            _camera.transform.position = pos;
-            _camera.transform.rotation = rot;
+        public void SetCamera(Vector3 pos, Quaternion rot, bool instant = true)
+        {
+            StopCamera();
+            _targetPose.position = pos;
+            _targetPose.rotation = rot;
+            _srcPose.position = _camera.transform.position;
+            _srcPose.rotation = _camera.transform.rotation;
+            _fromTime = Time.time;
+            _toTime = _fromTime+_easingTime;
+            if (instant)
+            {
+                _camera.transform.position = pos;
+                _camera.transform.rotation = rot;
+            }
         }
 
         public bool IsMoving() { return _movement.IsRunning(); }
@@ -81,9 +98,16 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private void HandleMovementDone(Timer.TimerStopType tst) {
             if (tst == Timer.TimerStopType.MANUAL) return;
+            _targetPose.position = _endPose.position;
+            _targetPose.rotation = _endPose.rotation;
             OnDestinationReached.Invoke(_endPose);
         }
 
+        private void UpdateTarget() {
+            if (_movement.IsRunning()) return;
+            if (Time.time > _toTime) return;
+            _camera.transform.rotation = Quaternion.Slerp(_srcPose.rotation, _targetPose.rotation, Remap.Map(Time.time, _fromTime, _toTime, 0,1));
+        }
 
         #endregion
 
@@ -94,12 +118,15 @@ namespace Accenture.XRStrikeTeam.Presentation
             Misc.CheckNotNull(_camera);
 
             _movement.LerpRotationForSingleWaypoints = false;
+            _movement.StartEnforcementRules.Set(true, false);
+            _movement.EndEnforcementRules.Set(true, false);
             _movement.OnStop.AddListener(HandleMovementDone);
         }
 
         private void Update()
         {
             UpdateMovement();
+            UpdateTarget();
         }
         #endregion
     }
