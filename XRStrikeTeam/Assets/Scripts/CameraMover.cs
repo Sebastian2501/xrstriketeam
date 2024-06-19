@@ -50,6 +50,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             if (trajectory == null)
             {
                 _movement.Duration = _travelTime;
+                _movement.MovementEasing = Easing.LINEAR;
                 _movement.Waypoints.Add(_startPose);
                 _movement.Waypoints.Add(_endPose);
             }
@@ -61,6 +62,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         private void LoadTrajectory(Trajectory traj) {
+            _movement.MovementEasing = traj.MovementEasing;
             _movement.Duration = traj.Duration;
             _movement.Waypoints.Add(_startPose);
             if (traj.NumWaypoints > 2) {

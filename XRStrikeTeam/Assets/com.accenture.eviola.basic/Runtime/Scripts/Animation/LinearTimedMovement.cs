@@ -6,6 +6,12 @@ using UnityEngine.Events;
 
 namespace Accenture.eviola.Animation
 {
+    public enum Easing { 
+        LINEAR,
+        QUADRATIC,
+        CUBIC
+    }
+
     public class LinearTimedMovement : Timer
     {
         public Transform AnimatedTransform = null;
@@ -103,6 +109,7 @@ namespace Accenture.eviola.Animation
         public bool LerpRotationForSingleWaypoints = true;
         public PoseEnforcementRules StartEnforcementRules = new PoseEnforcementRules(true, true);
         public PoseEnforcementRules EndEnforcementRules = new PoseEnforcementRules(true, true);
+        public Easing MovementEasing = Easing.LINEAR;
 
         private Pose _curPose = new Pose();
         private float _wptPct = 1;
@@ -168,12 +175,22 @@ namespace Accenture.eviola.Animation
             if (!IsRunning()) return;
 
             float totPct = GetPct();
+            switch (MovementEasing) {
+                case Easing.CUBIC:
+                    totPct = totPct * totPct * totPct;
+                    break;
+                case Easing.QUADRATIC:
+                    totPct = totPct * totPct;
+                    break;
+                default: break;
+            }
             int _curSegment = (int)(totPct / _wptPct);
             if (_curSegment >= Waypoints.Count-1) return;
             Pose wpFrom = GetStartWaypointForSegment(_curSegment);
             Pose wpTo = GetEndWaypointForSegment(_curSegment);
             float segPct = Math.Remap.Map(totPct % _wptPct, 0, _wptPct, 0, 1);
             _curPose.position = Vector3.Slerp(wpFrom.position, wpTo.position, segPct);
+
             if (LerpRotationForSingleWaypoints)
             {
                 _curPose.rotation = Quaternion.Slerp(wpFrom.rotation, wpTo.rotation, segPct);
