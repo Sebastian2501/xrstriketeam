@@ -24,6 +24,8 @@ namespace Accenture.XRStrikeTeam
         private List<Vector3> _wayPoints = new List<Vector3>();
         [SerializeField]
         public int DesiredNumWayPoints = 10;
+        [SerializeField]
+        public eviola.Animation.Easing MovementEasing = eviola.Animation.Easing.LINEAR;
         [Header("Time")]
         [SerializeField]
         private float _duration = 3;
