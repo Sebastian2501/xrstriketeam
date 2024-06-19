@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Accenture.eviola;
 using UnityEngine.Events;
+using System.Linq;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -27,6 +28,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         [Header("Steps")]
         [SerializeField]
         private List<Destination> _steps = new List<Destination>();
+        [SerializeField]
+        private List<UrlVideoPlayer> _videos = new List<UrlVideoPlayer>();
 
         private int _curStep = -1;
 
@@ -122,6 +125,13 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
             EditorUtility.SetDirty(this);
         }
+
+        public void CollectVideos() {
+            _videos.Clear();
+            UrlVideoPlayer[] vids = _stepsContainer.GetComponentsInChildren<UrlVideoPlayer>();
+            foreach (UrlVideoPlayer vid in vids) { _videos.Add(vid); }
+            EditorUtility.SetDirty(this);
+        }
 #endif
         public void ToggleAllPayloadsVisibility() {
             foreach (Destination step in _steps)
@@ -150,6 +160,9 @@ namespace Accenture.XRStrikeTeam.Presentation
             for (int i = 0; i < _steps.Count; i++) {
                 _steps[i].Controller = this;
                 _steps[i].Id = i;
+            }
+            foreach (var vid in _videos) { 
+                vid.InitVideo();
             }
         }
 
@@ -259,6 +272,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUI.Button("Make trajectories", GetTarget().MakeTrajectories);
             EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
             EditorUI.Button("Link Step Animation Controllers", GetTarget().TryLinkStepAnimationControllers);
+            EditorUI.Button("Collect Videos", GetTarget().CollectVideos);
         }
     }
 #endif
