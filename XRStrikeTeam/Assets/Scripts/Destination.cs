@@ -59,11 +59,20 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #region Transitioning
 
-        public Trajectory GetTrajectoryToGetHere() {
-            if (Id < 1) return null;
-            Destination prevDestination = Controller.GetStep(Id - 1);
-            if (prevDestination == null) return null;
-            return prevDestination.NextTrajectory;
+        public Trajectory GetTrajectoryToGetHere(StepJumpType jt=StepJumpType.FORWARD) {
+            switch (jt) {
+                case StepJumpType.FORWARD:
+                    if (Id < 1) return null;
+                    Destination prevDestination = Controller.GetStep(Id - 1);
+                    if (prevDestination == null) return null;
+                    return prevDestination.NextTrajectory;
+                case StepJumpType.BACKWARDS:
+                    return null;
+                    break;
+                case StepJumpType.JUMP:
+                default:
+                    return null;
+            }
         }
 
         public void Leave() {
@@ -74,7 +83,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             else {
                 _slideAnimatorController.EaseOut();
                 _delayedPayloadDeactivation.Abort();
-                _delayedPayloadActivation.Fire();
+                _delayedPayloadDeactivation.Fire();
             }
         }
 
@@ -86,15 +95,14 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
-        public void Go() {
-            Trajectory trajectory = GetTrajectoryToGetHere();
-
-            HandlePreviourDestinationLeave(trajectory);
+        public void Go(StepJumpType jt=StepJumpType.FORWARD) { 
+            Trajectory trajectory = GetTrajectoryToGetHere(jt);
+            
+            HandleOtherDestinationLeave(trajectory, jt);
             AddCameraMoverListener();
             
             Controller.CameraDriver.Go(_cameraSocket.position, _cameraSocket.rotation, trajectory);
             StartDelayedPayloadActivation(trajectory);
-            
         }
 
         public bool IsTransitioning() { return Controller.CameraDriver.IsMoving(); }
@@ -113,11 +121,22 @@ namespace Accenture.XRStrikeTeam.Presentation
             _delayedPayloadActivation.Fire();
         }
 
+        private void HandleOtherDestinationLeave(Trajectory traj, StepJumpType jt) {
+            switch (jt) {
+                case StepJumpType.FORWARD:
+                    HandlePreviourDestinationLeave(traj); 
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void HandlePreviourDestinationLeave(Trajectory traj) {
             _bLeaveOtherDestinationOnEnter = false;
             int prevIdx = Id - 1;
             _otherDestination = Controller.GetStep(prevIdx);
             if (_otherDestination == null) return;
+            
             if (traj == null)
             {
                 _bLeaveOtherDestinationOnEnter = true;
