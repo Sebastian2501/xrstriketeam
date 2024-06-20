@@ -40,6 +40,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8162279009679578756}
     m_Modifications:
+    - target: {fileID: 1903710561095758928, guid: de619b85be9103046a416708c0da82b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3602090320132791204, guid: de619b85be9103046a416708c0da82b9, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_04_00

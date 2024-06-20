@@ -66,6 +66,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5319278713405431318}
     m_Modifications:
+    - target: {fileID: 802553071427126830, guid: ae12fc618d74205499915f89024e521e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1657550031311063758, guid: ae12fc618d74205499915f89024e521e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -128,6 +132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5319278713405431318}
     m_Modifications:
+    - target: {fileID: 802553071427126830, guid: dd68a24724d632147aea2f6e06403271, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1657550031311063758, guid: dd68a24724d632147aea2f6e06403271, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.645
@@ -190,6 +198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5319278713405431318}
     m_Modifications:
+    - target: {fileID: 802553071427126830, guid: ce12eaee8f5a7c24ca33a538af6e190c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1657550031311063758, guid: ce12eaee8f5a7c24ca33a538af6e190c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.322
@@ -252,6 +264,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5319278713405431318}
     m_Modifications:
+    - target: {fileID: 802553071427126830, guid: c49ed41b1f4944741b3abc0e19dea758, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1657550031311063758, guid: c49ed41b1f4944741b3abc0e19dea758, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.645
@@ -314,6 +330,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5319278713405431318}
     m_Modifications:
+    - target: {fileID: 802553071427126830, guid: ea2a445d6ceb4a8419cdb97112c04e5a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1657550031311063758, guid: ea2a445d6ceb4a8419cdb97112c04e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.322
