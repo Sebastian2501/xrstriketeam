@@ -166,7 +166,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
-        private void SetStep(int idx, bool instantaneous = false) {
+        private void SetStep(int idx, bool instantaneous = false, StepJumpType jt=StepJumpType.JUMP) {
             if (!Misc.IsGoodIndex(idx, _steps)) return;
             if (idx == _curStep) return;
             if (instantaneous)
@@ -182,20 +182,20 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
             else
             {
-                _steps[_curStep].Go();
+                _steps[_curStep].Go(jt);
             }
         }
 
         public void NextStep() { 
             int idx = _curStep+1;
             if (idx >= _steps.Count) return;
-            SetStep(idx);
+            SetStep(idx, false, StepJumpType.FORWARD);
         }
 
         public void PrevStep() { 
             int idx = _curStep-1;
             if (idx < 0) return;
-            SetStep(idx);
+            SetStep(idx, true, StepJumpType.JUMP);
         }
 
         public void FirstStep(bool instantaneous=false) {

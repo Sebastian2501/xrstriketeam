@@ -23,4 +23,10 @@ namespace Accenture.XRStrikeTeam.Presentation {
             return idx>=fromIdx && idx<=toIdx;
         }
     }
+
+    public enum StepJumpType { 
+        FORWARD,
+        BACKWARDS,
+        JUMP
+    }
 }
