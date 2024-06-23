@@ -8,9 +8,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1319796360248000591, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861300756669432171, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 34324d64440682645ae47f26a98b948f, type: 2}
+    - target: {fileID: 5931140404239789661, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6654163020521103809, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
       propertyPath: m_Name
-      value: Pref_Demo_BackGround
+      value: Pref_Demo_BackGround_V_ArmaSwiss
       objectReference: {fileID: 0}
     - target: {fileID: 6927989760190343692, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50,6 +62,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6927989760190343692, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373190510315840931, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110854767009583781, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

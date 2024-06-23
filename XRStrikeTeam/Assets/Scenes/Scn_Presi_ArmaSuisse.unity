@@ -1068,63 +1068,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85801820}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &86611164
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 170160, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_Name
-      value: pf_vfx-ult_demo_psys_loop_ethereal
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.95753527
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.2883161
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495420, guid: eb76484a04277da40a3233fbc061f141, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 33.514
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: eb76484a04277da40a3233fbc061f141, type: 3}
 --- !u!1 &99163421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5215,10 +5158,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7907916556354939506, guid: 621fb154ee1c54a4aaa7fb6773f9aa77, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 34324d64440682645ae47f26a98b948f, type: 2}
     - target: {fileID: 8255108557613730520, guid: 621fb154ee1c54a4aaa7fb6773f9aa77, type: 3}
       propertyPath: m_Name
       value: Pref_Demo_BackGround_V_ArmaSwiss
@@ -24324,7 +24263,6 @@ SceneRoots:
   - {fileID: 424665560}
   - {fileID: 1705291602}
   - {fileID: 1218346998}
-  - {fileID: 86611164}
   - {fileID: 1696087884}
   - {fileID: 1713244105}
   - {fileID: 1270080733}

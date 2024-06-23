@@ -80,9 +80,9 @@ Material:
     - _Distance_Offset: 50
     - _DstBlend: 0
     - _FogDist_Ammount: 1
-    - _Fog_Dist_FadeLength: 10
-    - _Fog_Dist_FadeOffset: 5
-    - _Fog_Height_Distance: 1
+    - _Fog_Dist_FadeLength: 27.57
+    - _Fog_Dist_FadeOffset: 14.7
+    - _Fog_Height_Distance: 0
     - _Fog_Height_MaxY: 10
     - _Fog_Height_MinY: -10
     - _Fog_Height_Offset: 0
@@ -106,7 +106,7 @@ Material:
     - _Color_Outline: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Fog_Distance_Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
-    - _Fog_Height_Color: {r: 0.57112503, g: 0.57112503, b: 0.57112503, a: 1}
+    - _Fog_Height_Color: {r: 0.65, g: 0.65, b: 0.65, a: 1}
     - _Grid_Color: {r: 0.6, g: 0.6, b: 0.6, a: 0}
     - _Grid_Color_A: {r: 0.6, g: 0.6, b: 0.6, a: 0}
     - _Grid_Color_B: {r: 1, g: 1, b: 1, a: 0}
