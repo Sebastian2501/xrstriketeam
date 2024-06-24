@@ -908,7 +908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1146460100325222266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2893,6 +2893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4507866039067507555}
   - component: {fileID: -2079753413528204122}
+  - component: {fileID: 1946064049445472173}
   m_Layer: 0
   m_Name: Pref_UI_Master_Arma_Agenda
   m_TagString: Untagged
@@ -2929,6 +2930,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c23b81bfb15d74fb3a2ee8ab940fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1946064049445472173
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933748885358857395}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c260b18e79af52c4e869b7af5467db6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7477161814119660695
 GameObject:
   m_ObjectHideFlags: 0
