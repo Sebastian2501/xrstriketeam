@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5760817045573057
+--- !u!1001 &727939786964097228
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Arma_Slide_01
+      value: Pref_UI_Master_Arma_IntroOutro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
