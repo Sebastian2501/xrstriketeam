@@ -1442,6 +1442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4507866039067507555}
+  - component: {fileID: 5012918135077741378}
   m_Layer: 0
   m_Name: Pref_UI_Master_Arma_Titles
   m_TagString: Untagged
@@ -1466,6 +1467,18 @@ Transform:
   - {fileID: 3569680108016805029}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5012918135077741378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933748885358857395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c23b81bfb15d74fb3a2ee8ab940fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8852698051920095966
 GameObject:
   m_ObjectHideFlags: 0
