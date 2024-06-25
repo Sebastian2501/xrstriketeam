@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Nat_Fir_BB
-  m_Shader: {fileID: 10751, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 341617619869a97419122bb933e57e05, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -59,15 +59,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _T2D_BC:
+        m_Texture: {fileID: 2800000, guid: 400c0ba8b4c11c343a582e6f17b44fd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Fog_Dist_FadeLength: 27.5
+    - _Fog_Dist_FadeOffset: 14.7
+    - _Fog_Height_Distance: 0
+    - _Fog_Height_MaxY: 10
+    - _Fog_Height_MinY: -10
+    - _Fog_Height_Offset: 0
+    - _Fog_Height_Power: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Grid_Scale: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -77,7 +93,11 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Fog_Distance_Color: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _Fog_Height_Color: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+    - _Grid_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0}
   m_BuildTextureStacks: []
