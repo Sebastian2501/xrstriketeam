@@ -8,6 +8,79 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Wir k\xF6nnen euch helfen bei..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 671672267715398101, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Installation und Konfiguration der Software\r\n\n\u2022 Datenmigration
+        und -integration\r\n\n\u2022 Sicherstellung der Kompatibilit\xE4t mit bestehenden
+        Systemen\r\n\n\u2022 Entwicklung von zus\xE4tzlichen Funktionen oder Modulen
+        nach Bedarf\r\n\n\u2022 Erweiterung mit Digital Twins f\xFCr echtzeit Planung
+        und modellierung logistischer Herausforderungen\r\n\n\u2022 Integration von
+        realistischen und interaktiven Trainingsumgebungen\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734427387232568623, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226936656470368792, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668031902375966558, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Analyse der aktuellen Systeme und Prozesse\r\n\n\u2022 Identifikation
+        der Anforderungen und Ziele\r\n\n\u2022 Beratung zur besten L\xF6sung basierend
+        auf den Analyseergebnissen\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Fortlaufender Support
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: Bedarfsanalyse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.510014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 562.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 209.51001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386761604253934318, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +121,87 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "SitaWare Software Integration  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -600
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 87
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Projects
+      value: Pref_UI_Arma_Slide_20_Leistungsangebot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -600
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.510014
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684530935912805443, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220219177272397861, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713872684341263648, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 562.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713872684341263648, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886140617721838576, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949894703464073739, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Kontinuierliche Beratung und Unterst\xFCtzung bei weiteren Anpassungen\r\n\n\u2022
+        Regelm\xE4\xDFige Updates und Wartung der Software\r\n\n\u2022 \xDCberwachung
+        der Systemleistung und Fehlerbehebung\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
