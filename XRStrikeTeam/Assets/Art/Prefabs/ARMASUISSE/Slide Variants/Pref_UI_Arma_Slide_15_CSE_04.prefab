@@ -8,6 +8,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 671672267715398101, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Beispiele von Virtual/Live Trainings mit operativen Werkzeugen und
+        immersiven Trainingsger\xE4ten und wie diese einbezogen warden k\xF6nnen,
+        um Trainings zu verbessern\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454013100093592811, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0588c94ae324ceb47b18470cadce6a15, type: 3}
+    - target: {fileID: 2668031902375966558, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Wie Digital Twins / Ontologien erstellt werden k\xF6nnen, um bei operativer
+        Planung und dem Aufbau von Streitkr\xE4ften zu helfen\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Virtuelle Kommando-zentrale
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_margin.z
+      value: -40.42006
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +73,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Virtual  / Live Training
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5536622216524914848, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Operative Planer bei der Nutzung realer Planungswerkzeuge (Palantir,
+        S4HANA, asset Digital Twins)
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651408074246159932, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Mehrbeh\xF6rdliche Zusammenarbeit bei der Evakuierung der Zivilbev\xF6lkerung
+        und Planung und Ausf\xFChrung der Wiederherstellung von kritischer Infrastruktur\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832390368295814701, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c10e24a990bceb04f80442a28ec3f223, type: 3}
     - target: {fileID: 6933748885358857395, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Projects
+      value: Pref_UI_Arma_Slide_15_CSE_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059002634672034776, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7987045a9830a9043825ec07a03c3bdd, type: 3}
+    - target: {fileID: 8649127285640911456, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'JTAC markiert Ziele mit Laser Markierungen in einer virtuellen Simulation
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949894703464073739, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Wie XR genutzt werden kann, um durch eine virtuelle Kommandozentrale
+        immersives Situationsbewusstsein, Planung, Probel\xE4ufe und AAR zu schaffen\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
