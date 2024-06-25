@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 860385123699487530, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012710765321263385, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_text
+      value: THANK.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918563832034060019, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -319
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105380800837022716, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +64,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5920982923769537466, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -440.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714919579186541606, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 114.20001
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_IntroOutro
+      value: Pref_UI_Arma_Slide_23_ThankYou
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895945941583053168, guid: 4d4a51712cf6cba498eca4370ac9c011, type: 3}
+      propertyPath: m_text
+      value: YOU.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

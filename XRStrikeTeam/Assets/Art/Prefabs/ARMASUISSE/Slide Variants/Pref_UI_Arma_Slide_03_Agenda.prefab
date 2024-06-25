@@ -8,6 +8,28 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 104730713648379219, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897154474225124127, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 'Unsere
+
+        Leistungsangebote'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666574082460840409, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 'Kompetenzbereiche und Beschaffung
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668031902375966558, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 'Accenture in Zahlen, Global und Accenture Schweiz
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +70,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5536622216524914848, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: "\xDCber\nAccenture"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699166880793325024, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: "Ausgew\xE4hlte Projekte\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250375133275980851, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: "Weiterf\xFChrende\nReferenzen"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285820989063133494, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533877421161147275, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 'Common Synthetics Environment Projekt
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Agenda
+      value: Pref_UI_Arma_Slide_03_Agenda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284834249233083947, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 'Sitaware
+
+        Referenzen'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018306728080721351, guid: bf6c98c4eb6390047a7fc65eb9e6b256, type: 3}
+      propertyPath: m_text
+      value: 04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

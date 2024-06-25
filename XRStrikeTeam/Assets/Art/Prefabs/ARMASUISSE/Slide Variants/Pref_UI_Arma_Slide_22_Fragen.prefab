@@ -8,6 +8,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102954604478649533, guid: 0467ef0373a37f5419bbb466c589cbdd, type: 3}
+      propertyPath: m_text
+      value: 'Habt ihr noch
+
+        Fragen?'
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 0467ef0373a37f5419bbb466c589cbdd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +56,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 0467ef0373a37f5419bbb466c589cbdd, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Titles
+      value: Pref_UI_Arma_Slide_22_Fragen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

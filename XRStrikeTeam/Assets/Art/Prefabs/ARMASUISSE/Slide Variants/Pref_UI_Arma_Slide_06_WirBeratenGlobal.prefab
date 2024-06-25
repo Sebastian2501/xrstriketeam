@@ -8,6 +8,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 437724796818480315, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Banken\n\u2022 Kapitalm\xE4rkte\n\u2022 Versicherungen"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015687091261833490, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -88.999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252756780098899530, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: Products
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989583564388324626, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 171.10002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677088506479553743, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -336
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915605918963338109, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "18 Branchen im \xD6ffentlichen Sektor"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409616922978934985, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 518
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +76,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353354648707048672, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "Health and\vPublic Service (H&PS)\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491602817635856891, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Industrial Equipment\n\u2022 Automobil\n\u2022 Konsumg\xFCter\n\u2022
+        Gesundheit\n\u2022 Reisen & Tourismus"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5536622216524914848, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "Kunden aus \xFCber "
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Categories_A
+      value: Pref_UI_Arma_Slide_06_WirBeratenGlobal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284251730362803400, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: 'Financial Services
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916872486411299116, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Chemie\n\u2022 Energie\n\u2022 Rohstoffe\n\u2022 \xD6ffentliche
+        Versorgung"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960162992045655307, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: Resources
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941475838632098791, guid: 07f4156f5edd89847bb43fda09c3534c, type: 3}
+      propertyPath: m_text
+      value: "\u2022 Gesundheit\n\u2022 \xD6ffentliche Verwaltung\n\u2022 Verteidigung
+        und innere Sicherheit\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

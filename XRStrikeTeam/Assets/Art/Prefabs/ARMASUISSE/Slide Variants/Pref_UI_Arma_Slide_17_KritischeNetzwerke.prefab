@@ -8,6 +8,195 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Referenzen: Kritische Netzwerke f\xFCr die \xF6ffentliche Sicherheit"
+      objectReference: {fileID: 0}
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_margin.z
+      value: -208.51453
+      objectReference: {fileID: 0}
+    - target: {fileID: 279507048606887737, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 671672267715398101, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Landesweites digitales Mobilkommunikationsnetzwerk f\xFCr staatliche
+        Organisationen mit Sicherheits- oder Souver\xE4nit\xE4tsaufgaben\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 781858820102373529, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 781858820102373529, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 781858820102373529, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -286.38998
+      objectReference: {fileID: 0}
+    - target: {fileID: 798459936641137411, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 418.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 798459936641137411, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -230
+      objectReference: {fileID: 0}
+    - target: {fileID: 798459936641137411, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177242701332289516, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 683.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177242701332289516, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177242701332289516, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452587203549298888, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 418.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452587203549298888, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452587203549298888, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454013100093592811, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 11fbf750adf0a07448d545194a393902, type: 3}
+    - target: {fileID: 1456935022221211835, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 418.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456935022221211835, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456935022221211835, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539293870339965741, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539293870339965741, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539293870339965741, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734427387232568623, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992801804474379560, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450242764971170643, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -230
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450242764971170643, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -79.939995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668031902375966558, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Technische Beratung zur Implementierung und Betriebsf\xFChrung eines
+        landesweiten TETRA-Netzwerks f\xFCr Sicherheitskr\xE4fte\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791462378754718862, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791462378754718862, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -79.939995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Pan-Europ\xE4isches Breitbandmobilsystem f\xFCr die \xF6ffentliche
+        Sicherheit\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Gestaltung und Implementierung von mobilen Funknetzwerken
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -286.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 683.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -465
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -230
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386761604253934318, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +237,157 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4853361072915370721, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -230
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -286.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Beschaffung und Betrieb eines \xF6ffentlichen Sicherheitsnetzwerks\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423464265265525741, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "5G-Testspezifikationen f\xFCr einen nationalen Betreiber f\xFCr \xF6ffentliche
+        Sicherheit\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423464265265525741, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423464265265525741, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -700
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5722882973140050754, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Landesweite Migration von schmalbandigen Sprach- und Datendiensten
+        zu breitbandigen, missionskritischen Diensten auf Basis von 3GPP-Technologien
+        f\xFCr Mobilfunknetzbetreiber\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758464482041498628, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758464482041498628, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -79.939995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832390368295814701, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 187f1fdca7cf0494eb9a5d237053e36d, type: 3}
     - target: {fileID: 6933748885358857395, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Projects
+      value: Pref_UI_Arma_Slide_17_KritischeNetzwerke
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028138406141905747, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028138406141905747, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -79.939995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059002634672034776, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 646e07ff70128e34cb87bb9c7bd0050b, type: 3}
+    - target: {fileID: 7280997241902038413, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 418.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280997241902038413, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -700
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280997241902038413, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -700
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -286.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765327317665478378, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220219177272397861, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713872684341263648, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 683.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713872684341263648, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713872684341263648, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895313416556485642, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c42ee9580ec0e9f468dd130a51374a01, type: 3}
+    - target: {fileID: 8949894703464073739, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Innovationsaktivit\xE4t zur Erm\xF6glichung eines paneurop\xE4ischen
+        Breitbandmobilsystems f\xFCr die \xF6ffentliche Sicherheit\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

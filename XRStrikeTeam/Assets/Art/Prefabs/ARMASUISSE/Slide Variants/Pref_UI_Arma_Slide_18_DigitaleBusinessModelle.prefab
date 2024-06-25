@@ -8,6 +8,75 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Referenzen: Digitale Business Modelle'
+      objectReference: {fileID: 0}
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_margin.z
+      value: -264.29065
+      objectReference: {fileID: 0}
+    - target: {fileID: 671672267715398101, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Erforschung makro\xF6konomischen Herausforderungen in der Luftfahrt,
+        um die Betriebsstabilit\xE4t und die Zufriedenheit des fliegenden Personals
+        zu verbessern und entwicklung eines Prototyp-Services\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454013100093592811, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 33819ace52ecabc46af28cb4024406ff, type: 3}
+    - target: {fileID: 1734427387232568623, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668031902375966558, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Entwurf eines digitalen f\xFCr die vollst\xE4ndige Digitalisierung
+        von CST und entwicklung eines Transport Management Systems, das den Grundstein
+        f\xFCr ein integriertes digitales Logistiksystem in der Schweiz legt\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'SBB; Menschenzentriertes Transformationsprojekt
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Cargo sous terrain (CST); Digitales Business Modell & Transport Management
+        System
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340902951955865857, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -126.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386761604253934318, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +117,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -258
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'SWISS Crew Planning Strategie
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -126.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832390368295814701, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f3f4537177ca1f429ec638ccfa44fe1, type: 3}
     - target: {fileID: 6933748885358857395, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Projects
+      value: Pref_UI_Arma_Slide_18_DigitaleBusinessModelle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059002634672034776, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dfd01a87d5c42c4dbeff988cf60ebf2, type: 3}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220219177272397861, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730845267264108036, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -126.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949894703464073739, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Planung eines mehrj\xE4hriges Transformationsprojekt, das die Mitarbeiter
+        in die Umstellung auf das neue SAP-System einbezieht und so einen nahtlosen
+        \xDCbergang schafft, der sowohl die Kunden- als auch die Mitarbeiter-Experience
+        verbessert \r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

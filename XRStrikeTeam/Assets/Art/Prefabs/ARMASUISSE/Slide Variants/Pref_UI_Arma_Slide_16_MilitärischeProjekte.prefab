@@ -8,6 +8,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Referenzen: Milit\xE4rische Projekte"
+      objectReference: {fileID: 0}
+    - target: {fileID: 102954604478649533, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_margin.z
+      value: -85.85242
+      objectReference: {fileID: 0}
+    - target: {fileID: 671672267715398101, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Verbesserungen in Bezug auf Nachhaltigkeit in der Lieferkette der Australian
+        Defense Forces (ADF)
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 798459936641137411, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 371.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 798459936641137411, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 426.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454013100093592811, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a70602eec67e21d4b93a5fade708916c, type: 3}
+    - target: {fileID: 1454013100093592811, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456935022221211835, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 371.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456935022221211835, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 426.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734427387232568623, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668031902375966558, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Verwaltung der Lieferkette der R\xFCstungsflotte\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Australischer Anbieter f\xFCr Wartungs- und Serviceleistungen im Aerospace
+        Bereich\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828417162451763670, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Verteidigungs- und Technologielieferant f\xFCr Australian Defense Forces\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048757888787047928, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386761604253934318, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +128,64 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307902894542947122, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -319
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: "Verteidigungs-, Luft- und Raumfahrt-Dienstleister f\xFCr Australian
+        Defense Forces\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352583157086473316, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832390368295814701, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cd241e3d3f59e64f9df1591766fec5d, type: 3}
+    - target: {fileID: 6832390368295814701, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Projects
+      value: "Pref_UI_Arma_Slide_16_Milit\xE4rischeProjekte"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059002634672034776, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ce6f365d8250814ba2426bc2502704f, type: 3}
+    - target: {fileID: 7059002634672034776, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280997241902038413, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 371.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280997241902038413, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 426.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -319
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220219177272397861, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949894703464073739, guid: 19cf792379db3534f8821f7bfe704a80, type: 3}
+      propertyPath: m_text
+      value: 'Transformation der globalen Lieferkette (Global Supply-Chain Transformation)
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

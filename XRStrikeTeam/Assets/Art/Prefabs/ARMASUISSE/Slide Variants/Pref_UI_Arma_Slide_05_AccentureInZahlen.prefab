@@ -8,6 +8,58 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 24191265430960841, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Sprachen
+      objectReference: {fileID: 0}
+    - target: {fileID: 313538057081146547, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: "Wir beraten \xFCber"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322786199759283342, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: "L\xE4ndern t\xE4tig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350221577351169897, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Wir sind in mehr als
+      objectReference: {fileID: 0}
+    - target: {fileID: 2931170796515528172, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Mitarbeitende in der Schweiz
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267611119931008555, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: 30+
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267611119931008555, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267611119931008555, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.45882356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267611119931008555, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290773109
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439759936204251889, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Wir arbeiten in mehr als
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695970770260925573, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: 6'000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838817971798245633, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405963512830056219, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +100,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769847561719413291, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: '>2''000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769847561719413291, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769847561719413291, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.45882356
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769847561719413291, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290773109
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197894823053159838, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: In
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243166058435754324, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528720424870600539, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Jahren in der Schweiz
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955981117587348706, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Kunden
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135302148721663021, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Branchen
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_BigNumbers
+      value: Pref_UI_Arma_Slide_05_AccentureInZahlen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805113174678727517, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Wir haben
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399279792741273899, guid: cc8f57c9f33b6f34f8824c91de2ded49, type: 3}
+      propertyPath: m_text
+      value: Wir sind seit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

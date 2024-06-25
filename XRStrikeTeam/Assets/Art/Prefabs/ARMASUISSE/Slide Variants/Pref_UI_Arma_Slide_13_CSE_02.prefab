@@ -8,6 +8,170 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 50813320725408099, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "\xDCber Trainings hinaus vereinfacht CSE simulationsbasiertes Concept
+        Development and Experimentation (CD&E) und bietet Tools f\xFCr Entscheidungshilfen
+        bei der Planung und Durchf\xFChrung von Operationen in der realen Welt. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 102954604478649533, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: Zentrale Aspekte des CSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 413779888612940125, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 225.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 413779888612940125, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 140.27998
+      objectReference: {fileID: 0}
+    - target: {fileID: 413779888612940125, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 118.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 665
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 255.90002
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1445.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 624195435014761093, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -862.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 920289929149334490, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -568.7101
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935407575076787131, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935407575076787131, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 297.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055622234958750668, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -801.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213963149455553133, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "CSE baut auf einer optimalen Kombination von live, virtual und construktive
+        Simulatortechnologien auf \u2013 existierende Simulationen vom Kunden werden
+        mit neuen Technologien erweitert und k\xF6nnen Anbieterunabh\xE4ngig an Technologische
+        Fortschritte angepasst werden. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668031902375966558, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "Common Synthetic Environment (CSE) erf\xFCllt operative und taktische
+        Trainingsanforderungen, von einer einzelnen Staffel hin zu umfangreichen
+        gemeinsamen und kombinierten \xDCbungen.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 255.90002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 444.18994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765818188133190735, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -862.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137961362383783004, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: 'Angepasst an operative Anforderungen
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3456097649885796733, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "Herstellerunabh\xE4ngige integration von Vorhandenem und Neuem\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3456097649885796733, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_margin.z
+      value: -106.21713
+      objectReference: {fileID: 0}
+    - target: {fileID: 3456188740955829468, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "CSE l\xE4sst sich nahtlos in operative command and control Systeme
+        und Prozesse integrieren. Interoperabilit\xE4t wird durch die Nutzung standardisierter
+        und moderner Sicherheitsverfahren gew\xE4hrleistet. Faire Kampfgel\xE4nde
+        werden durch modern digitale Gel\xE4ndewerkzeuge garantiert.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164714889155513203, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "\xDCber Training hinaus\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 225.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -860.7201
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195911438401776959, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252897410976429587, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461804389137151987, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca8f9021bf1cacf44aff285d7b9566a3, type: 3}
+    - target: {fileID: 4461804389137151987, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4507866039067507555, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +212,149 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4756387462434522690, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f31f08f4691fe974eb1251229a7f1966, type: 3}
+    - target: {fileID: 4756387462434522690, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 561.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500225057662714813, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -568.7101
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660085606752938077, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 225.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660085606752938077, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 140.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660085606752938077, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -263.39005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 665
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 255.90002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1445.1901
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911734638137412153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -507
+      objectReference: {fileID: 0}
     - target: {fileID: 6933748885358857395, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_Arma_Categories_B
+      value: Pref_UI_Arma_Slide_13_CSE_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059002634672034776, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f396a00f1dd5f7d4daac566052dc2bd8, type: 3}
+    - target: {fileID: 7059002634672034776, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196854944770703554, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b009d1e84a860574d9e36ccd26a3606f, type: 3}
+    - target: {fileID: 7196854944770703554, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280997241902038413, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 255.90002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 444.18994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345867576602700166, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -481
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457979497511878714, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 432.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774821805638150153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 225.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774821805638150153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -860.7201
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774821805638150153, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -263.39005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900054456283172939, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 432.28998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900054456283172939, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 209.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309591489362844365, guid: 910b94fb754db7446aeea5dd5e149cbf, type: 3}
+      propertyPath: m_text
+      value: "Trainiere w\xE4hrend dem Kampf\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
