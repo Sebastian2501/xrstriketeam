@@ -115,6 +115,21 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
+        public Trajectory MakeTrajectoryFromTo(int idxFrom, int idxTo) {
+            if (!Misc.IsGoodIndex(idxFrom, _steps) || !Misc.IsGoodIndex(idxTo, _steps)) return null;
+
+            GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_trajectoryPrefab);
+            go.transform.parent = _trajectoryContainer;
+            go.name = idxFrom + "to" + idxTo + "_trajectory";
+            Trajectory trajectory = go.GetComponent<Trajectory>();
+            if (trajectory != null)
+            {
+                trajectory.SetTransformsAndMakeWaypoints(_steps[idxFrom].CameraSocket, _steps[idxTo].CameraSocket);
+                EditorUtility.SetDirty(trajectory);
+            }
+            return trajectory;
+        }
+
         public void TryLinkStepAnimationControllers()
         {
             if (_steps.Count < 1) return;
@@ -166,7 +181,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
-        private void SetStep(int idx, bool instantaneous = false, StepJumpType jt=StepJumpType.JUMP) {
+        public void SetStep(int idx, bool instantaneous = false, StepJumpType jt=StepJumpType.JUMP, Trajectory traj = null) {
             if (!Misc.IsGoodIndex(idx, _steps)) return;
             if (idx == _curStep) return;
             if (instantaneous)
@@ -182,7 +197,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
             else
             {
-                _steps[_curStep].Go(jt);
+                _steps[_curStep].Go(jt, traj);
             }
         }
 
@@ -201,6 +216,14 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void FirstStep(bool instantaneous=false) {
             SetAllPayloadsVisibility(false);
             SetStep(0, instantaneous);
+        }
+
+        public void GoStep(int destIdx, Trajectory traj) {
+            if (!Misc.IsGoodIndex(destIdx, _steps)) return;
+            if (_curStep == destIdx) return;
+            StepJumpType jt = StepJumpType.JUMP;
+            if (traj!=null) jt = StepJumpType.CUSTOM;
+            SetStep(destIdx, false, jt, traj);
         }
 
         public void HandleDestinationReached(int idx) {

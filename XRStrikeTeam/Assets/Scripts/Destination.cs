@@ -95,8 +95,16 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
-        public void Go(StepJumpType jt=StepJumpType.FORWARD) { 
-            Trajectory trajectory = GetTrajectoryToGetHere(jt);
+        public void Go(StepJumpType jt=StepJumpType.FORWARD, Trajectory traj=null) {
+            Trajectory trajectory = null;
+            switch (jt) {
+                case StepJumpType.CUSTOM:
+                    trajectory = traj;
+                    break;
+                default:
+                    trajectory = GetTrajectoryToGetHere(jt);
+                    break;
+            }
             
             HandleOtherDestinationLeave(trajectory, jt);
             AddCameraMoverListener();
@@ -124,6 +132,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void HandleOtherDestinationLeave(Trajectory traj, StepJumpType jt) {
             switch (jt) {
                 case StepJumpType.FORWARD:
+                case StepJumpType.CUSTOM:
                     HandlePreviourDestinationLeave(traj); 
                     break;
                 default:
