@@ -14,21 +14,29 @@ namespace Accenture.XRStrikeTeam.Presentation
         private int _paramExitIndex = -1;
 
         public void EaseIn() {
+            InitAnimator();
             _animator.SetTrigger(_paramEnterIndex);
         }
 
         public void EaseOut() {
+            InitAnimator();
             _animator.SetTrigger(_paramExitIndex);
         }
 
-        private void Awake()
+        protected void InitAnimator()
         {
+            if (_animator != null) return;
             _animator = GetComponent<Animator>();
 
             Misc.CheckNotNull(_animator);
 
             _paramEnterIndex = Animator.StringToHash(_paramEnterName);
             _paramExitIndex = Animator.StringToHash(_paramExitName);
+        }
+
+        private void Awake()
+        {
+            InitAnimator();
         }
     }
 }

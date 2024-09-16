@@ -27,6 +27,7 @@ namespace Accenture.XRStrikeTeam.Presentation {
     public enum StepJumpType { 
         FORWARD,
         BACKWARDS,
-        JUMP
+        JUMP,
+        CUSTOM
     }
 }
