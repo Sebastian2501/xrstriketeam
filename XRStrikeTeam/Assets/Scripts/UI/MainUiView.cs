@@ -27,7 +27,29 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         [SerializeField]
         private Button _btnUnmute = null;
 
+        #region Controller
+        private void AddControllerListeners() {
+            DisplayeMuteState(_stepController.IsMuted());
+
+            _stepController.OnMuteStateChange.AddListener(HandleMutedChanged);
+        }
+
+        private void RemoveControllerListeners() {
+            _stepController.OnMuteStateChange.RemoveListener(HandleMutedChanged);
+        }
+
+        private void HandleMutedChanged(bool b) { 
+            DisplayeMuteState(b);
+        }
+
+        #endregion
+
         #region UI
+
+        private void DisplayeMuteState(bool b) {
+            _btnMute.gameObject.SetActive(!b);
+            _btnUnmute.gameObject.SetActive(b);
+        }
 
         private void HandlePrevClick() { 
             _stepController.PrevStep();
@@ -45,9 +67,13 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
 
         private void HandleMinimizeClick() { }
 
-        private void HandleMuteClick() { }
+        private void HandleMuteClick() { 
+            _stepController.SetMuted(true);
+        }
 
-        private void HandleUnmuteClick() { }
+        private void HandleUnmuteClick() {
+            _stepController.SetMuted(false);
+        }
 
         private void AddUiListeners()
         {
@@ -88,12 +114,14 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
 
         private void OnEnable()
         {
+            AddControllerListeners();
             AddUiListeners();
         }
 
 
         private void OnDisable()
         {
+            RemoveControllerListeners();
             RemoveUiListeners();
         }
         #endregion

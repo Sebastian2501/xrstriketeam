@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Accenture.eviola;
 using UnityEngine.Events;
-using System.Linq;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -13,6 +12,7 @@ namespace Accenture.XRStrikeTeam.Presentation
     public class StepController : MonoBehaviour
     {
         public UnityEvent<int> OnStepChange = new UnityEvent<int>();
+        public UnityEvent<bool> OnMuteStateChange = new UnityEvent<bool>();
 
         [Header("ExternalComponents")]
         [SerializeField]
@@ -32,6 +32,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private List<UrlVideoPlayer> _videos = new List<UrlVideoPlayer>();
 
         private int _curStep = -1;
+        private bool _bMuted = false;
 
         private Camera _camera;
         public Camera PovCamera { get { return _camera; } }
@@ -233,6 +234,23 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
+        #endregion
+
+        #region Audio
+
+        public bool IsMuted() { return _bMuted; }
+
+        public void SetMuted(bool b) {
+            if (b == IsMuted()) return;
+            foreach (var vid in _videos) { 
+                vid.IsMuted = b;
+            }
+            _bMuted = b;
+            OnMuteStateChange.Invoke(_bMuted);
+        }
+
+        public void ToggleMuted() { SetMuted(!_bMuted); }
+        
         #endregion
 
         #region KeyboardInput
