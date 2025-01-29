@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 73932520716262359}
   - component: {fileID: 8310060316227862884}
   - component: {fileID: 1057783285919553706}
-  - component: {fileID: 2823826575793640684}
+  - component: {fileID: 22345610988968656}
   m_Layer: 0
   m_Name: Btn_Min
   m_TagString: Untagged
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2823826575793640684
+--- !u!114 &22345610988968656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1095459540403833689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b1d729b9812dd84886e2f2301c9b683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -269,6 +269,9 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1057783285919553706}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPointerClick:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1630219688011707721
@@ -427,7 +430,7 @@ GameObject:
   - component: {fileID: 1130743282186939991}
   - component: {fileID: 7151264414186095746}
   - component: {fileID: 8713153903057241555}
-  - component: {fileID: 1229384082828538040}
+  - component: {fileID: 7567489324014918325}
   m_Layer: 0
   m_Name: Btn_Max
   m_TagString: Untagged
@@ -493,7 +496,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1229384082828538040
+--- !u!114 &7567489324014918325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -502,7 +505,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2818904931728577047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b1d729b9812dd84886e2f2301c9b683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -535,6 +538,9 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 8713153903057241555}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPointerClick:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3713097966740712151

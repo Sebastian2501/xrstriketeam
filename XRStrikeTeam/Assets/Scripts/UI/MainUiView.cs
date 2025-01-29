@@ -19,15 +19,56 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         [SerializeField]
         private Button _btnHome = null;
         [SerializeField]
-        private Button _btnFullScreen = null;
+        private PointerButton _btnFullScreen = null;
         [SerializeField]
-        private Button _btnMinimize = null;
+        private PointerButton _btnMinimize = null;
         [SerializeField]
         private Button _btnMute = null;
         [SerializeField]
         private Button _btnUnmute = null;
 
+        #region fullscreen
+        
+        private bool _isFullscreen {
+            get {
+                return Screen.fullScreen;
+            }
+            set { 
+                Screen.fullScreen = value;
+                DisplayFullscreenState(value);
+            }
+        }
+        
+        #endregion
+
+        #region Controller
+        private void AddControllerListeners() {
+            DisplayeMuteState(_stepController.IsMuted());
+
+            _stepController.OnMuteStateChange.AddListener(HandleMutedChanged);
+        }
+
+        private void RemoveControllerListeners() {
+            _stepController.OnMuteStateChange.RemoveListener(HandleMutedChanged);
+        }
+
+        private void HandleMutedChanged(bool b) { 
+            DisplayeMuteState(b);
+        }
+
+        #endregion
+
         #region UI
+
+        private void DisplayeMuteState(bool b) {
+            _btnMute.gameObject.SetActive(!b);
+            _btnUnmute.gameObject.SetActive(b);
+        }
+
+        private void DisplayFullscreenState(bool b) { 
+            _btnFullScreen.gameObject.SetActive(!b);
+            _btnMinimize.gameObject.SetActive(b);
+        }
 
         private void HandlePrevClick() { 
             _stepController.PrevStep();
@@ -38,23 +79,28 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         }
 
         private void HandleHomeClicked() {
-            _stepController.FirstStep();
+            if (!_stepController.DidEnoughTimePassFromLastStepChange()) return;
+            _stepController.FirstStep(_stepController.ShouldGoHomeInstantly);
         }
 
-        private void HandleFullscreenClick() { }
+        private void HandleFullscreenClick() { _isFullscreen = true; }
 
-        private void HandleMinimizeClick() { }
+        private void HandleMinimizeClick() { _isFullscreen = false; }
 
-        private void HandleMuteClick() { }
+        private void HandleMuteClick() { 
+            _stepController.SetMuted(true);
+        }
 
-        private void HandleUnmuteClick() { }
+        private void HandleUnmuteClick() {
+            _stepController.SetMuted(false);
+        }
 
         private void AddUiListeners()
         {
             _btnPrev.onClick.AddListener(HandlePrevClick);
             _btnNext.onClick.AddListener(HandleNextClick);
-            _btnFullScreen.onClick.AddListener(HandleFullscreenClick);
-            _btnMinimize.onClick.AddListener(HandleMinimizeClick);
+            _btnFullScreen.OnPointerClick.AddListener(HandleFullscreenClick);
+            _btnMinimize.OnPointerClick.AddListener(HandleMinimizeClick);
             _btnMute.onClick.AddListener(HandleMuteClick);
             _btnUnmute.onClick.AddListener(HandleUnmuteClick);
             _btnHome.onClick.AddListener(HandleHomeClicked);
@@ -63,8 +109,8 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         private void RemoveUiListeners() {
             _btnPrev.onClick.RemoveListener(HandlePrevClick);
             _btnNext.onClick.RemoveListener(HandleNextClick);
-            _btnFullScreen.onClick.RemoveListener(HandleFullscreenClick);
-            _btnMinimize.onClick.RemoveListener(HandleMinimizeClick);
+            _btnFullScreen.OnPointerClick.RemoveListener(HandleFullscreenClick);
+            _btnMinimize.OnPointerClick.RemoveListener(HandleMinimizeClick);
             _btnMute.onClick.RemoveListener(HandleMuteClick);
             _btnUnmute.onClick.RemoveListener(HandleUnmuteClick);
             _btnHome.onClick.RemoveListener(HandleHomeClicked);
@@ -88,12 +134,15 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
 
         private void OnEnable()
         {
+            DisplayFullscreenState(_isFullscreen);
+            AddControllerListeners();
             AddUiListeners();
         }
 
 
         private void OnDisable()
         {
+            RemoveControllerListeners();
             RemoveUiListeners();
         }
         #endregion
