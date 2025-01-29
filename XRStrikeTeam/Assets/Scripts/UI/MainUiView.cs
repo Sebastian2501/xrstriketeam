@@ -27,6 +27,51 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         [SerializeField]
         private Button _btnUnmute = null;
 
+        #region UI
+
+        private void HandlePrevClick() { 
+            _stepController.PrevStep();
+        }
+
+        private void HandleNextClick() { 
+            _stepController.NextStep();
+        }
+
+        private void HandleHomeClicked() {
+            _stepController.FirstStep();
+        }
+
+        private void HandleFullscreenClick() { }
+
+        private void HandleMinimizeClick() { }
+
+        private void HandleMuteClick() { }
+
+        private void HandleUnmuteClick() { }
+
+        private void AddUiListeners()
+        {
+            _btnPrev.onClick.AddListener(HandlePrevClick);
+            _btnNext.onClick.AddListener(HandleNextClick);
+            _btnFullScreen.onClick.AddListener(HandleFullscreenClick);
+            _btnMinimize.onClick.AddListener(HandleMinimizeClick);
+            _btnMute.onClick.AddListener(HandleMuteClick);
+            _btnUnmute.onClick.AddListener(HandleUnmuteClick);
+            _btnHome.onClick.AddListener(HandleHomeClicked);
+        }
+
+        private void RemoveUiListeners() {
+            _btnPrev.onClick.RemoveListener(HandlePrevClick);
+            _btnNext.onClick.RemoveListener(HandleNextClick);
+            _btnFullScreen.onClick.RemoveListener(HandleFullscreenClick);
+            _btnMinimize.onClick.RemoveListener(HandleMinimizeClick);
+            _btnMute.onClick.RemoveListener(HandleMuteClick);
+            _btnUnmute.onClick.RemoveListener(HandleUnmuteClick);
+            _btnHome.onClick.RemoveListener(HandleHomeClicked);
+        }
+
+        #endregion
+
         #region MonoBehaviour
 
         private void Awake()
@@ -41,6 +86,16 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
             Misc.CheckNotNull(_btnUnmute);
         }
 
+        private void OnEnable()
+        {
+            AddUiListeners();
+        }
+
+
+        private void OnDisable()
+        {
+            RemoveUiListeners();
+        }
         #endregion
     }
 }
