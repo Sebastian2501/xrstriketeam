@@ -183,6 +183,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         public void SetStep(int idx, bool instantaneous = false, StepJumpType jt=StepJumpType.JUMP, Trajectory traj = null) {
+            if (IsCameraMoving()) return;
             if (!Misc.IsGoodIndex(idx, _steps)) return;
             if (idx == _curStep) return;
             if (instantaneous)
@@ -233,6 +234,8 @@ namespace Accenture.XRStrikeTeam.Presentation
                 _steps[prevIdx].Leave();
             }
         }
+
+        public bool IsCameraMoving() { return _cameraMover.IsMoving(); }
 
         #endregion
 
