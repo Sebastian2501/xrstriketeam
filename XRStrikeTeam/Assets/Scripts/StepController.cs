@@ -18,6 +18,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         [SerializeField]
         private CameraMover _cameraMover = null;
         [SerializeField]
+        private ScreenCurtainController _screenCurtain = null;
+        [SerializeField]
         private Transform _stepsContainer = null;
         [SerializeField]
         private Transform _trajectoryContainer = null;
@@ -32,6 +34,10 @@ namespace Accenture.XRStrikeTeam.Presentation
         private List<UrlVideoPlayer> _videos = new List<UrlVideoPlayer>();
         [SerializeField]
         private bool _instantFirstStep = true;
+        [SerializeField]
+        private bool _fadeToFirstStep = true;
+        [SerializeField]
+        private float _screenFadeTime = 1;
 
         public bool ShouldGoHomeInstantly { get { return _instantFirstStep; } }
 
@@ -181,12 +187,12 @@ namespace Accenture.XRStrikeTeam.Presentation
                 _steps[i].Controller = this;
                 _steps[i].Id = i;
             }
-            foreach (var vid in _videos) { 
+            foreach (var vid in _videos) {
                 vid.InitVideo();
             }
         }
 
-        public void SetStep(int idx, bool instantaneous = false, StepJumpType jt=StepJumpType.JUMP, Trajectory traj = null) {
+        public void SetStep(int idx, bool instantaneous = false, StepJumpType jt = StepJumpType.JUMP, Trajectory traj = null) {
             if (IsCameraMoving()) return;
             if (!Misc.IsGoodIndex(idx, _steps)) return;
             if (idx == _curStep) return;
@@ -207,19 +213,20 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
-        public void NextStep() { 
-            int idx = _curStep+1;
+        public void NextStep() {
+            int idx = _curStep + 1;
             if (idx >= _steps.Count) return;
             SetStep(idx, false, StepJumpType.FORWARD);
         }
 
-        public void PrevStep() { 
-            int idx = _curStep-1;
+        public void PrevStep() {
+            int idx = _curStep - 1;
             if (idx < 0) return;
             SetStep(idx, true, StepJumpType.JUMP);
         }
 
-        public void FirstStep(bool instantaneous=false) {
+        public void FirstStep(bool instantaneous = false) {
+            if (_fadeToFirstStep) FadeInAndOut();
             SetAllPayloadsVisibility(false);
             SetStep(0, instantaneous);
         }
@@ -228,7 +235,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             if (!Misc.IsGoodIndex(destIdx, _steps)) return;
             if (_curStep == destIdx) return;
             StepJumpType jt = StepJumpType.JUMP;
-            if (traj!=null) jt = StepJumpType.CUSTOM;
+            if (traj != null) jt = StepJumpType.CUSTOM;
             SetStep(destIdx, false, jt, traj);
         }
 
@@ -249,7 +256,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void SetMuted(bool b) {
             if (b == IsMuted()) return;
-            foreach (var vid in _videos) { 
+            foreach (var vid in _videos) {
                 vid.IsMuted = b;
             }
             _bMuted = b;
@@ -257,7 +264,21 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         public void ToggleMuted() { SetMuted(!_bMuted); }
-        
+
+        #endregion
+
+        #region ScreenFade
+
+        private void FadeInAndOut() {
+            _screenCurtain.SetOpaque(true);
+            StartCoroutine(DelayFadeOut());
+        }
+
+        private IEnumerator DelayFadeOut() {
+            yield return new WaitForSeconds(_screenFadeTime);
+            _screenCurtain.SetOpaque(false);
+        }
+
         #endregion
 
         #region KeyboardInput
@@ -282,6 +303,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void Awake()
         {
             Misc.CheckNotNull(_cameraMover);
+            Misc.CheckNotNull(_screenCurtain);
             Misc.CheckNotNull(_stepsContainer);
             Misc.CheckNotNull(_trajectoryContainer);
             Misc.CheckNotNull(_destinationPrefab);

@@ -299,6 +299,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _cameraMover: {fileID: 4046849845792461897}
+  _screenCurtain: {fileID: 8226323476964333208}
   _stepsContainer: {fileID: 2041281206481905198}
   _trajectoryContainer: {fileID: 2907081531968439327}
   _destinationPrefab: {fileID: 7206832791519106578, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
