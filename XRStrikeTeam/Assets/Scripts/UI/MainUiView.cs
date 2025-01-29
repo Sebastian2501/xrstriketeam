@@ -79,6 +79,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         }
 
         private void HandleHomeClicked() {
+            if (!_stepController.DidEnoughTimePassFromLastStepChange()) return;
             _stepController.FirstStep(_stepController.ShouldGoHomeInstantly);
         }
 

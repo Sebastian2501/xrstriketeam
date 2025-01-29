@@ -32,15 +32,19 @@ namespace Accenture.XRStrikeTeam.Presentation
         private List<Destination> _steps = new List<Destination>();
         [SerializeField]
         private List<UrlVideoPlayer> _videos = new List<UrlVideoPlayer>();
+        [Header("Options")]
         [SerializeField]
         private bool _instantFirstStep = true;
         [SerializeField]
         private bool _fadeToFirstStep = true;
         [SerializeField]
         private float _screenFadeTime = 1;
+        [SerializeField]
+        private float _minStepChangeTime = 2;
 
         public bool ShouldGoHomeInstantly { get { return _instantFirstStep; } }
 
+        private float _lastTimeStepChanged = 0;
         private int _curStep = -1;
         private bool _bMuted = false;
 
@@ -211,6 +215,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             {
                 _steps[_curStep].Go(jt, traj);
             }
+            _lastTimeStepChanged = Time.time;
         }
 
         public void NextStep() {
@@ -226,6 +231,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         }
 
         public void FirstStep(bool instantaneous = false) {
+            if(_curStep == 0) return;
             if (_fadeToFirstStep) FadeInAndOut();
             SetAllPayloadsVisibility(false);
             SetStep(0, instantaneous);
@@ -281,6 +287,14 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #endregion
 
+        #region AntiThrottle
+
+        public bool DidEnoughTimePassFromLastStepChange() {
+            return Time.time > (_lastTimeStepChanged + _minStepChangeTime);
+        }
+        
+        #endregion
+
         #region KeyboardInput
         private void UpdateKeyboard()
         {
@@ -294,7 +308,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                FirstStep(_instantFirstStep);
+                if(DidEnoughTimePassFromLastStepChange()) FirstStep(_instantFirstStep);
             }
         }
         #endregion
