@@ -30,6 +30,10 @@ namespace Accenture.XRStrikeTeam.Presentation
         private List<Destination> _steps = new List<Destination>();
         [SerializeField]
         private List<UrlVideoPlayer> _videos = new List<UrlVideoPlayer>();
+        [SerializeField]
+        private bool _instantFirstStep = true;
+
+        public bool ShouldGoHomeInstantly { get { return _instantFirstStep; } }
 
         private int _curStep = -1;
         private bool _bMuted = false;
@@ -269,7 +273,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                FirstStep();
+                FirstStep(_instantFirstStep);
             }
         }
         #endregion

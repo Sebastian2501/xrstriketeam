@@ -79,7 +79,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         }
 
         private void HandleHomeClicked() {
-            _stepController.FirstStep();
+            _stepController.FirstStep(_stepController.ShouldGoHomeInstantly);
         }
 
         private void HandleFullscreenClick() { _isFullscreen = true; }
