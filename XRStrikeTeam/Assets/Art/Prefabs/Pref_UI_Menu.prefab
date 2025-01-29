@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1057783285919553706}
   - component: {fileID: 2823826575793640684}
   m_Layer: 0
-  m_Name: Btn_Expand
+  m_Name: Btn_Min
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 8713153903057241555}
   - component: {fileID: 1229384082828538040}
   m_Layer: 0
-  m_Name: Btn_Collapse
+  m_Name: Btn_Max
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
