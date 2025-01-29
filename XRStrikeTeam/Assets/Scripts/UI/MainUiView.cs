@@ -27,6 +27,20 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         [SerializeField]
         private Button _btnUnmute = null;
 
+        #region fullscreen
+        
+        private bool _isFullscreen {
+            get {
+                return Screen.fullScreen;
+            }
+            set { 
+                Screen.fullScreen = value;
+                DisplayFullscreenState(value);
+            }
+        }
+        
+        #endregion
+
         #region Controller
         private void AddControllerListeners() {
             DisplayeMuteState(_stepController.IsMuted());
@@ -51,6 +65,11 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
             _btnUnmute.gameObject.SetActive(b);
         }
 
+        private void DisplayFullscreenState(bool b) { 
+            _btnFullScreen.gameObject.SetActive(!b);
+            _btnMinimize.gameObject.SetActive(b);
+        }
+
         private void HandlePrevClick() { 
             _stepController.PrevStep();
         }
@@ -63,9 +82,9 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
             _stepController.FirstStep();
         }
 
-        private void HandleFullscreenClick() { }
+        private void HandleFullscreenClick() { _isFullscreen = true; }
 
-        private void HandleMinimizeClick() { }
+        private void HandleMinimizeClick() { _isFullscreen = false; }
 
         private void HandleMuteClick() { 
             _stepController.SetMuted(true);
@@ -114,6 +133,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
 
         private void OnEnable()
         {
+            DisplayFullscreenState(_isFullscreen);
             AddControllerListeners();
             AddUiListeners();
         }
