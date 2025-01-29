@@ -29,7 +29,12 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public bool IsMuted { 
             get { return _bMuted; }
-            set { _bMuted = value; }
+            set { 
+                _bMuted = value;
+                if (_videoPlayer.gameObject.activeSelf) { 
+                    EnforceMuteState();
+                }
+            }
         }
 
         private string _fullVideoUrl { get { return Path.Combine(Application.streamingAssetsPath, _videoURL); } }
