@@ -2,9 +2,6 @@ using Accenture.eviola;
 using Accenture.eviola.Animation;
 using Accenture.eviola.Async;
 using Accenture.eviola.Math;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 

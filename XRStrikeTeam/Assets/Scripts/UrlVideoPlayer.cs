@@ -23,10 +23,31 @@ namespace Accenture.XRStrikeTeam.Presentation
         private VideoPlayer _videoPlayer = null;
         private VideoState _curState = VideoState.NOT_INITED;
         private bool _bReservedPlay = false;
+        private bool _bMuted = false;
 
         public VideoState CurrentState { get { return _curState; } }
 
+        public bool IsMuted { 
+            get { return _bMuted; }
+            set { 
+                _bMuted = value;
+                if (_videoPlayer.gameObject.activeSelf) { 
+                    EnforceMuteState();
+                }
+            }
+        }
+
         private string _fullVideoUrl { get { return Path.Combine(Application.streamingAssetsPath, _videoURL); } }
+
+        private void EnforceMuteState() {
+            if (_bMuted)
+            {
+                _videoPlayer.SetDirectAudioVolume(0, 0);
+            }
+            else {
+                _videoPlayer.SetDirectAudioVolume(0, 1);
+            }
+        }
 
         public void PlayVideo() {
             switch (_curState) { 
@@ -66,6 +87,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private void ExecutePlay() {
             Debug.Log("Playing " + _videoURL);
+            EnforceMuteState();
             _videoPlayer.Play();
             _bReservedPlay = false;
         }

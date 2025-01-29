@@ -1,8 +1,6 @@
 using Accenture.eviola;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -59,7 +57,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         #endregion
 
         #region Setup
-
+#if UNITY_EDITOR
         public void MakeTrajectories() {
             foreach (var button in _buttons) {
                 if (button != null) {
@@ -70,8 +68,9 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
                 }
             }
         }
-        
-        #endregion
+#endif
+
+#endregion
 
         #region  MonoBehaviour
 
