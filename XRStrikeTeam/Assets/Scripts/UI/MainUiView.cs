@@ -19,9 +19,9 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         [SerializeField]
         private Button _btnHome = null;
         [SerializeField]
-        private Button _btnFullScreen = null;
+        private PointerButton _btnFullScreen = null;
         [SerializeField]
-        private Button _btnMinimize = null;
+        private PointerButton _btnMinimize = null;
         [SerializeField]
         private Button _btnMute = null;
         [SerializeField]
@@ -98,8 +98,8 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         {
             _btnPrev.onClick.AddListener(HandlePrevClick);
             _btnNext.onClick.AddListener(HandleNextClick);
-            _btnFullScreen.onClick.AddListener(HandleFullscreenClick);
-            _btnMinimize.onClick.AddListener(HandleMinimizeClick);
+            _btnFullScreen.OnPointerClick.AddListener(HandleFullscreenClick);
+            _btnMinimize.OnPointerClick.AddListener(HandleMinimizeClick);
             _btnMute.onClick.AddListener(HandleMuteClick);
             _btnUnmute.onClick.AddListener(HandleUnmuteClick);
             _btnHome.onClick.AddListener(HandleHomeClicked);
@@ -108,8 +108,8 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
         private void RemoveUiListeners() {
             _btnPrev.onClick.RemoveListener(HandlePrevClick);
             _btnNext.onClick.RemoveListener(HandleNextClick);
-            _btnFullScreen.onClick.RemoveListener(HandleFullscreenClick);
-            _btnMinimize.onClick.RemoveListener(HandleMinimizeClick);
+            _btnFullScreen.OnPointerClick.RemoveListener(HandleFullscreenClick);
+            _btnMinimize.OnPointerClick.RemoveListener(HandleMinimizeClick);
             _btnMute.onClick.RemoveListener(HandleMuteClick);
             _btnUnmute.onClick.RemoveListener(HandleUnmuteClick);
             _btnHome.onClick.RemoveListener(HandleHomeClicked);
