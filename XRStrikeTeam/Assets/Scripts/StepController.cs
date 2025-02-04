@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Accenture.eviola;
 using UnityEngine.Events;
-using System;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -21,14 +20,6 @@ namespace Accenture.XRStrikeTeam.Presentation
         private CameraMover _cameraMover = null;
         [SerializeField]
         private ScreenCurtainController _screenCurtain = null;
-        [SerializeField]
-        private Transform _stepsContainer = null;
-        [SerializeField]
-        private Transform _trajectoryContainer = null;
-        [SerializeField]
-        private GameObject _destinationPrefab = null;
-        [SerializeField]
-        private GameObject _trajectoryPrefab = null;
         [Header("Steps")]
         [SerializeField]
         private List<StepCollection> _stepCollections = new List<StepCollection>();
@@ -59,112 +50,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         public bool IsDestination(Transform tra) {
             return tra.GetComponent<Destination>() != null;
         }
-/*
-#if UNITY_EDITOR
-        public void MakeDestinationsFromStuffInSteps() {
-            if (_stepsContainer.childCount < 1) return;
 
-            List<Transform> tras = new List<Transform>();
-            for (int i = 0; i < _stepsContainer.childCount; i++) {
-                Transform tra = _stepsContainer.GetChild(i);
-                if (!IsDestination(tra)) {
-                    tras.Add(tra);
-                }
-            }
 
-            foreach (Transform tra in tras) {
-                Pose payloadPose = new Pose();
-                payloadPose.position = tra.position;
-                payloadPose.rotation = tra.rotation;
-                GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_destinationPrefab);
-                go.transform.parent = _stepsContainer;
-                go.name = _steps.Count + "_Step";
-                Destination dst = go.GetComponent<Destination>();
-                dst.PayloadContainer.position = payloadPose.position;
-                dst.PayloadContainer.rotation = payloadPose.rotation;
-                tra.parent = dst.PayloadContainer;
-                _steps.Add(dst);
-            }
-
-            foreach (Destination step in _steps) {
-                EditorUtility.SetDirty(step);
-            }
-
-            EditorUtility.SetDirty(this);
-        }
-
-        public void ExtractPayloads() {
-            foreach (Destination step in _steps) {
-                if (step.PayloadContainer.childCount > 0) {
-                    step.PayloadContainer.GetChild(0).parent = _stepsContainer;
-                }
-            }
-            _steps.Clear();
-            EditorUtility.SetDirty(this);
-        }
-
-        public void MakeCamerasLookAtPayloads()
-        {
-            foreach (Destination step in _steps)
-            {
-                step.PointCameraAtPayload();
-                EditorUtility.SetDirty(step);
-            }
-            EditorUtility.SetDirty(this);
-        }
-
-        public void MakeTrajectories() {
-            if (_steps.Count < 1) return;
-            for (int i = 0; i < _steps.Count - 1; i++) {
-                int idxNxt = i + 1;
-                GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_trajectoryPrefab);
-                go.transform.parent = _trajectoryContainer;
-                go.name = i + "to" + idxNxt + "_trajectory";
-                Trajectory trajectory = go.GetComponent<Trajectory>();
-                if (trajectory != null)
-                {
-                    _steps[i].NextTrajectory = trajectory;
-                    trajectory.SetTransformsAndMakeWaypoints(_steps[i].CameraSocket, _steps[idxNxt].CameraSocket);
-                    EditorUtility.SetDirty(trajectory);
-                    EditorUtility.SetDirty(_steps[i]);
-                }
-            }
-        }
-
-        public Trajectory MakeTrajectoryFromTo(int idxFrom, int idxTo) {
-            if (!Misc.IsGoodIndex(idxFrom, _steps) || !Misc.IsGoodIndex(idxTo, _steps)) return null;
-
-            GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(_trajectoryPrefab);
-            go.transform.parent = _trajectoryContainer;
-            go.name = idxFrom + "to" + idxTo + "_trajectory";
-            Trajectory trajectory = go.GetComponent<Trajectory>();
-            if (trajectory != null)
-            {
-                trajectory.SetTransformsAndMakeWaypoints(_steps[idxFrom].CameraSocket, _steps[idxTo].CameraSocket);
-                EditorUtility.SetDirty(trajectory);
-            }
-            return trajectory;
-        }
-
-        public void TryLinkStepAnimationControllers()
-        {
-            if (_steps.Count < 1) return;
-            for (int i = 0; i < _steps.Count - 1; i++)
-            {
-                _steps[i].TryLinkAnimationController();
-                EditorUtility.SetDirty(_steps[i]);
-            }
-            EditorUtility.SetDirty(this);
-        }
-
-        public void CollectVideos() {
-            _videos.Clear();
-            UrlVideoPlayer[] vids = _stepsContainer.GetComponentsInChildren<UrlVideoPlayer>();
-            foreach (UrlVideoPlayer vid in vids) { _videos.Add(vid); }
-            EditorUtility.SetDirty(this);
-        }
-#endif
-*/
         public void ToggleAllPayloadsVisibility() {
             if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
             foreach (Destination step in _stepCollections[_curStepCollection].Steps)
@@ -326,10 +213,6 @@ namespace Accenture.XRStrikeTeam.Presentation
         {
             Misc.CheckNotNull(_cameraMover);
             Misc.CheckNotNull(_screenCurtain);
-            Misc.CheckNotNull(_stepsContainer);
-            Misc.CheckNotNull(_trajectoryContainer);
-            Misc.CheckNotNull(_destinationPrefab);
-            Misc.CheckNotNull(_trajectoryPrefab);
             _camera = _cameraMover.transform.GetComponent<Camera>();
             InitSteps();
         }
@@ -359,13 +242,7 @@ namespace Accenture.XRStrikeTeam.Presentation
                 EditorUtility.SetDirty(GetTarget());
                 EditorUI.Header("Current Step: "+GetTarget().CurrentStep);
             }
-            /*EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
-            EditorUI.Button("Extract Payloads", GetTarget().ExtractPayloads);
-            EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);
-            EditorUI.Button("Make trajectories", GetTarget().MakeTrajectories);
-            EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
-            EditorUI.Button("Link Step Animation Controllers", GetTarget().TryLinkStepAnimationControllers);
-            EditorUI.Button("Collect Videos", GetTarget().CollectVideos);*/
+            
         }
     }
 #endif

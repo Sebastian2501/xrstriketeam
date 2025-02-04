@@ -58,16 +58,20 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
 
         #region Setup
 #if UNITY_EDITOR
-        /*public void MakeTrajectories() {
+        public void MakeTrajectories() {
+            if (transform.parent == null) return;
+            StepCollection collection = transform.parent.GetComponent<StepCollection>();
+            if (collection == null) return;
             foreach (var button in _buttons) {
                 if (button != null) {
-                    Trajectory t = _stepController.MakeTrajectoryFromTo(_myStepIndex, button.DestinationIndex);
+                    
+                    Trajectory t = collection.MakeTrajectoryFromTo(_myStepIndex, button.DestinationIndex);
                     if (t != null) { 
                         button.TheTrajectory = t;
                     }
                 }
             }
-        }*/
+        }
 #endif
 
 #endregion
@@ -104,7 +108,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
             base.OnInspectorGUI();
 
             EditorUI.Button("Make Transitions", () => {
-                //Target.MakeTrajectories();
+                Target.MakeTrajectories();
                 EditorUtility.SetDirty(Target);
             });
         }
