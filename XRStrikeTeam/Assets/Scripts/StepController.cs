@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Accenture.eviola;
 using UnityEngine.Events;
+using System;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -29,9 +31,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private GameObject _trajectoryPrefab = null;
         [Header("Steps")]
         [SerializeField]
-        private List<Destination> _steps = new List<Destination>();
-        [SerializeField]
-        private List<UrlVideoPlayer> _videos = new List<UrlVideoPlayer>();
+        private List<StepCollection> _stepCollections = new List<StepCollection>();
         [Header("Options")]
         [SerializeField]
         private bool _instantFirstStep = true;
@@ -45,6 +45,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         public bool ShouldGoHomeInstantly { get { return _instantFirstStep; } }
 
         private float _lastTimeStepChanged = 0;
+        private int _curStepCollection = -1;
         private int _curStep = -1;
         private bool _bMuted = false;
 
@@ -58,7 +59,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         public bool IsDestination(Transform tra) {
             return tra.GetComponent<Destination>() != null;
         }
-
+/*
 #if UNITY_EDITOR
         public void MakeDestinationsFromStuffInSteps() {
             if (_stepsContainer.childCount < 1) return;
@@ -163,15 +164,18 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUtility.SetDirty(this);
         }
 #endif
+*/
         public void ToggleAllPayloadsVisibility() {
-            foreach (Destination step in _steps)
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
+            foreach (Destination step in _stepCollections[_curStepCollection].Steps)
             {
                 step.TogglePayloadVisibility();
             }
         }
 
         public void SetAllPayloadsVisibility(bool b) {
-            foreach (Destination step in _steps)
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
+            foreach (Destination step in _stepCollections[_curStepCollection].Steps)
             {
                 step.PayloadContainer.gameObject.SetActive(b);
             }
@@ -182,63 +186,66 @@ namespace Accenture.XRStrikeTeam.Presentation
         #region Steps
 
         public Destination GetStep(int idx) {
-            if (!Misc.IsGoodIndex(idx, _steps)) return null;
-            return _steps[idx];
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return null;
+            return _stepCollections[_curStepCollection].GetStep(idx);
+            
         }
 
         private void InitSteps() {
-            for (int i = 0; i < _steps.Count; i++) {
-                _steps[i].Controller = this;
-                _steps[i].Id = i;
-            }
-            foreach (var vid in _videos) {
-                vid.InitVideo();
+            
+            foreach (var collection in _stepCollections) { 
+                collection.InitSteps(this);
             }
         }
 
         public void SetStep(int idx, bool instantaneous = false, StepJumpType jt = StepJumpType.JUMP, Trajectory traj = null) {
             if (IsCameraMoving()) return;
-            if (!Misc.IsGoodIndex(idx, _steps)) return;
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
+            if (!Misc.IsGoodIndex(idx, _stepCollections[_curStepCollection].Steps)) return;
             if (idx == _curStep) return;
             if (instantaneous)
             {
-                if (Misc.IsGoodIndex(_curStep, _steps)) _steps[_curStep].Leave();
+                if (Misc.IsGoodIndex(_curStep, _stepCollections[_curStepCollection].Steps)) _stepCollections[_curStepCollection].Steps[_curStep].Leave();
             }
             _curStep = idx;
             OnStepChange.Invoke(_curStep);
             if (instantaneous)
             {
-                _steps[_curStep].PayloadContainer.gameObject.SetActive(true);
-                _steps[_curStep].Enter();
+                _stepCollections[_curStepCollection].Steps[_curStep].PayloadContainer.gameObject.SetActive(true);
+                _stepCollections[_curStepCollection].Steps[_curStep].Enter();
             }
             else
             {
-                _steps[_curStep].Go(jt, traj);
+                _stepCollections[_curStepCollection].Steps[_curStep].Go(jt, traj);
             }
             _lastTimeStepChanged = Time.time;
         }
 
         public void NextStep() {
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
             int idx = _curStep + 1;
-            if (idx >= _steps.Count) return;
+            if (idx >= _stepCollections[_curStepCollection].Steps.Count) return;
             SetStep(idx, false, StepJumpType.FORWARD);
         }
 
         public void PrevStep() {
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
             int idx = _curStep - 1;
             if (idx < 0) return;
             SetStep(idx, true, StepJumpType.JUMP);
         }
 
         public void FirstStep(bool instantaneous = false) {
-            if(_curStep == 0) return;
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
+            if (_curStep == 0) return;
             if (_fadeToFirstStep) FadeInAndOut();
             SetAllPayloadsVisibility(false);
             SetStep(0, instantaneous);
         }
 
         public void GoStep(int destIdx, Trajectory traj) {
-            if (!Misc.IsGoodIndex(destIdx, _steps)) return;
+            if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
+            if (!Misc.IsGoodIndex(destIdx, _stepCollections[_curStepCollection].Steps)) return;
             if (_curStep == destIdx) return;
             StepJumpType jt = StepJumpType.JUMP;
             if (traj != null) jt = StepJumpType.CUSTOM;
@@ -247,8 +254,8 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void HandleDestinationReached(int idx) {
             int prevIdx = idx - 1;
-            if (Misc.IsGoodIndex(prevIdx, _steps)) {
-                _steps[prevIdx].Leave();
+            if (Misc.IsGoodIndex(prevIdx, _stepCollections[_curStepCollection].Steps)) {
+                _stepCollections[_curStepCollection].Steps[prevIdx].Leave();
             }
         }
 
@@ -262,9 +269,10 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void SetMuted(bool b) {
             if (b == IsMuted()) return;
-            foreach (var vid in _videos) {
-                vid.IsMuted = b;
+            foreach (var collection in _stepCollections) { 
+                collection.SetMuted(b);
             }
+            
             _bMuted = b;
             OnMuteStateChange.Invoke(_bMuted);
         }
@@ -328,6 +336,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private void OnEnable()
         {
+            _curStepCollection = 0;
             FirstStep(true);
         }
 
@@ -350,13 +359,13 @@ namespace Accenture.XRStrikeTeam.Presentation
                 EditorUtility.SetDirty(GetTarget());
                 EditorUI.Header("Current Step: "+GetTarget().CurrentStep);
             }
-            EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
+            /*EditorUI.Button("Make Destinations From Stuff in Steps", GetTarget().MakeDestinationsFromStuffInSteps);
             EditorUI.Button("Extract Payloads", GetTarget().ExtractPayloads);
             EditorUI.Button("Make step camera sockets look at payloads", GetTarget().MakeCamerasLookAtPayloads);
             EditorUI.Button("Make trajectories", GetTarget().MakeTrajectories);
             EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
             EditorUI.Button("Link Step Animation Controllers", GetTarget().TryLinkStepAnimationControllers);
-            EditorUI.Button("Collect Videos", GetTarget().CollectVideos);
+            EditorUI.Button("Collect Videos", GetTarget().CollectVideos);*/
         }
     }
 #endif

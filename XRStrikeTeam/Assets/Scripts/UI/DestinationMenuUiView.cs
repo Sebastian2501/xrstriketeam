@@ -58,7 +58,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
 
         #region Setup
 #if UNITY_EDITOR
-        public void MakeTrajectories() {
+        /*public void MakeTrajectories() {
             foreach (var button in _buttons) {
                 if (button != null) {
                     Trajectory t = _stepController.MakeTrajectoryFromTo(_myStepIndex, button.DestinationIndex);
@@ -67,7 +67,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
                     }
                 }
             }
-        }
+        }*/
 #endif
 
 #endregion
@@ -104,7 +104,7 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
             base.OnInspectorGUI();
 
             EditorUI.Button("Make Transitions", () => {
-                Target.MakeTrajectories();
+                //Target.MakeTrajectories();
                 EditorUtility.SetDirty(Target);
             });
         }

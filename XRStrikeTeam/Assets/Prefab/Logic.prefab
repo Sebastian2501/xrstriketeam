@@ -353,6 +353,8 @@ MonoBehaviour:
   _trajectoryContainer: {fileID: 2907081531968439327}
   _destinationPrefab: {fileID: 7206832791519106578, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
   _trajectoryPrefab: {fileID: 3543517948983011136, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+  _stepCollections:
+  - {fileID: 4951359221493044720}
   _steps:
   - {fileID: 4361365403141174230}
   - {fileID: 2839390449580243543}

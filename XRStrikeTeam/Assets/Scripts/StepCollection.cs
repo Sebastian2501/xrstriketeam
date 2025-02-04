@@ -14,6 +14,37 @@ namespace Accenture.XRStrikeTeam.Presentation
         public List<Destination> Steps = new List<Destination>();
         public List<UrlVideoPlayer> Videos = new List<UrlVideoPlayer>();
 
+        #region Steps
+
+        public void InitSteps(StepController sc) {
+            for (int i = 0; i < Steps.Count; i++)
+            {
+                Steps[i].Controller = sc;
+                Steps[i].Id = i;
+            }
+            foreach (var vid in Videos) {
+                vid.InitVideo();
+            }
+        }
+
+        public Destination GetStep(int idx) {
+            if(!Misc.IsGoodIndex(idx, Steps))return null;
+            return Steps[idx];
+        }
+
+        #endregion
+
+        #region Mute
+
+        public void SetMuted(bool b) {
+            foreach (var vid in Videos) { 
+                vid.IsMuted = b;
+            }
+        }
+        
+        #endregion
+
+        #region Editor
 #if UNITY_EDITOR
         public void PopulateFromChildren() {
             Steps.Clear();
@@ -37,6 +68,8 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 #endif
+
+        #endregion
     }
 
 #if UNITY_EDITOR
