@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 545953735362061803}
     m_Modifications:
+    - target: {fileID: 174396691497668503, guid: e42082f6d195b62438af7a579037274b, type: 3}
+      propertyPath: m_text
+      value: E.ON Metaverse Projects
+      objectReference: {fileID: 0}
     - target: {fileID: 2136683720214887675, guid: e42082f6d195b62438af7a579037274b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48,9 +52,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2557166939633348608, guid: e42082f6d195b62438af7a579037274b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 25f02c6902c029c418b089ecbc58bedb, type: 3}
+    - target: {fileID: 3837328875298470102, guid: e42082f6d195b62438af7a579037274b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 99520bba856bcd740bdf2718619fc1d8, type: 3}
+    - target: {fileID: 3865375866723020611, guid: e42082f6d195b62438af7a579037274b, type: 3}
+      propertyPath: m_text
+      value: "Diamond client, Flagship metaverse project in EU\r\n999mio in sales
+        and follow-up projects and phases\r\nThis project demonstrates and proves,\_that
+        the XR StrikeTeam Method and especially 1AM can be successfully exported
+        and applied."
+      objectReference: {fileID: 0}
     - target: {fileID: 5525367973243732730, guid: e42082f6d195b62438af7a579037274b, type: 3}
       propertyPath: m_Name
       value: Pref_UI_GrpSlide_15_Project_ImmersiveLearningCampus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615292485749570932, guid: e42082f6d195b62438af7a579037274b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: af6970ebd3e4c2c499fbea540d1f6840, type: 3}
+    - target: {fileID: 7696120792308934096, guid: e42082f6d195b62438af7a579037274b, type: 3}
+      propertyPath: m_text
+      value: "A multi-year, multi-phase partnership resulting in the Republic of
+        Innovators, the Immersive Learning Campus and the Essen HQ Digital twin.\r\n\r\n<b>ROI</b>:
+        A corporate metaverse including event spaces, meeting rooms, data visualizations
+        and a partner campus.\r\n\r\n<b>Immersive Learning Campus</b>: A virtual
+        learning experience allowing E.ON employees to perform trainings in an immersive
+        environment. \r\n\r\n<b>Essen HQ Digital Twin</b>: A digital twin project
+        used to help plan and guide the campus design refurbishment."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -104,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7206832791519106578, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_Name
-      value: 03_Step_B_V_Projects_EON_Campus
+      value: 03_Step_B_V_Projects_EON_Metaverse
       objectReference: {fileID: 0}
     - target: {fileID: 7304211165333985227, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalPosition.x

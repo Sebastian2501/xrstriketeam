@@ -105,10 +105,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "GCV generated a multi-year collaboration between Accenture and the
-        WEF, leading to a number of XR projects with WEF partners as well.\u200B\r\nThe
-        project also elevated Accenture prestige, by being featured on the cover
-        of Time Magazine.\u200B\r\n"
+      value: "A multi-year collaboration between Accenture and WEF, leading to multiple
+        XR projects with WEF and their partners.\u200B\r\n\r\nDelivered 11+ environments
+        and 40+ high-impact collaborative sessions on the most prestigious world
+        stage \u2013 the Davos Annual meeting. Our work was experienced by 400+ C-Suite
+        Executives and World Leaders and received the highest praise, including from
+        our own CEO and CTO. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_lineSpacing
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -172,10 +186,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Global Collaboration Village for the World Economic Forum. The first
-        team to work with the as of yet unreleased MSFT Mesh technology, the first
-        decentralized Multilateral in the history of the WEF and a historic collaboration
-        between Accenture, MSFT and the WEF.\u200B\r\n"
+      value: 'The Global Collaboration Village digitally extends the impact of the
+        World Economic Forum.
+
+
+        Using immersive technology, it empowers
+        decision-makers to tackle challenges through co-presence, real-time interaction,
+        and dynamic visualisation.  Inside the Village, a growing network of leaders
+        learn, host, showcase, and collaborate to amplify impact.
+
+        
+
+        The
+        Village is a World Economic Forum initiative, in partnership with Accenture
+        and powered by Microsoft Mesh.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

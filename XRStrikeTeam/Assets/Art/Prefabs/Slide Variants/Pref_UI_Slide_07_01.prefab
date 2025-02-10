@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pref_UI_Slide_07_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5746569209987425218, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5895575506433623419, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
       propertyPath: m_text
-      value: "Leveraging the tools provided by 1AE such as The Index library and
+      value: "Leveraging the tools provided by 1AM such as The Index library and
         GenAI powered world building tools, production teams can cut costs by capitalizing
         on existing assets made and spend less time  on repetitive tasks.\u200B\r\n"
       objectReference: {fileID: 0}
