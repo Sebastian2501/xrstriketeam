@@ -78,16 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "The XR StrikeTeam can lead innovation at scale, resulting in high quality
-        products and solutions. It might seem counter intuitive to lean on such an
-        expensive region but while we're more expensive by the hour we are eventually
-        more affordable by the project.\u200B\r\n\r\nThis is because with the XR
-        StrikeTeam the job gets done right, the first time. \u200B\r\nIt is not a
-        question of on-shore, near-shore or even off-shore, our 15+ years of experience
-        means that you need the XR StrikeTeam leading the other regions with capabilities
-        that have not been incubated or developed yet.\u200B\r\n\r\n\u200BWith the
-        XR StrikeTeam on the project, the job gets done on time, on budget and above
-        expectations every.single.time!\u200B\r\n"
+      value: "The XR StrikeTeam can <b>lead innovation at scale</b>, resulting in
+        <b>high quality products and solutions</b>. We bring cutting-edge <b>knowledge</b>
+        and practical <b>experience</b> to deliver solutions that truly stand out.\r\n\r\nWe
+        excel in navigating the complexities of <b>production</b>, ensuring your
+        <b>vision</b> becomes reality with <b>precision and creativity</b>. Beyond
+        delivering results, we work closely with clients to ensure <b>seamless execution</b>
+        and <b>shared success</b>.\r\n\r\nBy partnering with us, you gain access
+        to a team that isn\u2019t afraid to take risks, solve unique problems, and
+        deliver <b>outcomes that set you apart in the market</b>."
       objectReference: {fileID: 0}
     - target: {fileID: 7167289888237696978, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -99,15 +98,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "To produce top tier quality at scale, leadership is extremely important.\u200B\r\n\rIn
+      value: "To produce top tier quality at scale, leadership is extremely important.\r\nIn
         large scale projects, our team provides leadership founded in trust and based
-        on the principles of servant leadership. Additionally, the unique nature
+        on the principles of servant leadership. Additionally, the unique\_nature
         of our industry requires novel approaches to project management, leveraging
         the tried and tested tools of agile where appropriate and expanding and enhancing
-        them where necessary to inspire change and growth.\u200B\r\n\r\nIn every
-        project, we aim to upskill our teams to eventually transition to a delegative
-        and participative style of leadership that promotes buy-in and dedication
-        from everyone involved in our projects.\u200B\r"
+        them where necessary\_to inspire change and growth.\r\n\nIn every project,
+        we aim to upskill our teams to eventually transition to a delegative and\_participative
+        style of leadership that promotes buy-in and dedication from everyone involved
+        in our projects."
       objectReference: {fileID: 0}
     - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -115,22 +114,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021548792092951499, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "We are a small antidisciplinary team of specialists that leverages
-        our core strengths to plan and execute the most challenging and demanding
+      value: "We are a small\_antidisciplinary team of specialists\_that leverages
+        our core strengths to\_plan and execute the most challenging and\_demanding
         projects, generating buzz and value for Accenture, our Clients and empowering
-        internal teams around the globe.\u200B\r"
+        internal teams around the globe."
       objectReference: {fileID: 0}
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "In everything we do, we try to not only deliver top tier quality but
+      value: 'In everything we do, we try to not only deliver top tier quality but
         to also create a method to replicate and scale the results. AICP delivered
         a host of tools that powered interactive experiences, volumetric video and
-        many more.\u200B\r\n\r\n\u200BEverything we do is based on industry best
-        practices and designed to scale. This is how we can stand up a team of over
-        30 developers and have them performing at peak capacity with minimal onboarding
-        time. This process, which we also outline in the 1AE slide can become the
-        foundation for production after the Technology Incubation stage and empower
-        our ATC teams across the world.\u200B\r\n"
+        many more.
+
+
+        Everything we do is based on industry best practices
+        and designed to scale. This is how we can stand up a team of over 30 developers
+        and have them performing at peak capacity with minimal onboarding time. This
+        process, which we also outline in the 1AM slide can become the foundation
+        for production after the Technology Incubation stage and empower our ATC
+        teams across the world.
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
