@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 2398949554490991141, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 08d05153e282ad0459b8e5c0c7c8852f, type: 3}
+      objectReference: {fileID: 21300000, guid: 02a96aa95c659cd4db4e85b7652d2f75, type: 3}
     - target: {fileID: 4730665056862502931, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6426843388917850442, guid: cfab812ca32e71644bb43b2db2bb9d22, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 08d05153e282ad0459b8e5c0c7c8852f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
