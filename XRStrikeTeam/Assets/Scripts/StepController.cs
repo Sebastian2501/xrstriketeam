@@ -200,6 +200,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             if (IsCameraMoving()) return;
             if (!Misc.IsGoodIndex(idx, _steps)) return;
             if (idx == _curStep) return;
+            PrintSetStepDebugInfo(idx, instantaneous, jt, traj);
             if (instantaneous)
             {
                 if (Misc.IsGoodIndex(_curStep, _steps)) _steps[_curStep].Leave();
@@ -209,13 +210,17 @@ namespace Accenture.XRStrikeTeam.Presentation
             if (instantaneous)
             {
                 _steps[_curStep].PayloadContainer.gameObject.SetActive(true);
-                _steps[_curStep].Enter();
+                _steps[_curStep].Enter(instantaneous);
             }
             else
             {
                 _steps[_curStep].Go(jt, traj);
             }
             _lastTimeStepChanged = Time.time;
+        }
+
+        private void PrintSetStepDebugInfo(int idx, bool instantaneous, StepJumpType jt, Trajectory traj) {
+            Debug.Log("SetStep: "+idx+": "+(instantaneous?"instant":"NOTinstant")+", "+jt+", "+(traj!=null?"trajectory":"NOtrajectory"));
         }
 
         public void NextStep() {
@@ -227,6 +232,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void PrevStep() {
             int idx = _curStep - 1;
             if (idx < 0) return;
+            if (_fadeToFirstStep) FadeInAndOut();
             SetStep(idx, true, StepJumpType.JUMP);
         }
 
@@ -300,7 +306,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                PrevStep();
+                if (DidEnoughTimePassFromLastStepChange()) PrevStep();
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow))
             {

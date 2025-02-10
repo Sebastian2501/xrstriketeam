@@ -70,7 +70,8 @@ namespace Accenture.XRStrikeTeam.Presentation.UI
             _btnMinimize.gameObject.SetActive(b);
         }
 
-        private void HandlePrevClick() { 
+        private void HandlePrevClick() {
+            if (!_stepController.DidEnoughTimePassFromLastStepChange()) return;
             _stepController.PrevStep();
         }
 

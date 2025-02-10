@@ -1,8 +1,9 @@
 using Accenture.eviola;
 using Accenture.eviola.Async;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Accenture.XRStrikeTeam.Presentation
 {
@@ -87,9 +88,9 @@ namespace Accenture.XRStrikeTeam.Presentation
             }
         }
 
-        public void Enter() {
+        public void Enter(bool instantaneous=false) {
             if (_bLeaveOtherDestinationOnEnter) HandleOtherDestinationDelayedLeave();
-            Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, Id==0);
+            Controller.CameraDriver.SetCamera(_cameraSocket.position, _cameraSocket.rotation, instantaneous);
             if (_autoAdvance) { 
                 Controller.NextStep();
             }
@@ -206,4 +207,19 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #endregion
     }
+
+#if UNITY_EDITOR
+    [CustomEditor(typeof(Destination))]
+    public class DestinationEditor : Editor { 
+        private Destination _target { get { return (Destination)target; } }
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+
+            EditorUI.Button("Enter", () => { _target.Enter(); });
+            EditorUI.Button("Leave", () => { _target.Leave(); });
+        }
+    }
+#endif
 }
