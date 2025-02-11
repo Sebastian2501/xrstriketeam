@@ -238,7 +238,11 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void PrevStep() {
             int idx = _curStep - 1;
-            if (idx < 0) return;
+            if (idx < 0)
+            {
+                if(!_circularSteps) return;
+                idx = _steps.Count - 1;
+            }
             if (_fadeToFirstStep) FadeInAndOut();
             SetStep(idx, true, StepJumpType.JUMP);
         }
