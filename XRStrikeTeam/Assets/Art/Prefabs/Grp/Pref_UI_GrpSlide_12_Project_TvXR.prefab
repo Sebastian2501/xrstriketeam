@@ -84,6 +84,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5917349903642340017, guid: 7d64264cf805a4a4b9a0e2392fb81ab2, type: 3}
+      propertyPath: m_text
+      value: "Our team and solutions have powered multiple executive events over
+        the years.\r\n\r\n<b>TVXR</b>: A portable, accessible and easy to use stage
+        demo of the annual Tech Vision. \r\n<b>GLC</b>: A connected VR event, experienced
+        simultaneously by 220 participants.\r\n<b>Tech-Symposium Paris</b>: An immersive,
+        live conversation between one of our technology leaders and their own digital
+        human twin.\r\n<b>JCI</b>: A virtual C-suite event, hosted by our CEO Julie
+        Sweet in partnership with JCI at our virtual head office in San Francisco."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
