@@ -46,6 +46,8 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public int CurrentStep { get { return _curStep; } }
 
+        private List<Destination> _steps { get { return _stepCollections[_curStepCollection].Steps; } }
+
         #region Init
         public bool IsDestination(Transform tra) {
             return tra.GetComponent<Destination>() != null;
@@ -54,7 +56,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void ToggleAllPayloadsVisibility() {
             if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
-            foreach (Destination step in _stepCollections[_curStepCollection].Steps)
+            foreach (Destination step in _steps)
             {
                 step.TogglePayloadVisibility();
             }
@@ -62,7 +64,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void SetAllPayloadsVisibility(bool b) {
             if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
-            foreach (Destination step in _stepCollections[_curStepCollection].Steps)
+            foreach (Destination step in _steps)
             {
                 step.PayloadContainer.gameObject.SetActive(b);
             }
@@ -88,23 +90,23 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void SetStep(int idx, bool instantaneous = false, StepJumpType jt = StepJumpType.JUMP, Trajectory traj = null) {
             if (IsCameraMoving()) return;
             if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
-            if (!Misc.IsGoodIndex(idx, _stepCollections[_curStepCollection].Steps)) return;
+            if (!Misc.IsGoodIndex(idx, _steps)) return;
             if (idx == _curStep) return;
             PrintSetStepDebugInfo(idx, instantaneous, jt, traj);
             if (instantaneous)
             {
-                if (Misc.IsGoodIndex(_curStep, _stepCollections[_curStepCollection].Steps)) _stepCollections[_curStepCollection].Steps[_curStep].Leave();
+                if (Misc.IsGoodIndex(_curStep, _steps)) _steps[_curStep].Leave();
             }
             _curStep = idx;
             OnStepChange.Invoke(_curStep);
             if (instantaneous)
             {
-                _stepCollections[_curStepCollection].Steps[_curStep].PayloadContainer.gameObject.SetActive(true);
-                _stepCollections[_curStepCollection].Steps[_curStep].Enter(instantaneous);
+                _steps[_curStep].PayloadContainer.gameObject.SetActive(true);
+                _steps[_curStep].Enter(instantaneous);
             }
             else
             {
-                _stepCollections[_curStepCollection].Steps[_curStep].Go(jt, traj);
+                _steps[_curStep].Go(jt, traj);
             }
             _lastTimeStepChanged = Time.time;
         }
@@ -116,7 +118,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         public void NextStep() {
             if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
             int idx = _curStep + 1;
-            if (idx >= _stepCollections[_curStepCollection].Steps.Count) return;
+            if (idx >= _steps.Count) return;
             SetStep(idx, false, StepJumpType.FORWARD);
         }
 
@@ -138,7 +140,7 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void GoStep(int destIdx, Trajectory traj) {
             if (!Misc.IsGoodIndex(_curStepCollection, _stepCollections)) return;
-            if (!Misc.IsGoodIndex(destIdx, _stepCollections[_curStepCollection].Steps)) return;
+            if (!Misc.IsGoodIndex(destIdx, _steps)) return;
             if (_curStep == destIdx) return;
             StepJumpType jt = StepJumpType.JUMP;
             if (traj != null) jt = StepJumpType.CUSTOM;
@@ -147,8 +149,8 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void HandleDestinationReached(int idx) {
             int prevIdx = idx - 1;
-            if (Misc.IsGoodIndex(prevIdx, _stepCollections[_curStepCollection].Steps)) {
-                _stepCollections[_curStepCollection].Steps[prevIdx].Leave();
+            if (Misc.IsGoodIndex(prevIdx, _steps)) {
+                _steps[prevIdx].Leave();
             }
         }
 
