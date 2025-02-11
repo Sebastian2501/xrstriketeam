@@ -41,6 +41,8 @@ namespace Accenture.XRStrikeTeam.Presentation
         private float _screenFadeTime = 1;
         [SerializeField]
         private float _minStepChangeTime = 2;
+        [SerializeField]
+        private bool _circularSteps = true;
 
         public bool ShouldGoHomeInstantly { get { return _instantFirstStep; } }
 
@@ -225,13 +227,22 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         public void NextStep() {
             int idx = _curStep + 1;
-            if (idx >= _steps.Count) return;
+            if (idx >= _steps.Count)
+            {
+                if(!_circularSteps) return;
+                FirstStep();
+                return;
+            }
             SetStep(idx, false, StepJumpType.FORWARD);
         }
 
         public void PrevStep() {
             int idx = _curStep - 1;
-            if (idx < 0) return;
+            if (idx < 0)
+            {
+                if(!_circularSteps) return;
+                idx = _steps.Count - 1;
+            }
             if (_fadeToFirstStep) FadeInAndOut();
             SetStep(idx, true, StepJumpType.JUMP);
         }
