@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3415517486228394325, guid: db1f76958a56bdb4bb9048992a419a65, type: 3}
+      propertyPath: m_text
+      value: Data visualization concept created for AI Embodied Agent
+      objectReference: {fileID: 0}
     - target: {fileID: 7760650279994696376, guid: db1f76958a56bdb4bb9048992a419a65, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_23
