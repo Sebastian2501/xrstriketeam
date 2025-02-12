@@ -26,8 +26,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "The project was featured by ESPN at international conferences, being
-        presented as a successful collaboration with Accenture.\u200B\r"
+      value: '71K BD Budget.
+
+        Designed the official ESPN EDGE Innovation
+        Center.
+
+        Partnership with Accenture, Microsoft and Verizon.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -93,7 +101,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "An AICP powered metaverse initiative to launch the new ESPN Edge brand.
         The environment includes an interactive ESPN museum, design thinking pods
-        and a virtual stadium.\u200B\r"
+        and a virtual stadium.\u200B\r\n\nThe ESPN Edge Innovation Center is dedicated
+        to collaborating with leading technology partners to explore how emerging
+        advancements like 5G, Augmented and Virtual Reality (AR/VR), and Mobile Edge
+        Computing (MEC) can revolutionize the sports fan experience."
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

@@ -26,8 +26,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "State of the art demonstration of Accenture\u2019s XR capabilities,
-        pioneering use case example, healthy, multi-year client partnership.\u200B\r"
+      value: '370K BD Effort.
+
+        Powered the virtual induction of Fellows during
+        COVID.
+
+        Spearheaded the partnership with nVidia Omniverse.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -95,7 +103,10 @@ PrefabInstance:
         brought to life during COVID lockdown, to create a virtual way to visit the
         (then) inaccessible museum spaces.\u200B\r\nThe project is a pioneering initiative
         in its industry, demonstrating our teams capability to efficiently create
-        a digital twin of something as complex as a museal collection.\u200B\r"
+        a digital twin of something as complex as a museal collection.\u200B\r\n\nState
+        of the art demonstration of Accenture\u2019s XR capabilities, pioneering
+        use case example, healthy, multi-year client partnership.\u200B\r\nFirst
+        Accenture project to also receive an nVidia Omniverse version.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

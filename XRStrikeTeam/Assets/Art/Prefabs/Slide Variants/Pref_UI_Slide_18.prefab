@@ -26,9 +26,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Flagship project that opened the road to multiple XR collaboration
-        with the Disney ecosystem; a successful multi-year project, featured multiple
-        times at international events such as CES and SXSW\u200B."
+      value: '114K BD Budget.
+
+        3500sq-feet Digital Twin of an iconic Disney
+        Location.
+
+        Presented at SXSW and CES.'
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_fontSize
@@ -42,6 +45,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6f368ea9c35c49f4798f73fba4a6a1f0, type: 3}
+    - target: {fileID: 1616189019385283296, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 411.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616189019385283296, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -255.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -96,10 +107,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "An AICP powered metaverse digital twin of the Disney Studio Lab, originally
-        created to create continuity during lockdown, by allowing virtual access
-        to the lab. The project grew into an XR research sandbox, co-created together
-        with our team.\u200B\r"
+      value: "This flagship project paved the way for multiple XR collaborations
+        within the Disney ecosystem, evolving into a successful multi-year initiative
+        that gained international recognition at events like CES and SXSW. Originally
+        conceived as a solution for maintaining continuity during lockdowns, it provided
+        virtual access to Disney Studios\u2019 StudioLAB, a 3,500-square-foot facility
+        inside the historic Animation building.\r\n\r\nBuilt using Accenture\u2019s
+        Immersive Collaboration Platform, the project expanded into an XR research
+        sandbox, co-created with Disney\u2019s team. A digital twin of the StudioLAB
+        was developed for remote collaboration and virtual tours. This innovation
+        offloaded visitor demand and enhanced accessibility, making the space more
+        widely available."
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

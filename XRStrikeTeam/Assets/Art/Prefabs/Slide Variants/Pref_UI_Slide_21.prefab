@@ -26,8 +26,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "State of the art metaverse project, before the instruction of mainstream
-        metaverse platforms\u200B\r"
+      value: '370K BD effort.
+
+        Used in 37+ virtual demo tours of the space
+        during COVID.
+
+        Accurate Digital Twin of the location and flagship
+        research projects.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -92,9 +101,10 @@ PrefabInstance:
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
       value: "An AICP metaverse digital twin of the Advanced Manufacturing Research
-        Centre in Sheffield UK.\u200B\r\nGiven the complexity of detailed machines
-        represented, the project is a powerful demonstration of the solidity of our
-        team\u2019s workflow.\u200B\r"
+        Centre in Sheffield UK.\u200B\r\n\nThis is a State of the Art metaverse project,
+        before the introduction of mainstream metaverse platforms\u200B.\n\nGiven
+        the complexity of detailed machines represented, the project is a powerful
+        demonstration of the solidity of our team\u2019s workflow.\u200B\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

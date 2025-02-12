@@ -10,14 +10,22 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Tech art
+      value: 'Tech Art
 
-        Performance optimization
+        Performance Optimization
 
-        Custom render pipelines
+        Custom Render Pipelines
 
         Custom
-        tools'
+        Tools'
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -77,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -749.4201
+      value: -800
       objectReference: {fileID: 0}
     - target: {fileID: 1691792900804609212, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -125,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 346.4
+      value: 416.9
       objectReference: {fileID: 0}
     - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -137,13 +145,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Live demos
+      value: 'Live Demos
 
-        Keynote presentations
+        Keynote Presentations
 
-        Stage presentations
+        Stage Presentations
 
         Workshops'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4209406206963730360, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -196,10 +212,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "Creative direction\r\nCreative Production\nDesign Thinking \r\nSoftware
-        design & solutions\r\nArt direction\r\nVisual development & Concept Art\r\nStoryboards
-        & wireframes\r\nPrototyping\r\nUI/UX\r\n2d/3d asset creation\r\nDigital twins\r\n360\xB0
-        Videos"
+      value: "Creative Direction\r\nCreative Production\nDesign Thinking \r\nSoftware
+        Design & Solutions\r\nArt Direction\r\nVisual Development & Concept Art\r\nStoryboards
+        & Wireframes\r\nPrototyping\r\nUI/UX\r\n2D/3D Asset Creation\r\nDigital Twins\r\n360\xB0
+        Videos\nCAD\nBIM"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -215,7 +239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -749.4201
+      value: -800
       objectReference: {fileID: 0}
     - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -231,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -796
+      value: -846.5799
       objectReference: {fileID: 0}
     - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -305,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 578.4
+      value: 631.5
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -333,28 +357,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Program management
+      value: 'Program Management
 
-        Project management
+        Project Management
 
-        Thought leadership
+        Thought Leadership
 
         Design
-        and build enablement
+        and Build Enablement
 
-        Business requirement analysis
+        Business Requirement Analysis
 
         Agile
-        management
+        Management
 
-        Client relationship management
+        Client Relationship Management
 
         Estimation and
-        planning
+        Planning
 
-        Risk & Scope management
+        Risk & Scope Management
 
-        Sales enablement'
+        Sales Enablement'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -374,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -796
+      value: -846.5799
       objectReference: {fileID: 0}
     - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -390,9 +422,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Software architecture
+      value: 'Software Architecture
 
-        Software engineering
+        Software Engineering
 
         AI & GenAI
 
@@ -403,19 +435,27 @@ PrefabInstance:
 
         AR/VR/Metaverse
 
-        Computer vision
+        Computer Vision
 
         Synthetic
-        data creation
+        Data Creation
 
-        Spatial computing
+        Spatial Computing
 
         Simulation
 
         Data
-        visualization
+        Visualization
 
         Nvidia Omniverse'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

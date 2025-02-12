@@ -48,16 +48,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 969445623457505314, guid: 8573059b47d6df8498338c05598bf6c4, type: 3}
-      propertyPath: m_text
-      value: "State of the art demonstration of Accenture\u2019s XR capabilities,
-        pioneering use case example, healthy, multi-year client partnership.\u200B\r\nFirst
-        Accenture project to also receive an nVidia Omniverse version."
-      objectReference: {fileID: 0}
-    - target: {fileID: 969445623457505314, guid: 8573059b47d6df8498338c05598bf6c4, type: 3}
-      propertyPath: m_isRightToLeft
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5564576698730639866, guid: 8573059b47d6df8498338c05598bf6c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
