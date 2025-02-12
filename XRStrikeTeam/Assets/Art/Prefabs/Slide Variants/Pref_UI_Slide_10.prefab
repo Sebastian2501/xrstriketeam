@@ -26,8 +26,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Developed on only 164K MD&I budget.\r\nGenerated 1.3mio in value for
-        over 35 BD and MD&I projects\r.\n8.5mio+ in influenced sales."
+      value: 'Developed on only 164K MD&I budget.
+
+        Generated 1.3mio in value
+        for over 35 BD and MD&I projects.
+
+        8.5mio+ in influenced sales.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name

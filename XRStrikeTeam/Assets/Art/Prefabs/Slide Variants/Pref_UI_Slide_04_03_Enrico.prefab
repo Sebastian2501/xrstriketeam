@@ -8,13 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1168894794955596130, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 415.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_04_03
+      value: Pref_UI_Slide_04_03_Enrico
       objectReference: {fileID: 0}
     - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_text
-      value: "<i>Development Lead\u200B\r</i>"
+      value: "<i>Development Lead / Creative Technologist\u200B\r</i>"
       objectReference: {fileID: 0}
     - target: {fileID: 5152755227755425638, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_SizeDelta.y
