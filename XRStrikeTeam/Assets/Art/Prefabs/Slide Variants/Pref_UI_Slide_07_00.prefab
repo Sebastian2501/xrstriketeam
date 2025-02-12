@@ -66,19 +66,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "Among supporting many projects, we have developed pipelines and workflows
-        such as the 1AE initiative that have become the core ways of working on major
-        metaverse successes such as the GCV, E.ON Campus, Republic of Innovators
-        and all AICP and its related projects.\u200B\r\n\r\n1AE is a set of processes,
-        pipelines and frontend/backend tools designed to unify and empower creatives
-        across OneAccenture. \u200B\r\nWe believe that with this initiative, we can
-        cut production costs, accelerate content delivery, and maximize sales by
-        leveraging economies of scale, streamlining operations and efficiency to
-        increase our performance and influence our bottom line. \u200B\r"
+      value: "Among supporting many projects, we have developed <b>pipelines and
+        workflows</b> such as the <b>OneAccenture Method (1AM) initiative</b> that
+        have become the core <b>ways of working</b> on major metaverse successes
+        such as the GCV, E.ON Campus, Republic of Innovators and all AICP and its
+        related projects.\r\n\n1AM is a <b>set of processes, pipelines and frontend/backend
+        tools</b> designed to unify and <b>empower</b> creatives across <b>OneAccenture</b>.
+        We believe that with this initiative, we can <b>cut production costs, accelerate
+        content delivery</b>, and <b>maximize sales</b> by leveraging economies of
+        scale, streamlining operations and efficiency to increase our performance
+        and influence our bottom line.\_"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_lineSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8993380840655740961, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "Our Next Initiative: Introducing 1AE\u200B\r\n"
+      value: 'Our Next Initiative: Introducing 1AM
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

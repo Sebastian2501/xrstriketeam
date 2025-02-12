@@ -54,11 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_text
-      value: "Contact\u200B\r\n\ns.giannoulatos@accenture.com\u200B\r\nenrico.viola@accenture.com\u200B\r\nyury.schicker@accenture.com\u200B\r\n"
+      value: "Contact\u200B\r\n\ns.giannoulatos@accenture.com\u200B\r\nalyssa.prinsloo@accenture.com\nenrico.viola@accenture.com\u200B\r\nyury.schicker@accenture.com\u200B\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_fontColor.b
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_fontColor32.rgba

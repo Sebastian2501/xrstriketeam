@@ -125,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 304.7
+      value: 346.4
       objectReference: {fileID: 0}
     - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -192,13 +192,14 @@ PrefabInstance:
     - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
       value: Our 15+ years of experience in emerging technology, makes us the experts
-        of incubation
+        of Spatial and XR.
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "Creative direction\nDesign thinking\nSoftware design & solutions\nArt
-        direction\nVisual development & Concept art\nStoryboards & wireframes\nPrototyping\nUI/UX\n2D/3D
-        asset creation\nDigital twins\n360\xB0 videos"
+      value: "Creative direction\r\nCreative Production\nDesign Thinking \r\nSoftware
+        design & solutions\r\nArt direction\r\nVisual development & Concept Art\r\nStoryboards
+        & wireframes\r\nPrototyping\r\nUI/UX\r\n2d/3d asset creation\r\nDigital twins\r\n360\xB0
+        Videos"
       objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -262,14 +263,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "The XR StrikeTeam is a small team of <b>handpicked experts</b>. Almost
+      value: 'The XR StrikeTeam is a small team of <b>handpicked experts</b>. Almost
         all our members have a strong foundation in <b>project management</b> and
         <b>leadership</b> through years of running their own operations and freelancing
-        experience.\u200B\r\n\u200B\r\nOn top of that our complementary skills in
-        production, generating 2D and 3D content, User Experience Design, Graphics
-        Programming, Computer Vision, AI and many others mean that not only can we
-        <b>incubate any emerging technology</b> but also <b>lead diverse teams and
-        produce at scale</b>.\r\n"
+        experience.
+
+
+
+        Our members have a proven track record in <b>sales
+        enablement</b>, from RFP and client pitches to SME input, feasibility studies,
+        POC and prototyping. The XR StrikeTeam can help boost sales and ensure maximum
+        quality and value for our clients.
+
+
+
+        On top of that our complementary
+        skills in production, generating 2D and 3D content, User Experience Design,
+        Graphics Programming, Computer Vision, AI and many others mean that not only
+        can we realize projects using <b>any emerging technology</b> but also <b>lead
+        diverse teams and produce at scale</b>.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_lineSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -324,7 +352,9 @@ PrefabInstance:
         Estimation and
         planning
 
-        Risk & Skope management'
+        Risk & Scope management
+
+        Sales enablement'
       objectReference: {fileID: 0}
     - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -385,7 +415,7 @@ PrefabInstance:
         Data
         visualization
 
-        Nvidi Omniverse'
+        Nvidia Omniverse'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

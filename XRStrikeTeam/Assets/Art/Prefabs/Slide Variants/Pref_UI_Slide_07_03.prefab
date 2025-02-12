@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5895575506433623419, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
       propertyPath: m_text
-      value: "Build your project up to 4x faster using the 1AE tools for Unity powered
+      value: "Build your project up to 4x faster using the 1AM tools for Unity powered
         by GenAI integration than if built in the traditional manual way.\u200B\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}

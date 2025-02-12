@@ -14,7 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_04_01
+      value: Pref_UI_Slide_04_01_Sebastian
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: <i>Lead Production Manager / Producer</i>
       objectReference: {fileID: 0}
     - target: {fileID: 7471858974770150892, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_Sprite

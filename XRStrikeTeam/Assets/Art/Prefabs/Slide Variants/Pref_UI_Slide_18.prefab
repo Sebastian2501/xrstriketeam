@@ -28,7 +28,11 @@ PrefabInstance:
       propertyPath: m_text
       value: "Flagship project that opened the road to multiple XR collaboration
         with the Disney ecosystem; a successful multi-year project, featured multiple
-        times at international events such as CES and SXSW\u200B\r."
+        times at international events such as CES and SXSW\u200B."
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
