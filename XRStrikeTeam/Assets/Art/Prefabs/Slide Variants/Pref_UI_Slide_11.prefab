@@ -30,14 +30,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "40+ high-impact collaborative sessions across 11+ environments on the
-        most prestigious world stage \u2013 the Davos Annual meeting. \nExperienced
-        by 400+ C-Suite Executives and World Leaders and received the highest praise,
-        including from our own CEO and CTO. "
+      value: "50+ high-impact collaborative sessions across 14+ environments on the
+        most prestigious world stage \u2013 the Davos Annual meeting. \r\nExperienced
+        at 14 events and engaged 950+ C-Suite Executives and World Leaders and received
+        the highest praise, including from our own CEO and CTO. "
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_fontSize
-      value: 20
+      value: 22.05
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_lineSpacing
@@ -109,14 +109,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "A multi-year collaboration between Accenture and WEF, leading to multiple
-        XR projects with WEF and their partners.\u200B GCV digitally extends the
-        impact of the World Economic Forum.\r\n\r\nUsing immersive technology, it
-        empowers decision-makers to tackle challenges through co-presence, real-time
-        interaction, and dynamic visualisation.  Inside the Village, a growing network
-        of leaders learn, host, showcase, and collaborate to amplify impact.\r\n\r\nThe
-        Village is a World Economic Forum initiative, in partnership with Accenture
-        and powered by Microsoft Mesh."
+      value: "The Global Collaboration Village digitally extends the impact of the
+        World Economic Forum. Using immersive technology, it empowers decision-makers
+        to tackle challenges through co-presence, real-time interaction, and dynamic
+        visualisation. Inside the Village, a growing network of leaders learn, host,
+        showcase, and collaborate to amplify impact.\r\n\r\nThe Village is a World
+        Economic Forum initiative, in partnership with Accenture and powered by Microsoft
+        Mesh. This multi-year collaboration between Accenture and the World Economic
+        Forum, resulted in multiple XR projects with the Forum and their partners.
+        \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

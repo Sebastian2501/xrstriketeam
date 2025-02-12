@@ -30,9 +30,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "These events reached a high profile and wide audience, contributing
-        to build trust in Accenture ability to deliver in the XR and innovation sectors
-        and \u2013 consequently \u2013 supporting sales in these areas."
+      value: Our team and solutions have played a key role in powering executive
+        events over the years, reaching high-profile audiences and driving sales
+        in Spatial Computing and XR.
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -96,13 +100,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Our team and solutions have powered multiple executive events over
-        the years.\r\n\r\n<b>TVXR</b>: A portable, accessible and easy to use stage
-        demo of the annual Tech Vision. \r\n<b>GLC</b>: A connected VR event, experienced
-        simultaneously by 220 participants.\r\n<b>Tech-Symposium Paris</b>: An immersive
-        conversation \r\n<b>JCI</b>: Our team produced this augmented version of
-        the Tech Vision event for multiple years in row, bringing a wide range of
-        tech innovations, from AR to robotics onto stages across the world."
+      value: "<b>TVXR</b>: A portable, accessible and easy to use stage demo of the
+        annual Tech Vision. \r\n\r\n<b>GLC</b>: A connected VR event, experienced
+        simultaneously by 220 participants.\r\n\r\n<b>Tech-Symposium Paris</b>: An
+        immersive conversation.\r\n\r\n<b>JCI</b>: Our team produced this augmented
+        version of the Tech Vision event for multiple years in row, bringing a wide
+        range of tech innovations, from AR to robotics onto stages across the world."
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

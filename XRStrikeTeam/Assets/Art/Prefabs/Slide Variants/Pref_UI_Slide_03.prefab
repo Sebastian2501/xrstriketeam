@@ -19,6 +19,14 @@ PrefabInstance:
         Custom
         Tools'
       objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 380
@@ -77,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -749.4201
+      value: -800
       objectReference: {fileID: 0}
     - target: {fileID: 1691792900804609212, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -125,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 346.4
+      value: 416.9
       objectReference: {fileID: 0}
     - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -144,6 +152,14 @@ PrefabInstance:
         Stage Presentations
 
         Workshops'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4209406206963730360, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -199,7 +215,15 @@ PrefabInstance:
       value: "Creative Direction\r\nCreative Production\nDesign Thinking \r\nSoftware
         Design & Solutions\r\nArt Direction\r\nVisual Development & Concept Art\r\nStoryboards
         & Wireframes\r\nPrototyping\r\nUI/UX\r\n2D/3D Asset Creation\r\nDigital Twins\r\n360\xB0
-        Videos"
+        Videos\nCAD\nBIM"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -215,7 +239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -749.4201
+      value: -800
       objectReference: {fileID: 0}
     - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -231,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -796
+      value: -846.5799
       objectReference: {fileID: 0}
     - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -356,6 +380,14 @@ PrefabInstance:
 
         Sales Enablement'
       objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -374,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -796
+      value: -846.5799
       objectReference: {fileID: 0}
     - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -416,6 +448,14 @@ PrefabInstance:
         Visualization
 
         Nvidia Omniverse'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
