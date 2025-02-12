@@ -8,22 +8,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1168894794955596130, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 415.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_04_02
+      value: Pref_UI_Slide_04_03_Enrico
       objectReference: {fileID: 0}
     - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_text
-      value: "<i>Art Director / Designer\u200B\r</i>"
+      value: "<i>Development Lead / Creative Technologist\u200B\r</i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152755227755425638, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 730
       objectReference: {fileID: 0}
     - target: {fileID: 6622742115596369273, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_text
-      value: "Yury Schicker\u200B\r"
+      value: "\u200B\u200B\u200B\u200B\u200BEnrico Viola\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7471858974770150892, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: efc0ad050e7f1c24c863c64902ed24bc, type: 3}
+      objectReference: {fileID: 21300000, guid: bf816ab2162aafe49aef14a24f581924, type: 3}
     - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -66,13 +74,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8426166630021682342, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_text
-      value: "Art Director and Designer for the XR Studio Zurich, XR ASG and Art
-        Director for GCV.\u200B\r\n\r\nInterdisciplinary design veteran, with wide
-        knowledge in various art styles across multiple creative domains, oversees
-        art direction of projects across multiple platforms, from concepts to launch
-        and design work in all aspects of production.\u200B\r\n\r\nMajor Accenture
-        contributions: AICP, GCV, E.ON Campus, Tech Vision XR, Skyverse, AI Embodied
-        Agent, MxP and more...\u200B\r"
+      value: "Development and Innovation Lead for the XR Studio Zurich, XR ASG and
+        Dev Lead for GCV. \u200B\r\n\r\n\u200B15+ years leading emerging Technology
+        projects. Technologically developed immersive experiences for international
+        brands by bridging the gap between design and engineering through XR and
+        the metaverse.\u200B\r\n\r\nMajor Accenture contributions: AICP, GCV, E.ON
+        Campus, Tech Vision XR, Sky Immersive Dataviz, BMW Metaverse Pilot, AI Embodied
+        Agent, IMP and more...\u200B\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

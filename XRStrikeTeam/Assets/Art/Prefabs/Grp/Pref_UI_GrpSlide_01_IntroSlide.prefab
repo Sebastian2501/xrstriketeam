@@ -40,6 +40,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2817567442010449274}
     m_Modifications:
+    - target: {fileID: 1571685941228529214, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
+      propertyPath: m_text
+      value: Meet the team
+      objectReference: {fileID: 0}
     - target: {fileID: 1798764546679995887, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -88,6 +92,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4589989034478049261, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
+      propertyPath: m_text
+      value: What we offer
+      objectReference: {fileID: 0}
     - target: {fileID: 6025248651096557487, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_01
@@ -95,6 +103,10 @@ PrefabInstance:
     - target: {fileID: 6025248651096557487, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418036216697090514, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
+      propertyPath: m_text
+      value: Learn about the projects
       objectReference: {fileID: 0}
     - target: {fileID: 8650182457895020635, guid: 62c18d4f276dcd64ab881c1f656a7e09, type: 3}
       propertyPath: m_IsActive

@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e67da8c804231bf4f9eec92666ec4909, type: 3}
+      objectReference: {fileID: 21300000, guid: 79c94de40fa0d00429073084b1c9d0e4, type: 3}
     - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -26,20 +26,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: tba
+      value: 'Developed on only 330K MD&I budget.
+
+        Is powering a next generation
+        agent in a 1.2mio client project.
+
+        Cross- and multi-platform capabilities.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
       value: Pref_UI_Slide_26_Elliot
       objectReference: {fileID: 0}
+    - target: {fileID: 1445411471127116332, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 42032a6a0275e7641bd6a25b2a74488c, type: 3}
+      objectReference: {fileID: 21300000, guid: 801eafdbe18f22f4c9eb618b09c40a78, type: 3}
     - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: db34ca8a8db77804fb60df2e975d8d17, type: 3}
+    - target: {fileID: 3117520440347663127, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 540
+      objectReference: {fileID: 0}
     - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -90,7 +107,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: tba
+      value: "AI Embodied Agent is a state-of-the-art prototyping platform to power
+        the next generation of AI agents.\r\n\r\nIt is ready to be extended and expanded
+        for various client needs while avoiding common pitfalls currently experienced
+        in the development of AI agents such as over reliance on LLM\u2019s, trust,
+        photorealism, text to speech and speech to text capabilities.\r\n\r\nWithin
+        weeks of it's completion, AI Embodied Agent is already used as a flagship
+        feature in a major Spatial client project and is considered for several more
+        in the retail and training space."
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x
@@ -99,7 +123,7 @@ PrefabInstance:
     - target: {fileID: 8369904848783164712, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c68a558126b69d3439633ce7bfd366a4, type: 3}
+      objectReference: {fileID: 21300000, guid: e67da8c804231bf4f9eec92666ec4909, type: 3}
     - target: {fileID: 8428176771275144500, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
       value: Accenture
@@ -107,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 8764803656298611708, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 801eafdbe18f22f4c9eb618b09c40a78, type: 3}
+      objectReference: {fileID: 21300000, guid: eb20892b823c17842bb5dfbe1af5fa2f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

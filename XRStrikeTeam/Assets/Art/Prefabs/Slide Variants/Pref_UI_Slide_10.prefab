@@ -26,9 +26,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "\u200B\u200BEmpowered multiple global projects for diverse industries
-        and internal demos like JCI, where Julie Sweet presented smart building concepts
-        in Virtual Reality. ICP has powered demos multiple times at CES.\u200B\r"
+      value: 'Developed on only 164K MD&I budget.
+
+        Generated 1.3mio in value
+        for over 35 BD and MD&I projects.
+
+        8.5mio+ in influenced sales.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -38,6 +45,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8801cf432b1bbc94bb476a7d564dcfb0, type: 3}
+    - target: {fileID: 1616189019385283296, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 833.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616189019385283296, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 363.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -92,12 +107,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Multi-user, multi-platform, collaborative platform and accelerator
-        featuring digital twins, design thinking environments and immersive demos.
-        Digital recreation of client spaces such as Disney StudioLab, ESPN, Computer
-        History Museum, AMRC and many more have delighted our Clients and been featured
-        at trade shows many times. \u200B\r\nICP has powered demos multiple times
-        at CES.\u200B\r\n"
+      value: "AICP is a multi-user, cross-platform meeting and collaboration solution,
+        featuring public and private meeting rooms with PC, Mac, iOS and Oculus Quest
+        cross compatibility. \r\n\nAICP has been used by multiple sales teams as
+        a core credential of our expertise in this domain and to win XR business.
+        Specifically with Siemens IL, SBB and BP. \r\n\nICP has powered demos multiple
+        times at CES for Disney, ESPN and others.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

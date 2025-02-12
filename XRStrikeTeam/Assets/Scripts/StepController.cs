@@ -229,11 +229,13 @@ namespace Accenture.XRStrikeTeam.Presentation
             int idx = _curStep + 1;
             if (idx >= _steps.Count)
             {
-                if(!_circularSteps) return;
-                FirstStep();
-                return;
+                if (!_circularSteps) return;
+                FirstStep(true);
             }
-            SetStep(idx, false, StepJumpType.FORWARD);
+            else
+            {
+                SetStep(idx, false, StepJumpType.FORWARD);
+            }
         }
 
         public void PrevStep() {

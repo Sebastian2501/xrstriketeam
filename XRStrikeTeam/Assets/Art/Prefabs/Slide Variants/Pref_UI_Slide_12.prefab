@@ -32,7 +32,7 @@ PrefabInstance:
       propertyPath: m_text
       value: "These events reached a high profile and wide audience, contributing
         to build trust in Accenture ability to deliver in the XR and innovation sectors
-        and \u2013 consequently \u2013 supporting sales in these areas.\u200B\r\n"
+        and \u2013 consequently \u2013 supporting sales in these areas."
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Name
@@ -45,14 +45,14 @@ PrefabInstance:
     - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8d4d5979a30338246835c64a5e66f17a, type: 3}
+      objectReference: {fileID: 21300000, guid: f777bacec144b52418cd6579f5a717b2, type: 3}
     - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e57c46dfdff8e644aa1ae0b3a45f10db, type: 3}
     - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Tech Vision XR\u200B\r"
+      value: Executive Leadership Events
       objectReference: {fileID: 0}
     - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -96,10 +96,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
-      value: "Portable, accessible and easy to use stage demo of the annual Tech
-        Vision. Our team produced this augmented version of the Tech Vision event
-        for multiple years in row, bringing a wide range of tech innovations, from
-        AR to robotics onto stages across the world.\u200B\r\n"
+      value: "Our team and solutions have powered multiple executive events over
+        the years.\r\n\r\n<b>TVXR</b>: A portable, accessible and easy to use stage
+        demo of the annual Tech Vision. \r\n<b>GLC</b>: A connected VR event, experienced
+        simultaneously by 220 participants.\r\n<b>Tech-Symposium Paris</b>: An immersive
+        conversation \r\n<b>JCI</b>: Our team produced this augmented version of
+        the Tech Vision event for multiple years in row, bringing a wide range of
+        tech innovations, from AR to robotics onto stages across the world."
       objectReference: {fileID: 0}
     - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_SizeDelta.x

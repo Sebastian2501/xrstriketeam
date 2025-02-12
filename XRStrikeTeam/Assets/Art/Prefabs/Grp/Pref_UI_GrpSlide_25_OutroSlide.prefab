@@ -40,6 +40,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3191903221732168389}
     m_Modifications:
+    - target: {fileID: 1579041605088158332, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579041605088158332, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579041605088158332, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579041605088158332, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -540
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667076069459825467, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667076069459825467, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667076069459825467, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667076069459825467, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -470
+      objectReference: {fileID: 0}
     - target: {fileID: 1798764546679995887, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -78,6 +110,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1798764546679995887, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935233579014143587, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_text
+      value: "Contact\u200B\r\n\ns.giannoulatos@accenture.com\u200B\r\nalyssa.prinsloo@accenture.com\nenrico.viola@accenture.com\u200B\r\nyury.schicker@accenture.com\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193403316547793245, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193403316547793245, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193403316547793245, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193403316547793245, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -610
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458026529716503511, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6025248651096557487, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
