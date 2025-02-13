@@ -4,7 +4,6 @@ using Accenture.eviola.Async;
 using Accenture.eviola.Math;
 using UnityEngine;
 using UnityEngine.Events;
-using static UnityEditor.PlayerSettings;
 
 namespace Accenture.XRStrikeTeam.Presentation
 {
