@@ -33,6 +33,15 @@ namespace Accenture.XRStrikeTeam
         private float _delayEaseIn = 0;
         [SerializeField]
         private float _delayEaseOut = 0;
+        [Header("options")]
+        [SerializeField]
+        private bool _keepTrackOfStepIndices = false;
+        [HideInInspector]
+        [SerializeField]
+        private int _idxFrom = -1;
+        [HideInInspector]
+        [SerializeField]
+        private int _idxTo = -1;
 
         public int NumWaypoints { get { return _wayPoints.Count; } }
 
@@ -40,6 +49,24 @@ namespace Accenture.XRStrikeTeam
         public float DelayEaseIn { get { return _delayEaseIn; } }
         public float DelayEaseOut { get { return _delayEaseOut; } }
 
+        public bool KeepTrackOfStepIndices
+        {
+            get { 
+                return _keepTrackOfStepIndices;
+            }
+        }
+
+        public int IdxFrom
+        {
+            get { return _idxFrom; }
+            set { _idxFrom = value; }
+        }
+
+        public int IdxTo
+        {
+            get { return _idxTo; }
+            set { _idxTo = value; }
+        }
 
         public Vector3 GetWayPoint(int idx) {
             if (!Misc.IsGoodIndex(idx, _wayPoints)) return Vector3.zero;
@@ -95,6 +122,12 @@ namespace Accenture.XRStrikeTeam
         {
             base.OnInspectorGUI();
 
+            if (GetTarget().KeepTrackOfStepIndices) {
+                EditorUI.IntField("Step index From", GetTarget().IdxFrom, (int i) => { GetTarget().IdxFrom = i; EditorUtility.SetDirty(GetTarget()); });
+                EditorUI.IntField("Step index To", GetTarget().IdxTo, (int i) => { GetTarget().IdxTo = i; EditorUtility.SetDirty(GetTarget()); });
+            }
+
+            EditorUI.Header("Editor");
             EditorUI.Button("Make Trajectory", () => { 
                 GetTarget().MakeWayPoints();
                 EditorUtility.SetDirty(GetTarget());   
