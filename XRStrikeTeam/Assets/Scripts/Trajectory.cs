@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Accenture.rkiss.PathGeneration;
+using System;
+using UnityEngine.UIElements;
+
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -42,6 +46,48 @@ namespace Accenture.XRStrikeTeam
         [HideInInspector]
         [SerializeField]
         private int _idxTo = -1;
+
+        #region namingConventions
+
+        /// <summary>
+        /// given a trajectory name, return the from and to indices
+        /// expected name format: FROMtoTO_trajectory
+        /// </summary>
+        /// <returns>Tuple<from, to>; Tuple<-1,-1> if bad naming</returns>
+        static public Tuple<int, int> NameToIndices(string name) { 
+            Tuple<int,int> res = new Tuple<int,int>(-1,-1);
+            string[] indicesAndName = name.Split("_");
+            if (indicesAndName.Length < 2) return Tuple.Create(-1, -1);
+            string[] indices = indicesAndName[0].Split("to");
+            if(indices.Length<2) return Tuple.Create(-1, -1);
+            return Tuple.Create(Int32.Parse(indices[0]), Int32.Parse(indices[1]));
+        }
+
+        public void SetStepIndices(int from, int to) {
+            _keepTrackOfStepIndices = true;
+            _idxFrom = from;
+            _idxTo = to;
+        }
+
+        public void SetStepIndicesFromName() {
+            Tuple<int, int> indices = NameToIndices(gameObject.name);
+            if (indices.Item1 < 0 || indices.Item2 < 0) return;
+            SetStepIndices(indices.Item1, indices.Item2);
+        }
+
+        public void SetStepIndicesFromNameIfNotConsecutive() {
+            Tuple<int, int> indices = NameToIndices(gameObject.name);
+            if (indices.Item1 < 0 || indices.Item2 < 0) return;
+            if (indices.Item1 == indices.Item2 - 1) return;
+            SetStepIndices(indices.Item1, indices.Item2);
+#if UNITY_EDITOR
+            EditorUtility.SetDirty(this);
+#endif
+        }
+
+        #endregion
+
+        #region setup
 
         public int NumWaypoints { get { return _wayPoints.Count; } }
 
@@ -88,6 +134,10 @@ namespace Accenture.XRStrikeTeam
             MakeWayPoints();
         }
 
+        #endregion
+
+        #region Monobehaviour
+
         private void Awake()
         {
             Misc.CheckNotNull(_from);
@@ -109,6 +159,7 @@ namespace Accenture.XRStrikeTeam
                 Gizmos.DrawWireSphere(point, 0.1f);
             }
         }
+        #endregion
     }
 
 #if UNITY_EDITOR
@@ -131,6 +182,10 @@ namespace Accenture.XRStrikeTeam
             EditorUI.Button("Make Trajectory", () => { 
                 GetTarget().MakeWayPoints();
                 EditorUtility.SetDirty(GetTarget());   
+            });
+            EditorUI.Button("TrackIndicesFromName", () => {
+                GetTarget().SetStepIndicesFromName();
+                EditorUtility.SetDirty(GetTarget());
             });
         }
     }

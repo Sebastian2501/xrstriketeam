@@ -164,6 +164,17 @@ namespace Accenture.XRStrikeTeam.Presentation
             foreach (UrlVideoPlayer vid in vids) { _videos.Add(vid); }
             EditorUtility.SetDirty(this);
         }
+
+        public void TrackIndicesInNonCOnsecutiveTrajectories() {
+            if (_trajectoryContainer == null) return;
+            for (int i = 0; i < _trajectoryContainer.childCount; i++) {
+                Transform tra = _trajectoryContainer.GetChild(i);
+                Trajectory traj = tra.GetComponent<Trajectory>();
+                if (traj != null) {
+                    traj.SetStepIndicesFromNameIfNotConsecutive();
+                }
+            }
+        }
 #endif
         public void ToggleAllPayloadsVisibility() {
             foreach (Destination step in _steps)
@@ -376,6 +387,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
             EditorUI.Button("Link Step Animation Controllers", GetTarget().TryLinkStepAnimationControllers);
             EditorUI.Button("Collect Videos", GetTarget().CollectVideos);
+            EditorUI.Button("Track Indices in non consecutive Trajectories", () => { GetTarget().TrackIndicesInNonCOnsecutiveTrajectories(); });
         }
     }
 #endif
