@@ -16,6 +16,12 @@ namespace Accenture.XRStrikeTeam.Presentation
             ROTATING_TO_TARGET
         }
 
+        public enum PoseMatchState { 
+            NO_MATCH,
+            POSITION_MATCH,
+            COMPLETE_MATCH
+        }
+
         public UnityEvent<Pose> OnDestinationReached = new UnityEvent<Pose>();
 
         [Header("ExternalComponents")]
@@ -92,6 +98,14 @@ namespace Accenture.XRStrikeTeam.Presentation
             OnDestinationReached.Invoke(_endPose);
         }
 
+        private bool AmIOnPosition(Vector3 pos) { return _camera.transform.position == pos; }
+        private bool AmIOnRotation(Quaternion rot) { return _camera.transform.rotation == rot; }
+        private PoseMatchState AmIOnPose(Vector3 pos, Quaternion rot) {
+            if (!AmIOnPosition(pos)) return PoseMatchState.NO_MATCH;
+            if (!AmIOnRotation(rot)) return PoseMatchState.POSITION_MATCH;
+            return PoseMatchState.COMPLETE_MATCH;
+        }
+
         #endregion
 
         #region stateHandling
@@ -103,12 +117,14 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void SetOnTarget(Vector3 pos, Quaternion rot) { 
             _curState = CameraState.ON_TARGET;
             _movement.Stop();
+            if (AmIOnPose(pos, rot)==PoseMatchState.COMPLETE_MATCH) return;
             _camera.transform.position = pos;
             _camera.transform.rotation = rot;
         }
 
         private void StartTrajectory(Vector3 posDest, Quaternion rotDest, Trajectory traj=null) {
             _movement.Stop();
+
             _curState = CameraState.IN_TRAJECTORY;
 
             _startPose.position = _camera.transform.position;
@@ -116,6 +132,12 @@ namespace Accenture.XRStrikeTeam.Presentation
 
             _endPose.position = posDest;
             _endPose.rotation = rotDest;
+
+            if (AmIOnPosition(posDest)) {
+                HandleMovementDone(Timer.TimerStopType.NATURAL);
+                StartRotateToTarget();
+                return;
+            }
 
             _movement.AnimatedTransform = _camera.transform;
             _movement.Waypoints.Clear();
@@ -134,6 +156,11 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         private void StartRotateToTarget() {
             _movement.Stop();
+
+            if (AmIOnRotation(_endPose.rotation)) {
+                SetOnTarget(_endPose.position, _endPose.rotation);
+            }
+
             _curState = CameraState.ROTATING_TO_TARGET;
 
             _fromTime = Time.time;
