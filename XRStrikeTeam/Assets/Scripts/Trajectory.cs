@@ -114,6 +114,11 @@ namespace Accenture.XRStrikeTeam
             set { _idxTo = value; }
         }
 
+        public bool IsTrackingStepIndices() {
+            if (!_keepTrackOfStepIndices) return false;
+            return (_idxFrom>=0 && _idxTo>=0);
+        }
+
         public Vector3 GetWayPoint(int idx) {
             if (!Misc.IsGoodIndex(idx, _wayPoints)) return Vector3.zero;
             return _wayPoints[idx];
