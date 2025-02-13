@@ -40,6 +40,7 @@ namespace Accenture.XRStrikeTeam.Presentation
         private float _toTime = 0;
         private WaypointsTimedMovement _movement = new WaypointsTimedMovement();
         private CameraState _curState = CameraState.ON_TARGET;
+        private bool _hasEndPose = false;
 
         #region Animation
 
@@ -104,6 +105,8 @@ namespace Accenture.XRStrikeTeam.Presentation
             if (!AmIOnRotation(rot)) return PoseMatchState.POSITION_MATCH;
             return PoseMatchState.COMPLETE_MATCH;
         }
+
+        private PoseMatchState AmIOnPose(Pose pose) { return AmIOnPose(pose.position, pose.rotation); }
 
         #endregion
 
@@ -177,6 +180,11 @@ namespace Accenture.XRStrikeTeam.Presentation
             _camera.transform.rotation = Quaternion.Slerp(_srcPose.rotation, _targetPose.rotation, Remap.Map(Time.time, _fromTime, _toTime, 0, 1));
         }
 
+        private void KeepMeInPlace() {
+            if (AmIOnPose(_endPose) == PoseMatchState.COMPLETE_MATCH) return;
+            
+        }
+
         private void UpdateState() {
             switch (State) {
                 case CameraState.IN_TRAJECTORY:
@@ -187,6 +195,7 @@ namespace Accenture.XRStrikeTeam.Presentation
                     break;
                 case CameraState.ON_TARGET:
                 default:
+                    KeepMeInPlace();
                     break;
             }
         }
