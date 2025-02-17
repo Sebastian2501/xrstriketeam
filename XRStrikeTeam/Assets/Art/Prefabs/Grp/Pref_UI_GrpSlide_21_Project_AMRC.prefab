@@ -44,11 +44,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pref_UI_Slide_21
       objectReference: {fileID: 0}
-    - target: {fileID: 969445623457505314, guid: a82c27a93996ca94da81555ab99d93f4, type: 3}
-      propertyPath: m_text
-      value: "State of the art metaverse project, before the introduction of mainstream
-        metaverse platforms\u200B\r"
-      objectReference: {fileID: 0}
     - target: {fileID: 5564576698730639866, guid: a82c27a93996ca94da81555ab99d93f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

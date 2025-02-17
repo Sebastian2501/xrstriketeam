@@ -133,15 +133,45 @@ namespace Accenture.XRStrikeTeam.Presentation
         private void HandleOtherDestinationLeave(Trajectory traj, StepJumpType jt) {
             switch (jt) {
                 case StepJumpType.FORWARD:
+                    HandlePreviousDestinationLeave(traj);
+                    break;
                 case StepJumpType.CUSTOM:
-                    HandlePreviourDestinationLeave(traj); 
+                    if (traj.IsTrackingStepIndices())
+                    {
+                        HandleOtherDestinationLeave(traj.IdxFrom, traj);
+                    }
+                    else {
+                        HandlePreviousDestinationLeave(traj);
+                    }
                     break;
                 default:
                     break;
             }
         }
 
-        private void HandlePreviourDestinationLeave(Trajectory traj) {
+        private void HandlePreviousDestinationLeave(Trajectory traj) { HandleOtherDestinationLeave(Id -1, traj); }
+
+        private void HandleOtherDestinationLeave(int otherDestId, Trajectory traj) {
+            _bLeaveOtherDestinationOnEnter = false;
+            _otherDestination = Controller.GetStep(otherDestId);
+            if (_otherDestination == null) return;
+
+            if (traj == null)
+            {
+                _bLeaveOtherDestinationOnEnter = true;
+            }
+            else if (traj.DelayEaseOut <= 0)
+            {
+                HandleOtherDestinationDelayedLeave();
+            }
+            else {
+                _delayedLeave.Abort();
+                _delayedLeave.Delay = traj.DelayEaseOut;
+                _delayedLeave.Fire();
+            }
+        }
+
+        /*private void HandlePreviourDestinationLeave(Trajectory traj) {
             _bLeaveOtherDestinationOnEnter = false;
             int prevIdx = Id - 1;
             _otherDestination = Controller.GetStep(prevIdx);
@@ -160,7 +190,7 @@ namespace Accenture.XRStrikeTeam.Presentation
                 _delayedLeave.Delay = traj.DelayEaseOut;
                 _delayedLeave.Fire();
             }
-        }
+        }*/
 
         private void HandleOtherDestinationDelayedLeave() {
             if (_otherDestination == null) return;
