@@ -8412,6 +8412,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6554223054794478742}
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _idxTo
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _idxFrom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _duration
       value: 1
       objectReference: {fileID: 0}
@@ -8426,6 +8434,10 @@ PrefabInstance:
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _wayPoints.Array.size
       value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _keepTrackOfStepIndices
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _wayPoints.Array.data[0].z
@@ -11267,6 +11279,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6554223054794478742}
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _idxTo
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _idxFrom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _duration
       value: 1
       objectReference: {fileID: 0}
@@ -11281,6 +11301,10 @@ PrefabInstance:
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _wayPoints.Array.size
       value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _keepTrackOfStepIndices
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _wayPoints.Array.data[0].z
@@ -18574,6 +18598,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6554223054794478742}
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _idxTo
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _idxFrom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _duration
       value: 1
       objectReference: {fileID: 0}
@@ -18588,6 +18620,10 @@ PrefabInstance:
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _wayPoints.Array.size
       value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
+      propertyPath: _keepTrackOfStepIndices
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3585241831336466284, guid: 891630f1e94cde0459d486d1777865d7, type: 3}
       propertyPath: _wayPoints.Array.data[0].z

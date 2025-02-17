@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Accenture.rkiss.PathGeneration;
+using System;
+using UnityEngine.UIElements;
+
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -33,6 +37,57 @@ namespace Accenture.XRStrikeTeam
         private float _delayEaseIn = 0;
         [SerializeField]
         private float _delayEaseOut = 0;
+        [Header("options")]
+        [SerializeField]
+        private bool _keepTrackOfStepIndices = false;
+        [HideInInspector]
+        [SerializeField]
+        private int _idxFrom = -1;
+        [HideInInspector]
+        [SerializeField]
+        private int _idxTo = -1;
+
+        #region namingConventions
+
+        /// <summary>
+        /// given a trajectory name, return the from and to indices
+        /// expected name format: FROMtoTO_trajectory
+        /// </summary>
+        /// <returns>Tuple<from, to>; Tuple<-1,-1> if bad naming</returns>
+        static public Tuple<int, int> NameToIndices(string name) { 
+            Tuple<int,int> res = new Tuple<int,int>(-1,-1);
+            string[] indicesAndName = name.Split("_");
+            if (indicesAndName.Length < 2) return Tuple.Create(-1, -1);
+            string[] indices = indicesAndName[0].Split("to");
+            if(indices.Length<2) return Tuple.Create(-1, -1);
+            return Tuple.Create(Int32.Parse(indices[0]), Int32.Parse(indices[1]));
+        }
+
+        public void SetStepIndices(int from, int to) {
+            _keepTrackOfStepIndices = true;
+            _idxFrom = from;
+            _idxTo = to;
+        }
+
+        public void SetStepIndicesFromName() {
+            Tuple<int, int> indices = NameToIndices(gameObject.name);
+            if (indices.Item1 < 0 || indices.Item2 < 0) return;
+            SetStepIndices(indices.Item1, indices.Item2);
+        }
+
+        public void SetStepIndicesFromNameIfNotConsecutive() {
+            Tuple<int, int> indices = NameToIndices(gameObject.name);
+            if (indices.Item1 < 0 || indices.Item2 < 0) return;
+            if (indices.Item1 == indices.Item2 - 1) return;
+            SetStepIndices(indices.Item1, indices.Item2);
+#if UNITY_EDITOR
+            EditorUtility.SetDirty(this);
+#endif
+        }
+
+        #endregion
+
+        #region setup
 
         public int NumWaypoints { get { return _wayPoints.Count; } }
 
@@ -40,6 +95,29 @@ namespace Accenture.XRStrikeTeam
         public float DelayEaseIn { get { return _delayEaseIn; } }
         public float DelayEaseOut { get { return _delayEaseOut; } }
 
+        public bool KeepTrackOfStepIndices
+        {
+            get { 
+                return _keepTrackOfStepIndices;
+            }
+        }
+
+        public int IdxFrom
+        {
+            get { return _idxFrom; }
+            set { _idxFrom = value; }
+        }
+
+        public int IdxTo
+        {
+            get { return _idxTo; }
+            set { _idxTo = value; }
+        }
+
+        public bool IsTrackingStepIndices() {
+            if (!_keepTrackOfStepIndices) return false;
+            return (_idxFrom>=0 && _idxTo>=0);
+        }
 
         public Vector3 GetWayPoint(int idx) {
             if (!Misc.IsGoodIndex(idx, _wayPoints)) return Vector3.zero;
@@ -60,6 +138,10 @@ namespace Accenture.XRStrikeTeam
             _to = endPoint;
             MakeWayPoints();
         }
+
+        #endregion
+
+        #region Monobehaviour
 
         private void Awake()
         {
@@ -82,6 +164,7 @@ namespace Accenture.XRStrikeTeam
                 Gizmos.DrawWireSphere(point, 0.1f);
             }
         }
+        #endregion
     }
 
 #if UNITY_EDITOR
@@ -95,9 +178,19 @@ namespace Accenture.XRStrikeTeam
         {
             base.OnInspectorGUI();
 
+            if (GetTarget().KeepTrackOfStepIndices) {
+                EditorUI.IntField("Step index From", GetTarget().IdxFrom, (int i) => { GetTarget().IdxFrom = i; EditorUtility.SetDirty(GetTarget()); });
+                EditorUI.IntField("Step index To", GetTarget().IdxTo, (int i) => { GetTarget().IdxTo = i; EditorUtility.SetDirty(GetTarget()); });
+            }
+
+            EditorUI.Header("Editor");
             EditorUI.Button("Make Trajectory", () => { 
                 GetTarget().MakeWayPoints();
                 EditorUtility.SetDirty(GetTarget());   
+            });
+            EditorUI.Button("TrackIndicesFromName", () => {
+                GetTarget().SetStepIndicesFromName();
+                EditorUtility.SetDirty(GetTarget());
             });
         }
     }

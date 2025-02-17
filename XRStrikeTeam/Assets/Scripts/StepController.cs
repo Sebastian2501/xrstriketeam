@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Accenture.eviola;
 using UnityEngine.Events;
+using System;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -164,6 +166,17 @@ namespace Accenture.XRStrikeTeam.Presentation
             foreach (UrlVideoPlayer vid in vids) { _videos.Add(vid); }
             EditorUtility.SetDirty(this);
         }
+
+        public void TrackIndicesInNonCOnsecutiveTrajectories() {
+            if (_trajectoryContainer == null) return;
+            for (int i = 0; i < _trajectoryContainer.childCount; i++) {
+                Transform tra = _trajectoryContainer.GetChild(i);
+                Trajectory traj = tra.GetComponent<Trajectory>();
+                if (traj != null) {
+                    traj.SetStepIndicesFromNameIfNotConsecutive();
+                }
+            }
+        }
 #endif
         public void ToggleAllPayloadsVisibility() {
             foreach (Destination step in _steps)
@@ -245,15 +258,29 @@ namespace Accenture.XRStrikeTeam.Presentation
                 if(!_circularSteps) return;
                 idx = _steps.Count - 1;
             }
-            if (_fadeToFirstStep) FadeInAndOut();
-            SetStep(idx, true, StepJumpType.JUMP);
+            Action a = () => { SetStep(idx, true, StepJumpType.JUMP); };
+            if (_fadeToFirstStep)
+            {
+                FadeInAndOut(a);
+            }
+            else {
+                a();
+            }
         }
 
         public void FirstStep(bool instantaneous = false) {
             if(_curStep == 0) return;
-            if (_fadeToFirstStep) FadeInAndOut();
-            SetAllPayloadsVisibility(false);
-            SetStep(0, instantaneous);
+            Action a = () => {
+                SetAllPayloadsVisibility(false);
+                SetStep(0, instantaneous);
+            };
+            if (_fadeToFirstStep)
+            {
+                FadeInAndOut(a);
+            }
+            else {
+                a();
+            }
         }
 
         public void GoStep(int destIdx, Trajectory traj) {
@@ -294,13 +321,14 @@ namespace Accenture.XRStrikeTeam.Presentation
 
         #region ScreenFade
 
-        private void FadeInAndOut() {
+        private void FadeInAndOut(Action a = null) {
             _screenCurtain.SetOpaque(true);
-            StartCoroutine(DelayFadeOut());
+            StartCoroutine(DelayFadeOut(a));
         }
 
-        private IEnumerator DelayFadeOut() {
+        private IEnumerator DelayFadeOut(Action a=null) {
             yield return new WaitForSeconds(_screenFadeTime);
+            if (a != null) a();
             _screenCurtain.SetOpaque(false);
         }
 
@@ -376,6 +404,7 @@ namespace Accenture.XRStrikeTeam.Presentation
             EditorUI.Button("Toggle all payloads visibility", GetTarget().ToggleAllPayloadsVisibility);
             EditorUI.Button("Link Step Animation Controllers", GetTarget().TryLinkStepAnimationControllers);
             EditorUI.Button("Collect Videos", GetTarget().CollectVideos);
+            EditorUI.Button("Track Indices in non consecutive Trajectories", () => { GetTarget().TrackIndicesInNonCOnsecutiveTrajectories(); });
         }
     }
 #endif
