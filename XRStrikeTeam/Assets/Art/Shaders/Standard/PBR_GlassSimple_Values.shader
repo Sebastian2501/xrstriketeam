@@ -14,7 +14,7 @@ Shader "XReality/Standard/PBR_GlassSimple_Values"
 	SubShader
 	{
 		Tags{ "RenderType" = "Transparent"  "Queue" = "Transparent+0" "IgnoreProjector" = "True" }
-		Cull Back
+		Cull Off
 		CGINCLUDE
 		#include "UnityPBSLighting.cginc"
 		#include "Lighting.cginc"
@@ -41,7 +41,8 @@ Shader "XReality/Standard/PBR_GlassSimple_Values"
 			float3 ase_normalWS = i.worldNormal;
 			float fresnelNdotV5 = dot( ase_normalWS, ase_viewDirWS );
 			float fresnelNode5 = ( 0.0 + 1.0 * pow( 1.0 - fresnelNdotV5, _GlassFresnelPower ) );
-			o.Alpha = ( _Opacity * fresnelNode5 );
+			float lerpResult21 = lerp( 0.2 , _Opacity , fresnelNode5);
+			o.Alpha = lerpResult21;
 		}
 
 		ENDCG
@@ -122,20 +123,20 @@ Shader "XReality/Standard/PBR_GlassSimple_Values"
 }
 /*ASEBEGIN
 Version=19801
-Node;AmplifyShaderEditor.RangedFloatNode;6;-752.5,315;Inherit;False;Property;_GlassFresnelPower;Glass Fresnel Power;3;0;Create;True;0;0;0;False;0;False;5;0.6;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;6;-849.5,359;Inherit;False;Property;_GlassFresnelPower;Glass Fresnel Power;3;0;Create;True;0;0;0;False;0;False;5;0.6;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;3;-609.5,-13;Inherit;False;Property;_Roughness;Roughness;1;0;Create;True;0;0;0;False;0;False;0;0.1;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.FresnelNode;5;-382.5,227;Inherit;False;Standard;WorldNormal;ViewDir;False;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;11;-449.5,138;Inherit;False;Property;_Opacity;Opacity;2;0;Create;True;0;0;0;False;0;False;1;0.5;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.FresnelNode;5;-479.5,263;Inherit;False;Standard;WorldNormal;ViewDir;False;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;11;-676.5,144;Inherit;False;Property;_Opacity;Opacity;2;0;Create;True;0;0;0;False;0;False;1;0.5;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;4;-203.5,-6;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;9;-51.5,166;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ColorNode;1;-306.5,-230;Inherit;False;Property;_Color;Color;0;1;[HDR];Create;True;0;0;0;False;0;False;1,1,1,1;1,1,1,1;True;True;0;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;20;173,-97;Float;False;True;-1;3;AmplifyShaderEditor.MaterialInspector;0;0;Standard;XReality/Standard/PBR_GlassSimple_Values;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;False;False;False;False;False;False;Back;0;False;;0;False;;False;0;False;;0;False;;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;True;2;5;False;;10;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;17;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.LerpOp;21;-86,119;Inherit;False;3;0;FLOAT;0.2;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;20;173,-97;Float;False;True;-1;3;AmplifyShaderEditor.MaterialInspector;0;0;Standard;XReality/Standard/PBR_GlassSimple_Values;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;False;False;False;False;False;False;Off;0;False;;0;False;;False;0;False;;0;False;;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;True;2;5;False;;10;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;17;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;5;3;6;0
 WireConnection;4;0;3;0
-WireConnection;9;0;11;0
-WireConnection;9;1;5;0
+WireConnection;21;1;11;0
+WireConnection;21;2;5;0
 WireConnection;20;0;1;0
 WireConnection;20;4;4;0
-WireConnection;20;9;9;0
+WireConnection;20;9;21;0
 ASEEND*/
-//CHKSM=9B492A6131B8F3457742756E9AC97F7BD3F62182
+//CHKSM=01B2CF5D475F6D2793BB04E2E2F3518D0CB462A8

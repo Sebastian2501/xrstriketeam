@@ -311,6 +311,10 @@ PrefabInstance:
       value: SM_Bld_Aldi_Floor
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: adb7191ae0ddb1b4ba35152cec2daae6, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: adb7191ae0ddb1b4ba35152cec2daae6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
