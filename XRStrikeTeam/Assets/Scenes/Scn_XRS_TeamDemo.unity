@@ -14519,10 +14519,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5217800591412462267, guid: f9d712417ebd20e41a518ed003f24f02, type: 3}
-      propertyPath: m_Name
-      value: Pref_UI_V_Slide01_IntroSlide
-      objectReference: {fileID: 0}
     - target: {fileID: 8024466846318735132, guid: f9d712417ebd20e41a518ed003f24f02, type: 3}
       propertyPath: m_Name
       value: LogicWithDestinations

@@ -75,6 +75,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2127286646356454682}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8098828460452320698}
   m_SourcePrefab: {fileID: 100100000, guid: ea13c5d05e2bf3f4f9c91f268572b2d3, type: 3}
 --- !u!4 &1340925390290669135 stripped
 Transform:
@@ -104,7 +107,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 1
+  m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -122,6 +125,20 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &8098828460452320698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860052776456000757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db27d95aeb6171479d3988f9fd9a62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoURL: RobotDataVis_001.mp4
+  _playOnAwake: 1
 --- !u!1001 &4799232069737699082
 PrefabInstance:
   m_ObjectHideFlags: 0
