@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3006019196089835925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 778339490984557139, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_Slide_02_00
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691792900804609212, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915142120646818525, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768314000855046526, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851126319429762715, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eddd3872026b784f8070095bf1a651b, type: 3}
+    - target: {fileID: 4209406206963730360, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: "During our time at Accenture we have proven that we are the tip-of-the-spear
+        team, below some of our notable achievements\u200B\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246148372871099873, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1126.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181268732924090719, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 336c89a7140246149ab2f7234036713f, type: 3}

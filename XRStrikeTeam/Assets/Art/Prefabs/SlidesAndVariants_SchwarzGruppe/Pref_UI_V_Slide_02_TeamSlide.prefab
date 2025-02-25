@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6895439169865034602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Tech Art
+
+        Performance Optimization
+
+        Custom Render Pipelines
+
+        Custom
+        Tools'
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 364.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1088
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -389.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_Slide_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 840449459151189960, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Management
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 661
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -343
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413443786350937242, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616189019385283296, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616189019385283296, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -301.4201
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1088
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691792900804609212, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915142120646818525, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768314000855046526, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851126319429762715, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224550443466392553, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385263564479265190, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eddd3872026b784f8070095bf1a651b, type: 3}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 416.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1462
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -389.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Live Demos
+
+        Keynote Presentations
+
+        Stage Presentations
+
+        Workshops'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209406206963730360, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Our 15+ years of experience in emerging technology, makes us the experts
+        of Spatial and XR.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: "Creative Direction\r\nCreative Production\nDesign Thinking \r\nSoftware
+        Design & Solutions\r\nArt Direction\r\nVisual Development & Concept Art\r\nStoryboards
+        & Wireframes\r\nPrototyping\r\nUI/UX\r\n2D/3D Asset Creation\r\nDigital Twins\r\n360\xB0
+        Videos\nCAD\nBIM"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Optimization
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 661
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 168.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 661
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -846.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1088
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721439833064750658, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Live
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911661017267956508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911661017267956508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1462
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911661017267956508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -343
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'The XR StrikeTeam is a small team of <b>handpicked experts</b>. Almost
+        all our members have a strong foundation in <b>project management</b> and
+        <b>leadership</b> through years of running their own operations and freelancing
+        experience.
+
+
+
+        Our members have a proven track record in <b>sales
+        enablement</b>, from RFP and client pitches to SME input, feasibility studies,
+        POC and prototyping. The XR StrikeTeam can help boost sales and ensure maximum
+        quality and value for our clients.
+
+
+
+        On top of that our complementary
+        skills in production, generating 2D and 3D content, User Experience Design,
+        Graphics Programming, Computer Vision, AI and many others mean that not only
+        can we realize projects using <b>any emerging technology</b> but also <b>lead
+        diverse teams and produce at scale</b>.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_lineSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 504.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 631.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -348
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 661
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -389.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313075317711866508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Development
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Program Management
+
+        Project Management
+
+        Thought Leadership
+
+        Design
+        and Build Enablement
+
+        Business Requirement Analysis
+
+        Agile
+        Management
+
+        Client Relationship Management
+
+        Estimation and
+        Planning
+
+        Risk & Scope Management
+
+        Sales Enablement'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 168.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1088
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -846.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: What we offer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083034158690671783, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Design & Experience
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181268732924090719, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Software Architecture
+
+        Software Engineering
+
+        AI & GenAI
+
+        Blockchain
+
+        Extended
+        Reality (XR)
+
+        AR/VR/Metaverse
+
+        Computer Vision
+
+        Synthetic
+        Data Creation
+
+        Spatial Computing
+
+        Simulation
+
+        Data
+        Visualization
+
+        Nvidia Omniverse'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 336c89a7140246149ab2f7234036713f, type: 3}

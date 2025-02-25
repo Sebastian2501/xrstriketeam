@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &909704895939342825
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bdd3cea4917e92441a97c8a5d904110a, type: 3}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76489695248189022, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: '370K BD Effort.
+
+        Powered the virtual induction of Fellows during
+        COVID.
+
+        Spearheaded the partnership with nVidia Omniverse.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 138417931336290763, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_Slide_19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06f07d2b719146146b8a2560e5f47c3e, type: 3}
+    - target: {fileID: 1671875013299097224, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37d854bb932725146a98ad99efdf7b4d, type: 3}
+    - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e57c46dfdff8e644aa1ae0b3a45f10db, type: 3}
+    - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "AICP - Computer History Museum\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "An AICP powered metaverse digital twin of the Computer History Museum,
+        brought to life during COVID lockdown, to create a virtual way to visit the
+        (then) inaccessible museum spaces.\u200B\r\nThe project is a pioneering initiative
+        in its industry, demonstrating our teams capability to efficiently create
+        a digital twin of something as complex as a museal collection.\u200B\r\n\nState
+        of the art demonstration of Accenture\u2019s XR capabilities, pioneering
+        use case example, healthy, multi-year client partnership.\u200B\r\nFirst
+        Accenture project to also receive an nVidia Omniverse version.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265414659886257146, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369904848783164712, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d553db10a9fc1c4e80e411e3af1a270, type: 3}
+    - target: {fileID: 8428176771275144500, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_text
+      value: "CHM\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764803656298611708, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c4c4ced64b0b9464b8b9e6a6bbc60d58, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
