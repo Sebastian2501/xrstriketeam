@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 778339490984557139, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Master_IntroOutro
+      value: Pref_UI_V_Slide_01_IntroSlide_Base
       objectReference: {fileID: 0}
     - target: {fileID: 4730665056862502931, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,6 +51,10 @@ PrefabInstance:
     - target: {fileID: 4730665056862502931, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 29c0d8f712f79164e9862e315c9ee305, type: 3}
+      propertyPath: m_text
+      value: Team | Competencies | Offerings | Projects
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

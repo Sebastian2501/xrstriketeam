@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6895439169865034602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Tech Art
+
+        Performance Optimization
+
+        Custom Render Pipelines
+
+        Custom
+        Tools'
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 344087358628459930, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 364.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 561936004863464270, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -603.17993
+      objectReference: {fileID: 0}
+    - target: {fileID: 778339490984557139, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_V_Slide_02_TheXRstrikeTeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 840449459151189960, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Competitive Advantage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 439.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -319.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413443786350937242, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616189019385283296, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616189019385283296, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -301.4201
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1088
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629988077379171974, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691792900804609212, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915142120646818525, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403606087005377959, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768314000855046526, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851126319429762715, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224550443466392553, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385263564479265190, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 257842f323ff5164c88dc62f6a24e548, type: 3}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.41960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 416.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700093323990857646, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -813.67993
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Live Demos
+
+        Keynote Presentations
+
+        Stage Presentations
+
+        Workshops'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787210156794926030, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209406206963730360, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: "Your trusted partner for Spatial Computing from RFP to Delivery\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'We combine <b>top-tier quality</b> with <b>systems thinking</b> to
+        create <b>scalable methods</b>. Our <b>industry-best practices</b> enable
+        rapid onboarding and sustained high performance, forming a foundation for
+        global technology incubation.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Optimization
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 661
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 168.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 661
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363703057018806299, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -846.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669555423780410623, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -556.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721439833064750658, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Live
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911661017267956508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911661017267956508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911661017267956508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -767.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'We are an ad-hoc team of <b>technology and innovation experts</b> providing
+        <b>solutions</b> and <b>leadership</b> to the most challenging projects in
+        the spatial computing space, creating impact for Accenture, our clients,
+        and internal teams worldwide.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_lineSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 881.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 631.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -335
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -366.47992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313075317711866508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Leadership
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'The XR StrikeTeam provides <b>standout solutions</b> with <b>cutting-edge
+        expertise</b>. We navigate production complexities with <b>precision and
+        creativity</b>, ensuring <b>seamless execution and shared success</b>. Our
+        <b>methodical</b>, problem-solving approach <b>sets you apart</b> in the
+        market.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 168.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1088
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -846.5799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: The XR StrikeTeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083034158690671783, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: Methodology
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181268732924090719, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_text
+      value: 'Leadership is key to <b>quality at scale</b>. We foster trust through
+        servant leadership, adapting agile methods <b>to drive change</b>. Our goal
+        is to upskill teams, transitioning to a participative leadership style that
+        promotes <b>dedication and ownership</b>.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 1413443786350937242, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+    - {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 336c89a7140246149ab2f7234036713f, type: 3}
