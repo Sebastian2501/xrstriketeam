@@ -76,7 +76,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -88,23 +88,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9925462
       objectReference: {fileID: 0}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.12186928
       objectReference: {fileID: 0}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7206832791519106578, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_Name
-      value: 04_Step_A_V_Roster_Sebastian
+      value: 04_Step_A_V_Quote01
       objectReference: {fileID: 0}
     - target: {fileID: 7304211165333985227, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalPosition.x

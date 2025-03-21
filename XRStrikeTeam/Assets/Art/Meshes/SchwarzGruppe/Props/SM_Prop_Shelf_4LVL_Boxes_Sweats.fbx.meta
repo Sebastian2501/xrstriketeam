@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_Trim_Products_Sweets
     second: {fileID: 2100000, guid: 92220c142a7bf9647a8838da01e237e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Trim_Products_Sweets1
+    second: {fileID: 2100000, guid: f40a301236745af4b966799445061089, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

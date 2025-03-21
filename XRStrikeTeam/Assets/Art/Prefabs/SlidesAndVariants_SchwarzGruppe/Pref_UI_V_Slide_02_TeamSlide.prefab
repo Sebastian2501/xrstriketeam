@@ -1,5 +1,305 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &933632416441115283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6272030358942412917}
+  - component: {fileID: 6199463700658822283}
+  - component: {fileID: 4173113020458632894}
+  m_Layer: 0
+  m_Name: Image_Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6272030358942412917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933632416441115283}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4895758698441132914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 617.4988, y: -380.00024}
+  m_SizeDelta: {x: -1654.9976, y: -710.00024}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &6199463700658822283
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933632416441115283}
+  m_CullTransparentMesh: 1
+--- !u!114 &4173113020458632894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933632416441115283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6, g: 0.6, b: 0.6, a: 0.8}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 11b4449e5be987749938674202cd965c, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3398714166704259262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6609117372250373099}
+  - component: {fileID: 4164806591025381680}
+  - component: {fileID: 5840689977483047615}
+  m_Layer: 0
+  m_Name: Image_Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6609117372250373099
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398714166704259262}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6292594177227409421}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 250.74747, y: -380.00012}
+  m_SizeDelta: {x: -1625.2949, y: -710.0001}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &4164806591025381680
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398714166704259262}
+  m_CullTransparentMesh: 1
+--- !u!114 &5840689977483047615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398714166704259262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6, g: 0.6, b: 0.6, a: 0.8}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 11b4449e5be987749938674202cd965c, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3547925509684560758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4565776486936424706}
+  - component: {fileID: 7808523088766635182}
+  - component: {fileID: 7383579256254670555}
+  m_Layer: 0
+  m_Name: Image_Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4565776486936424706
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547925509684560758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.38000005, z: 0.38000005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5940500988490630838}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -381.3048, y: -344}
+  m_SizeDelta: {x: -857.3904, y: -468.00018}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &7808523088766635182
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547925509684560758}
+  m_CullTransparentMesh: 1
+--- !u!114 &7383579256254670555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547925509684560758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6, g: 0.6, b: 0.6, a: 0.8}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 11b4449e5be987749938674202cd965c, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3731527278047616226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3344145289063667460}
+  - component: {fileID: 7259657415395801549}
+  - component: {fileID: 6008364291035829666}
+  m_Layer: 0
+  m_Name: Image_Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3344145289063667460
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3731527278047616226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 959872079097789608}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -161.00476, y: -379.99994}
+  m_SizeDelta: {x: -1600.7904, y: -709.99994}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &7259657415395801549
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3731527278047616226}
+  m_CullTransparentMesh: 1
+--- !u!114 &6008364291035829666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3731527278047616226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6, g: 0.6, b: 0.6, a: 0.8}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 11b4449e5be987749938674202cd965c, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &6895439169865034602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43,13 +343,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -389.5799
       objectReference: {fileID: 0}
+    - target: {fileID: 640158161282163559, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -592
+      objectReference: {fileID: 0}
+    - target: {fileID: 640158161282163559, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -229.99994
+      objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_03
+      value: Pref_UI_V_Slide_02_TeamSlide
       objectReference: {fileID: 0}
     - target: {fileID: 840449459151189960, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: Management
+      value: Hard Skills
+      objectReference: {fileID: 0}
+    - target: {fileID: 840449459151189960, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 991182557993889244, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1044046487944246389, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -65,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1413443786350937242, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1616189019385283296, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -94,6 +410,18 @@ PrefabInstance:
     - target: {fileID: 1915142120646818525, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035838124323659800, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -592
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035838124323659800, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -229.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403606087005377959, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2768314000855046526, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -207,27 +535,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: Our 15+ years of experience in emerging technology, makes us the experts
-        of Spatial and XR.
+      value: Das XR ASG innovations team
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSize
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867151716405101471, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "Creative Direction\r\nCreative Production\nDesign Thinking \r\nSoftware
-        Design & Solutions\r\nArt Direction\r\nVisual Development & Concept Art\r\nStoryboards
-        & Wireframes\r\nPrototyping\r\nUI/UX\r\n2D/3D Asset Creation\r\nDigital Twins\r\n360\xB0
-        Videos\nCAD\nBIM"
+      value: "Automotive\vAerospace\r\nArchitecture\r\nConsulting\r\nData Stories\vPharmaceutical\r\nRetail\r\nSecurity\r\nSports
+        & Entertainment\r\nSustainability \r\nTechnology\r\nUtilities & Energy\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
       value: Optimization
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972797808626816962, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -592
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972797808626816962, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 6328328220928746777, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -287,32 +660,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'The XR StrikeTeam is a small team of <b>handpicked experts</b>. Almost
-        all our members have a strong foundation in <b>project management</b> and
-        <b>leadership</b> through years of running their own operations and freelancing
-        experience.
-
-
-
-        Our members have a proven track record in <b>sales
-        enablement</b>, from RFP and client pitches to SME input, feasibility studies,
-        POC and prototyping. The XR StrikeTeam can help boost sales and ensure maximum
-        quality and value for our clients.
-
-
-
-        On top of that our complementary
-        skills in production, generating 2D and 3D content, User Experience Design,
-        Graphics Programming, Computer Vision, AI and many others mean that not only
-        can we realize projects using <b>any emerging technology</b> but also <b>lead
-        diverse teams and produce at scale</b>.'
+      value: "Wir sind Accenture`s XR Team Deutschland Schweiz \xD6sterreich.\n\nAlles
+        begann 2018 in der Schweiz, als das Extended Reality Studio im Herzen Z\xFCrichs
+        er\xF6ffnet wurde und XR Developer, 3D Artists und  weitere XR Spezialisten
+        die ersten innovativen Demos entwickelten. \r\n\nSeitdem sind wir auf \xFCber
+        60 Experten gewachsen und haben mit exklusiven  Eigenentwicklungen die unterschiedlichsten
+        Projekte f\xFCr Kunden wie Disney, E.ON, World Economic Forum, etc. umgesetzt. 
+        \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_margin.w
+      value: 280.4117
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_margin.z
+      value: -181.85901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
@@ -323,9 +704,25 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246148372871099873, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -571
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246148372871099873, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -293
+      objectReference: {fileID: 0}
+    - target: {fileID: 7343212740446417452, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 504.6
+      value: 841.96
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -353,44 +750,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8313075317711866508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: Development
+      value: Soft Skills
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313075317711866508, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Program Management
-
-        Project Management
-
-        Thought Leadership
-
-        Design
-        and Build Enablement
-
-        Business Requirement Analysis
-
-        Agile
-        Management
-
-        Client Relationship Management
-
-        Estimation and
-        Planning
-
-        Risk & Scope Management
-
-        Sales Enablement'
+      value: "AI & GenAI\r\nXR/AR/VR/Metaverse\r\nBlockchain\r\nComputer Vision\r\nData
+        Visualization\r\nGraphic Computing\r\nNvidia Omniverse\r\nRobotics\r\nSimulation\r\nSoftware
+        Architecture\r\nSoftware Engineering\r\nSpatial Computing\r\nSynthetic Data
+        Creation\r\nRealtime Game Engines\nXR/Spatial\r"
       objectReference: {fileID: 0}
     - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8704228748493885083, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -410,11 +809,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: What we offer
+      value: Hallo
       objectReference: {fileID: 0}
     - target: {fileID: 9083034158690671783, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: Design & Experience
+      value: Industrien
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083034158690671783, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9181268732924090719, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -422,43 +825,91 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Software Architecture
+      value: 'Agile Management
 
-        Software Engineering
+        Design & Build Enablement
 
-        AI & GenAI
+        Estimation
+        and Planning
 
-        Blockchain
+        New Tech Adoption
 
-        Extended
-        Reality (XR)
+        Program Management
 
-        AR/VR/Metaverse
+        Project
+        Management
 
-        Computer Vision
+        Risk & Scope Management
 
-        Synthetic
-        Data Creation
+        Sales Enablement
 
-        Spatial Computing
+        Tech
+        Powered Storytelling
 
-        Simulation
+        Thought Leadership
 
-        Data
-        Visualization
+        UX/UI
 
-        Nvidia Omniverse'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 991182557993889244, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 4565776486936424706}
+    - targetCorrespondingSourceObject: {fileID: 5972797808626816962, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 3344145289063667460}
+    - targetCorrespondingSourceObject: {fileID: 640158161282163559, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 6609117372250373099}
+    - targetCorrespondingSourceObject: {fileID: 2035838124323659800, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 6272030358942412917}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+--- !u!224 &959872079097789608 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5972797808626816962, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+  m_PrefabInstance: {fileID: 6895439169865034602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &4895758698441132914 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2035838124323659800, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+  m_PrefabInstance: {fileID: 6895439169865034602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5940500988490630838 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 991182557993889244, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+  m_PrefabInstance: {fileID: 6895439169865034602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &6292594177227409421 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 640158161282163559, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+  m_PrefabInstance: {fileID: 6895439169865034602}
+  m_PrefabAsset: {fileID: 0}

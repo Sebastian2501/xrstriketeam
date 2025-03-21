@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 778339490984557139, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_06
+      value: Pref_UI_V_Slide_03b_LoesungsAnsatz
       objectReference: {fileID: 0}
     - target: {fileID: 840449459151189960, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -23,7 +23,11 @@ PrefabInstance:
     - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6eddd3872026b784f8070095bf1a651b, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.9019608
+      objectReference: {fileID: 0}
     - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_Color.b
       value: 0.49803922

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7639545105406723114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 43216094967170253, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_Slide_04_01_Sebastian
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: <i>Lead Production Manager / Producer</i>
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471858974770150892, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06550a62879df4443a7c71c3a1317471, type: 3}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426166630021682342, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
+      propertyPath: m_text
+      value: "3D Art and Lead Producer for the XR Studio Zurich, XR ASG and Build
+        Stream Lead for GCV.\u200B\r\n\n\u200BOver 10+ Years of managerial expertise
+        in multiple industries ranging from natural resources, simulation and training
+        to cinema projects worldwide.\u200B\r\n\r\r\nMajor Accenture contributions:
+        AICP, GCV, Disney Studio Lab, E.ON Campus, Tech Vision XR, AI Embodied Agent,
+        Takeda Pillars of Growth, Future of Systems and more...\r\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
