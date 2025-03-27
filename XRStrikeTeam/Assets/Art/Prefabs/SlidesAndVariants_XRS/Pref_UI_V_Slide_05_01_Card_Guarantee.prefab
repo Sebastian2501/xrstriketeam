@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9159167237918343631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1307400773750124899, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_Name
+      value: Pref_UI_V_Slide_05_01_Card_Guarantee
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272172872227967580, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272172872227967580, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152755227755425638, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 410
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746569209987425218, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895575506433623419, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_text
+      value: Through streamlined workflows and a highly skilled, upskilled network,
+        our team enables production groups to reduce costs, minimize repetitive work,
+        and deliver high-quality results faster and more efficiently.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336635639389294096, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -193
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501636797336587009, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8619233281342548186, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}
+      propertyPath: m_text
+      value: "Shrink your production Cost by up to 50%\u200B\r"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 096ce1771d2b54245a16c14d130bf00e, type: 3}

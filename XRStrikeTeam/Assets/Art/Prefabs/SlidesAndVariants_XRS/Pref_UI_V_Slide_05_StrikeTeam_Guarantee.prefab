@@ -10,11 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 778339490984557139, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_07_00
+      value: Pref_UI_V_Slide_05_StrikeTeam_Guarantee
       objectReference: {fileID: 0}
     - target: {fileID: 1691792900804609212, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403606087005377959, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2851126319429762715, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
@@ -23,7 +27,11 @@ PrefabInstance:
     - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6eddd3872026b784f8070095bf1a651b, type: 3}
+      objectReference: {fileID: 21300000, guid: c6868784ab563ea418a1dd506bb8616d, type: 3}
+    - target: {fileID: 3532359184605135056, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.09803922
+      objectReference: {fileID: 0}
     - target: {fileID: 4730665056862502931, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -66,16 +74,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: "Among supporting many projects, we have developed <b>pipelines and
-        workflows</b> such as the <b>OneAccenture Method (1AM) initiative</b> that
-        have become the core <b>ways of working</b> on major metaverse successes
-        such as the GCV, E.ON Campus, Republic of Innovators and all AICP and its
-        related projects.\r\n\n1AM is a <b>set of processes, pipelines and frontend/backend
-        tools</b> designed to unify and <b>empower</b> creatives across <b>OneAccenture</b>.
-        We believe that with this initiative, we can <b>cut production costs, accelerate
-        content delivery</b>, and <b>maximize sales</b> by leveraging economies of
-        scale, streamlining operations and efficiency to increase our performance
-        and influence our bottom line.\_"
+      value: 'Among supporting many high-impact projects, our team has designed pipelines
+        and workflows that have powered major metaverse successes such as the GCV,
+        E.ON Campus, Republic of Innovators, and all AICP-related initiatives.
+
+
+        We
+        specialize in creating <b>scalable processes, tools, and solutions</b> that
+        unify teams and drive <b>efficient, high-quality production</b>. These capabilities
+        have consistently <b>reduced costs, accelerated delivery</b>, and <b>maximized
+        outcomes</b> by <b>streamlining operations, empowering creatives and management</b>,
+        and <b>increasing overall performance</b>.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
@@ -89,9 +100,13 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 5042967399057301706, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8993380840655740961, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'Our Next Initiative: Introducing 1AM
+      value: 'The StrikeTeam Guarantee
 
 '
       objectReference: {fileID: 0}

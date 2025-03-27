@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: d2a79c4a14758e24fbc602ff6ca458ed
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _T3D_HDR: {fileID: 8900000, guid: 03d81cfad4bfcb5478ba502af3616d17, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
