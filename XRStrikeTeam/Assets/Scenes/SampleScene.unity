@@ -8446,13 +8446,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -14519,10 +14519,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5217800591412462267, guid: f9d712417ebd20e41a518ed003f24f02, type: 3}
-      propertyPath: m_Name
-      value: Pref_UI_V_Slide01_IntroSlide
-      objectReference: {fileID: 0}
     - target: {fileID: 8024466846318735132, guid: f9d712417ebd20e41a518ed003f24f02, type: 3}
       propertyPath: m_Name
       value: LogicWithDestinations
@@ -19578,8 +19574,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705291599}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07466901, y: 0.6918347, z: 0.0696186, w: 0.7148025}
-  m_LocalPosition: {x: -5.987552, y: -0.10632233, z: -1.1807309}
+  m_LocalRotation: {x: -0.0000001878213, y: 0.9277674, z: 0.00003294132, w: -0.37315923}
+  m_LocalPosition: {x: -0.942136, y: 0.6749435, z: -8.125165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24014,9 +24010,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4861300756669432171, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861300756669432171, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6654163020521103809, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
       propertyPath: m_Name
       value: Pref_Demo_BackGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654163020521103809, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6927989760190343692, guid: b744096f9722d254d8fb6c97a0b4b146, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24071,10 +24079,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1195984702}
     m_Modifications:
-    - target: {fileID: 3558785865199598048, guid: 25956e289ebad1d489b6f1d1c4792020, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4436918659972933112, guid: 25956e289ebad1d489b6f1d1c4792020, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -24119,14 +24123,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pref_Env_ZurichStudio
       objectReference: {fileID: 0}
-    - target: {fileID: 6715983075937389280, guid: 25956e289ebad1d489b6f1d1c4792020, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7094732118235230603, guid: 25956e289ebad1d489b6f1d1c4792020, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24139,8 +24135,8 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1246648567}
   - {fileID: 663344279}
-  - {fileID: 1705291602}
   - {fileID: 424665560}
+  - {fileID: 1705291602}
   - {fileID: 1218346998}
   - {fileID: 4060686623418375518}
   - {fileID: 86611164}
