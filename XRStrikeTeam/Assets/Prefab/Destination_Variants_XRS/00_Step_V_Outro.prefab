@@ -177,6 +177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pref_UI_V_Slide_OutroSlide
       objectReference: {fileID: 0}
+    - target: {fileID: 8650182457895020635, guid: 8bd0111e922d3684d99699f75fdf6ac4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

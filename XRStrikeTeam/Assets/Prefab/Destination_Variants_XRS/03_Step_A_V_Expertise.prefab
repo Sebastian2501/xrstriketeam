@@ -62,6 +62,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2168262949619772281, guid: 85084e42b0aafb24fa4a207aa0001ee8, type: 3}
   m_PrefabInstance: {fileID: 5972714612763482050}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7856069503012170661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4604092642402024551, guid: 85084e42b0aafb24fa4a207aa0001ee8, type: 3}
+  m_PrefabInstance: {fileID: 5972714612763482050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c23b81bfb15d74fb3a2ee8ab940fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7119728514267427360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,8 +83,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3003096868383930626, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3614634259327074404, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
+      propertyPath: _slideAnimatorController
+      value: 
+      objectReference: {fileID: 7856069503012170661}
     - target: {fileID: 6078218112224651044, guid: e94e5662a729b0e4288f00be853ea31c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
