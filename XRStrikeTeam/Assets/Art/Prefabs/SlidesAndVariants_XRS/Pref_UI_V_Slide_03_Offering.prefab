@@ -688,16 +688,16 @@ PrefabInstance:
       propertyPath: m_text
       value: '-Immersive Data Visualization & Analytics
 
-        -Digital Twins
-        for Real-Time Operational Monitoring
+        -Digital Twins for
+        Real-Time Operational Monitoring
 
-        -AI-Driven Virtual Patients
-        for Medical & Therapeutic Training
+        -AI-Embodied Agents for Virtual
+        Assistants
 
-        -Context-Aware AI Avatars for
-        Remote Collaboration
+        -Context-Aware AI Avatars for Remote Collaboration
 
-        -Adaptive AI for Personalized Learning'
+        -Adaptive
+        AI for Personalized Learning'
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
@@ -706,6 +706,10 @@ PrefabInstance:
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -935,13 +939,13 @@ PrefabInstance:
         -Virtual
         Prototyping & Rapid Iteration
 
-        -Collaborative Design Reviews in
-        XR
+        -Collaborative Design Reviews in XR
 
-        -Immersive Training for Machinery & Processes
+        -Manufacturing
+        Process Simulation and Optimization
 
-        -Augmented
-        Reality for Assembly, Maintenance & Production'
+        -Augmented Reality for Assembly,
+        Maintenance & Production'
       objectReference: {fileID: 0}
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize

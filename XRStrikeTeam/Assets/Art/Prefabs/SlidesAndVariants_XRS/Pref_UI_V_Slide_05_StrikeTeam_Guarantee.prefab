@@ -106,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8993380840655740961, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'The StrikeTeam Guarantee
+      value: 'The StrikeTeam Commitment
 
 '
       objectReference: {fileID: 0}

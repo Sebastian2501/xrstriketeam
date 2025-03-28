@@ -1422,21 +1422,21 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Software Architecture & Engineering
 
-        Storyboards & Wireframes
-
         Prototyping
 
-        AI
-        & GenAI
+        Emerging
+        Technologies:
 
-        Performance & Optimization
+        -Extended Reality (XR)
 
-        Robotics
+        -AI & GenAI
 
-        Keynote
-        Presentations
+        -Robotics
 
-        Stage Presentations'
+        Performance
+        & Optimization
+
+        Keynote & Stage Presentations'
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
@@ -1544,6 +1544,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 504.6
@@ -1643,17 +1647,17 @@ PrefabInstance:
 
         Software Design & Solutions
 
-        Art
-        Direction
+        Storyboards
+        & Wireframes
 
         Visual Development
 
+        Art Direction
+
         UI/UX
 
-        Extended Reality
-        (XR)
-
-        Computer Vision
+        Computer
+        Vision
 
         2D & 3D Asset Creation'
       objectReference: {fileID: 0}

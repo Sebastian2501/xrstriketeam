@@ -219,12 +219,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
-      value: 'We combine <b>top-tier quality</b> with <b>systems thinking</b> to
-        create <b>scalable methods</b>. Our <b>industry-best practices</b> enable
-        rapid onboarding and sustained high performance, forming a foundation for
-        global technology incubation.
-
-'
+      value: We combine <b>top-tier quality</b> with <b>systems thinking</b> to create
+        <b>scalable methods</b>. Our <b>industry-best practices</b> enable rapid
+        onboarding and sustained high performance, contributing to effective and
+        efficient prototyping and delivery methodologies.
       objectReference: {fileID: 0}
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
@@ -233,6 +231,10 @@ PrefabInstance:
     - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908032956531385170, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
@@ -319,6 +321,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 881.2
@@ -377,6 +383,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8339426555049997738, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8563324473509378009, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -425,6 +435,10 @@ PrefabInstance:
     - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195752355630216533, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
