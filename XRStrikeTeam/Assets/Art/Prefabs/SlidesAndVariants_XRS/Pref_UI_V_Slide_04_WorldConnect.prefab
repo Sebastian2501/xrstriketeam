@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5288294381847765543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -316,6 +316,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5133634380431526772, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_Name
+      value: BG_Fade_Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133634380431526772, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5462287209926177867, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
       value: Optimization
@@ -398,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_margin.z
@@ -414,7 +422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093852550519479147, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_fontSizeBase
-      value: 32
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -422,7 +430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 631.5
+      value: 526.2
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -430,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7737510476934151732, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -335
+      value: -440.3
       objectReference: {fileID: 0}
     - target: {fileID: 7990983827158862096, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -497,6 +505,10 @@ PrefabInstance:
     - target: {fileID: 8754569350916443321, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text
       value: The XR StrikeTeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836376150475847443, guid: 336c89a7140246149ab2f7234036713f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 570
       objectReference: {fileID: 0}
     - target: {fileID: 9083034158690671783, guid: 336c89a7140246149ab2f7234036713f, type: 3}
       propertyPath: m_text

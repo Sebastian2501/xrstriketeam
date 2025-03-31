@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1307400773750124899, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_Name
-      value: Pref_UI_Slide_04_02_Yury
+      value: Pref_UI_V_Slide_04_Roster_02_Yury
       objectReference: {fileID: 0}
     - target: {fileID: 3595115031469351316, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_text
-      value: <i>Lead Art Director / Design Lead</i>
+      value: <i>Art Director / Design Lead</i>
       objectReference: {fileID: 0}
     - target: {fileID: 6622742115596369273, guid: e291d1be787fc604799d63e55c4eb77f, type: 3}
       propertyPath: m_text
