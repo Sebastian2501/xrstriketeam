@@ -192,7 +192,7 @@ Material:
     - _Color1: {r: 1, g: 1, b: 1, a: 1}
     - _ColorCurvature: {r: 0, g: 0, b: 0, a: 0}
     - _ColorEmission: {r: 0, g: 0, b: 0, a: 0}
-    - _Color_Atmo: {r: 0, g: 0.54684085, b: 0.84705883, a: 0}
+    - _Color_Atmo: {r: 0, g: 0.9477272, b: 1, a: 0}
     - _Color_Ocean: {r: 0, g: 0.042571478, b: 0.14899999, a: 0}
     - _Color_Shore: {r: 0, g: 0.49803922, b: 0.68235296, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
