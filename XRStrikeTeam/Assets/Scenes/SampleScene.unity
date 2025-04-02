@@ -480,6 +480,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6284962104985914109, guid: f9d712417ebd20e41a518ed003f24f02, type: 3}
+      propertyPath: _videoURL
+      value: RobotDataVis_002.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 8024466846318735132, guid: f9d712417ebd20e41a518ed003f24f02, type: 3}
       propertyPath: m_Name
       value: LogicWithDestinations
