@@ -142,7 +142,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _Emission: 0.25
+    - _Emission: 0.5
     - _EnvironmentReflections: 1
     - _Fog_Dist_FadeLength: 5
     - _Fog_Dist_FadeOffset: 2
@@ -206,3 +206,4 @@ Material:
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _UV: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
