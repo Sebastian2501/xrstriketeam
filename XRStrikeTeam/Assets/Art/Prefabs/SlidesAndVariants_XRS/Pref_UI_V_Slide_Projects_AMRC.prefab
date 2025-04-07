@@ -42,6 +42,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pref_UI_V_Slide_Projects_AMRC
       objectReference: {fileID: 0}
+    - target: {fileID: 1219321261694839411, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443117626450018511, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443117626450018511, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443117626450018511, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 77.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443117626450018511, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 1564571132136570496, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -50,6 +70,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2236629e95dcc0a4b819ceccd0096c72, type: 3}
+    - target: {fileID: 3018842702878183314, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018842702878183314, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018842702878183314, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018842702878183314, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3532359184605135056, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -57,6 +93,26 @@ PrefabInstance:
     - target: {fileID: 3901459106254582047, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
       value: "AICP - AMRC\u200B\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607511628603538785, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607511628603538785, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607511628603538785, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 155.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607511628603538785, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623707478513688547, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -97,6 +153,10 @@ PrefabInstance:
     - target: {fileID: 4730665056862502931, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508280854243624100, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6809809507299810136, guid: f3f42e35bec1c004d99cf358c198e4a5, type: 3}
       propertyPath: m_text
